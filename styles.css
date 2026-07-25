@@ -1,0 +1,350 @@
+/* Ritornello — Score register.
+   Grounds are true white / true near-black; warmth comes from the marks,
+   type, and content — never tinted wallpaper. See ritornello-brand/brand.md. */
+
+:root {
+  --page: #FFFFFF;
+  --ink: #131518;
+  --muted: #5A616A;
+  --hairline: #E2E4E7;
+  --blue: #2B5DA8;
+  --red: #B3122F;
+
+  --font-display: "Fraunces", "Iowan Old Style", Georgia, serif;
+  --font-body: "IBM Plex Sans", "Helvetica Neue", Arial, sans-serif;
+  --font-mono: "IBM Plex Mono", "SF Mono", Menlo, monospace;
+
+  --measure: 41rem;
+  --gutter: clamp(1.25rem, 5vw, 2.5rem);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --page: #0F1113;
+    --ink: #ECEDEF;
+    --muted: #8F969F;
+    --hairline: #26292D;
+    --blue: #7FA9E6;
+    --red: #E4556A;
+  }
+}
+
+* { box-sizing: border-box; }
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--page);
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-size: 1.0625rem;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+a {
+  color: var(--blue);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.18em;
+  text-decoration-color: color-mix(in srgb, var(--blue) 45%, transparent);
+  transition: text-decoration-color 120ms ease;
+}
+a:hover { text-decoration-color: var(--blue); }
+
+::selection { background: color-mix(in srgb, var(--red) 18%, transparent); }
+
+/* ---------- masthead ---------- */
+
+.masthead {
+  max-width: var(--measure);
+  margin: 0 auto;
+  padding: 1.5rem var(--gutter) 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.masthead-mark img { display: block; }
+
+.masthead-nav a {
+  font-family: var(--font-mono);
+  font-size: 0.8125rem;
+  letter-spacing: 0.02em;
+  color: var(--muted);
+  text-decoration-color: color-mix(in srgb, var(--muted) 40%, transparent);
+}
+.masthead-nav a:hover { color: var(--blue); text-decoration-color: var(--blue); }
+
+/* ---------- hero ---------- */
+
+.hero {
+  max-width: var(--measure);
+  margin: 0 auto;
+  padding: clamp(3.5rem, 10vh, 6.5rem) var(--gutter) 0;
+}
+
+.hero-wordmark {
+  margin: 0;
+}
+.hero-wordmark img {
+  display: block;
+  width: min(100%, 30rem);
+  height: auto;
+}
+
+.hero-flavor {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-weight: 400;
+  font-size: clamp(1.25rem, 3.2vw, 1.5rem);
+  color: var(--muted);
+  margin: 1.4rem 0 0;
+}
+
+.hero-lede {
+  max-width: 36rem;
+  margin: 1.6rem 0 0;
+}
+
+/* ---------- staff divider: five hairlines, two red dots at the right ---------- */
+
+.staff {
+  position: relative;
+  max-width: var(--measure);
+  margin: clamp(3rem, 8vh, 4.5rem) auto;
+  height: 33px;
+  /* padding box carries the lines so the dots can sit inside the measure */
+  margin-left: auto;
+  margin-right: auto;
+}
+.staff::before {
+  content: "";
+  position: absolute;
+  inset: 0 var(--gutter);
+  background: repeating-linear-gradient(
+    to bottom,
+    var(--hairline) 0 1px,
+    transparent 1px 8px
+  );
+}
+.staff::after {
+  content: "";
+  position: absolute;
+  top: 9.5px;
+  right: var(--gutter);
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--red);
+  box-shadow: 0 8px 0 var(--red);
+}
+
+/* ---------- method stanza ---------- */
+
+.method {
+  max-width: var(--measure);
+  margin: 0 auto;
+  padding: 0 var(--gutter);
+}
+.method p {
+  max-width: 36rem;
+  margin: 0;
+  color: var(--muted);
+}
+
+/* ---------- movements (sections) ---------- */
+
+.movement {
+  max-width: var(--measure);
+  margin: 0 auto;
+  padding: 0 var(--gutter);
+}
+
+.method + .movement { margin-top: clamp(3.5rem, 9vh, 5rem); }
+
+.movement-head {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto auto;
+  column-gap: 1rem;
+  align-items: baseline;
+  margin-bottom: 2.25rem;
+}
+
+/* boxed rehearsal letter */
+.rehearsal {
+  grid-row: 1 / span 2;
+  align-self: start;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.25rem;
+  height: 2.25rem;
+  border: 1.5px solid var(--ink);
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 1.25rem;
+  line-height: 1;
+  translate: 0 0.3rem;
+}
+
+.movement h2 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: clamp(1.75rem, 4.5vw, 2.25rem);
+  line-height: 1.1;
+  letter-spacing: -0.01em;
+  margin: 0;
+}
+
+.movement-sub {
+  grid-column: 2;
+  margin: 0.35rem 0 0;
+  font-size: 0.9375rem;
+  color: var(--muted);
+}
+
+/* ---------- pieces (works within a movement) ---------- */
+
+.pieces {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.piece {
+  border-top: 1px solid var(--hairline);
+  padding: 1.5rem 0 1.75rem;
+}
+.pieces .piece:last-child { padding-bottom: 0.5rem; }
+
+.piece h3 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 1.25rem;
+  letter-spacing: -0.005em;
+  margin: 0 0 0.5rem;
+}
+.piece h3 a {
+  color: var(--ink);
+  text-decoration: none;
+}
+.piece h3 a:hover { color: var(--blue); }
+
+.piece p {
+  max-width: 36rem;
+  margin: 0;
+}
+
+.piece-links {
+  margin-top: 0.7rem !important;
+  font-family: var(--font-mono);
+  font-size: 0.8125rem;
+  letter-spacing: 0.02em;
+  display: flex;
+  gap: 1.4rem;
+}
+
+/* ---------- programme (dot-leader list) ---------- */
+
+.programme-title {
+  font-family: var(--font-mono);
+  font-weight: 400;
+  font-size: 0.8125rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin: 3rem 0 1rem;
+}
+
+.programme {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-variant-numeric: tabular-nums;
+}
+
+.programme li + li { margin-top: 0.1rem; }
+
+.programme a {
+  display: flex;
+  align-items: baseline;
+  gap: 0.6rem;
+  padding: 0.32rem 0;
+  color: var(--ink);
+  text-decoration: none;
+}
+.programme a:hover span:first-child { color: var(--blue); }
+
+.programme .leader {
+  flex: 1;
+  border-bottom: 1px dotted var(--hairline);
+  translate: 0 -0.28em;
+  min-width: 2rem;
+}
+.programme a:hover .leader { border-bottom-color: color-mix(in srgb, var(--blue) 50%, transparent); }
+
+.programme .venue {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.02em;
+  color: var(--muted);
+}
+.programme a:hover .venue { color: var(--blue); }
+
+/* ---------- coda / footer ---------- */
+
+.coda {
+  max-width: var(--measure);
+  margin: 0 auto;
+  padding: 0 0 4rem;
+}
+.coda .staff { margin-bottom: 2.5rem; }
+
+.coda-mark {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 1.0625rem;
+  text-align: center;
+  margin: 0 var(--gutter);
+}
+
+.coda-line {
+  text-align: center;
+  font-family: var(--font-mono);
+  font-size: 0.8125rem;
+  margin: 0.9rem var(--gutter) 0;
+}
+
+.coda-fine {
+  text-align: center;
+  font-size: 0.75rem;
+  color: var(--muted);
+  max-width: 30rem;
+  margin: 1.6rem auto 0;
+  padding: 0 var(--gutter);
+}
+
+/* ---------- entrance: one staggered reveal on load ---------- */
+
+@media (prefers-reduced-motion: no-preference) {
+  .hero-wordmark, .hero-flavor, .hero-lede, .method, .movement, .staff, .coda {
+    animation: rise 640ms cubic-bezier(0.22, 1, 0.36, 1) both;
+  }
+  .hero-flavor { animation-delay: 90ms; }
+  .hero-lede { animation-delay: 160ms; }
+  .staff { animation-delay: 220ms; }
+  .method { animation-delay: 260ms; }
+  .movement { animation-delay: 300ms; }
+  .coda { animation-delay: 340ms; }
+
+  @keyframes rise {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: none; }
+  }
+}
