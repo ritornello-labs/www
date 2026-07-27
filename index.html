@@ -6,6 +6,8 @@
 <title>Ritornello — open tools and decks for spaced-repetition practice</title>
 <meta name="description" content="Ritornello is a workshop of open-source add-ons, shared decks, and developer tooling for serious spaced-repetition practice with Anki.">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<meta name="theme-color" content="#FFFFFF" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0F1113" media="(prefers-color-scheme: dark)">
 <link rel="stylesheet" href="assets/fonts.css">
 <link rel="stylesheet" href="styles.css">
 <meta property="og:title" content="Ritornello">
@@ -16,10 +18,8 @@
 
 <header class="masthead">
   <a class="masthead-mark" href="/" aria-label="Ritornello home">
-    <picture>
-      <source srcset="assets/monogram-dark.svg" media="(prefers-color-scheme: dark)">
-      <img src="assets/monogram.svg" alt="" width="28" height="28">
-    </picture>
+    <img class="img-light" src="assets/monogram.svg" alt="" width="28" height="28">
+    <img class="img-dark" src="assets/monogram-dark.svg" alt="" width="28" height="28">
   </a>
   <nav class="masthead-nav">
     <a href="https://github.com/ritornello-labs">GitHub</a>
@@ -30,10 +30,8 @@
 
   <section class="hero">
     <h1 class="hero-wordmark">
-      <picture>
-        <source srcset="assets/wordmark-dark.svg" media="(prefers-color-scheme: dark)">
-        <img src="assets/wordmark.svg" alt="ritornello" width="646" height="100">
-      </picture>
+      <img class="img-light" src="assets/wordmark.svg" alt="ritornello" width="646" height="100">
+      <img class="img-dark" src="assets/wordmark-dark.svg" alt="ritornello" width="646" height="100">
     </h1>
     <p class="hero-flavor">the theme that keeps returning</p>
     <p class="hero-lede">
