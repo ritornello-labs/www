@@ -293,7 +293,43 @@ a:hover { text-decoration-color: var(--blue); }
   margin: 0;
 }
 
-.piece-inner > p:first-child { padding-top: 0.15rem; }
+/* expanded layout: thumbnail column left of the text */
+.piece-inner.with-shot {
+  display: grid;
+  grid-template-columns: 10rem 1fr;
+  gap: 1.25rem;
+  align-items: start;
+}
+.piece-text { min-width: 0; padding-top: 0.15rem; }
+.piece-inner > .piece-text:only-child { padding-top: 0.15rem; }
+
+.piece-thumb {
+  display: block;
+  padding: 0;
+  margin: 0.2rem 0 1.4rem;
+  background: none;
+  border: 1px solid var(--hairline);
+  cursor: zoom-in;
+  line-height: 0;
+}
+.piece-thumb img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.piece-thumb:hover { border-color: var(--muted); }
+.piece-thumb:focus-visible {
+  outline: 2px solid var(--blue);
+  outline-offset: 2px;
+}
+@media (prefers-color-scheme: dark) {
+  .piece-thumb img { filter: brightness(0.9); }
+}
+
+@media (max-width: 36rem) {
+  .piece-inner.with-shot { grid-template-columns: 1fr; gap: 0.4rem; }
+  .piece-thumb { max-width: 13rem; margin-bottom: 0.8rem; }
+}
 
 .piece-links {
   margin-top: 0.7rem !important;
@@ -304,16 +340,12 @@ a:hover { text-decoration-color: var(--blue); }
   gap: 1.4rem;
 }
 
-.piece-shot {
-  display: block;
-  width: min(100%, 27.5rem);
-  height: auto;
-  margin: 1.1rem 0 1.5rem;
-  border: 1px solid var(--hairline);
-}
-@media (prefers-color-scheme: dark) {
-  .piece-shot { filter: brightness(0.9); }
-}
+/* compact pieces (the deck shelf) */
+.pieces-compact .piece-title { font-size: 1.0625rem; }
+.pieces-compact .piece-head { padding: 0.7rem 0; }
+.pieces-compact .piece-pin { margin-left: auto; }
+.pieces-compact .piece-inner.with-shot { grid-template-columns: 8rem 1fr; }
+.pieces-compact .piece-inner p { font-size: 0.9375rem; }
 
 .badge {
   font-family: var(--font-mono);
@@ -415,6 +447,38 @@ a:hover { text-decoration-color: var(--blue); }
   margin: 1.6rem auto 0;
   padding: 0 var(--gutter);
 }
+
+/* ---------- lightbox ---------- */
+
+.lightbox {
+  padding: 0;
+  border: 1px solid var(--hairline);
+  background: var(--page);
+  max-width: min(58rem, 92vw);
+  max-height: 92vh;
+}
+.lightbox::backdrop {
+  background: color-mix(in srgb, #0F1113 62%, transparent);
+}
+.lightbox img {
+  display: block;
+  max-width: 100%;
+  max-height: calc(92vh - 2px);
+}
+.lightbox-close {
+  position: absolute;
+  top: 0.4rem;
+  right: 0.4rem;
+  width: 2rem;
+  height: 2rem;
+  border: 1px solid var(--hairline);
+  background: var(--page);
+  color: var(--ink);
+  font-size: 1.1rem;
+  line-height: 1;
+  cursor: pointer;
+}
+.lightbox-close:hover { color: var(--red); border-color: var(--red); }
 
 /* ---------- light/dark mark variants ----------
    Toggled in CSS (not <picture source media>): media queries re-evaluate on
