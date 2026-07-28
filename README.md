@@ -37,3 +37,10 @@ CNAME to `ritornello-labs.github.io`.
 project repos (`docs/images/`, `release/screenshots/`, or
 `anki-shared-deck-assets`) — never HTML reconstructions, per workspace
 policy.
+
+## Cache busting
+
+`index.html` links `styles.css?v=N`. Pages serves assets with
+`max-age=600`, so a stylesheet change can lag the HTML by up to 10 minutes
+in browsers that cached the old file — bump `N` whenever `styles.css`
+changes so the pair updates atomically.
