@@ -61,112 +61,93 @@
   <section class="movement" id="add-ons">
     <header class="movement-head">
       <span class="rehearsal" aria-hidden="true">A</span>
-      <h2>Add-ons</h2>
-      <p class="movement-sub">Published on AnkiWeb, source and releases on GitHub.
-        <span class="open-hint">Hover a title to peek; click to keep it open. Screenshots enlarge on click.</span></p>
+      <div class="movement-titles">
+        <h2><button class="movement-toggle" type="button" aria-expanded="true">Add-ons<span class="caret" aria-hidden="true"></span></button></h2>
+        <p class="movement-sub">Published on AnkiWeb, source and releases on GitHub. Screenshots enlarge on click.</p>
+      </div>
     </header>
 
+    <div class="movement-body">
+    <div class="movement-inner">
     <ul class="pieces">
       <li class="piece">
-        <button class="piece-head" type="button" aria-expanded="false">
-          <span class="piece-title">Chat With Your Cards</span>
-          <span class="piece-tagline">an AI chat dock inside the reviewer</span>
-          <span class="piece-pin" aria-hidden="true">:&#8214;</span>
-        </button>
-        <div class="piece-body">
-          <div class="piece-inner with-shot">
-            <button class="piece-thumb" type="button" data-full="assets/shots/cwyc.webp"
-                    aria-label="Enlarge screenshot: the chat dock beside an Anki card">
-              <img src="assets/shots/cwyc-thumb.webp" alt="Chat With Your Cards dock answering a question next to an Anki card" width="360" loading="lazy">
-            </button>
-            <div class="piece-text">
-              <p>Talk to your collection while you study: the current card rides
-                 along as context, and the agent can search your decks, explain
-                 the missing prerequisite, and propose new notes — every write
-                 goes through a reviewable, revertible proposal.
-                 <span class="badge">developer preview</span></p>
-              <p class="piece-links">
-                <a href="https://github.com/ritornello-labs/chat-with-your-cards">GitHub</a>
-              </p>
-            </div>
+        <div class="piece-grid with-shot">
+          <button class="piece-thumb" type="button" data-full="assets/shots/cwyc.webp"
+                  aria-label="Enlarge screenshot: the chat dock beside an Anki card">
+            <img src="assets/shots/cwyc-thumb.webp" alt="Chat With Your Cards dock answering a question next to an Anki card" width="360" loading="lazy">
+          </button>
+          <div class="piece-text">
+            <h3 class="piece-title">Chat With Your Cards</h3>
+            <p>Talk to your collection while you study: the current card rides
+               along as context, and the agent can search your decks, explain
+               the missing prerequisite, and propose new notes — every write
+               goes through a reviewable, revertible proposal.
+               <span class="badge">developer preview</span></p>
+            <p class="piece-links">
+              <a href="https://github.com/ritornello-labs/chat-with-your-cards">GitHub</a>
+            </p>
           </div>
         </div>
       </li>
       <li class="piece">
-        <button class="piece-head" type="button" aria-expanded="false">
-          <span class="piece-title">Fractional New-Card Scheduler</span>
-          <span class="piece-tagline">fractional, per-deck new-card doses</span>
-          <span class="piece-pin" aria-hidden="true">:&#8214;</span>
-        </button>
-        <div class="piece-body">
-          <div class="piece-inner with-shot">
-            <button class="piece-thumb" type="button" data-full="assets/shots/fractional.webp"
-                    aria-label="Enlarge screenshot: the scheduler configuration window">
-              <img src="assets/shots/fractional-thumb.webp" alt="Fractional New-Card Scheduler configuration window" width="360" loading="lazy">
-            </button>
-            <div class="piece-text">
-              <p>Spread new cards through the week in fractional, per-deck doses
-                 instead of daily cliffs, with deck-health badges that show what
-                 the defaults hide.</p>
-              <p class="piece-links">
-                <a href="https://ankiweb.net/shared/info/304166926">AnkiWeb</a>
-                <a href="https://github.com/ritornello-labs/anki-fractional-scheduler">GitHub</a>
-                <a href="https://github.com/ritornello-labs/anki-fractional-scheduler/releases/download/v0.5.0/fractional-new-card-scheduler.ankiaddon">.ankiaddon&nbsp;&#8595;</a>
-              </p>
-            </div>
+        <div class="piece-grid with-shot">
+          <button class="piece-thumb" type="button" data-full="assets/shots/fractional.webp"
+                  aria-label="Enlarge screenshot: the scheduler configuration window">
+            <img src="assets/shots/fractional-thumb.webp" alt="Fractional New-Card Scheduler configuration window" width="360" loading="lazy">
+          </button>
+          <div class="piece-text">
+            <h3 class="piece-title">Fractional New-Card Scheduler</h3>
+            <p>Spread new cards through the week in fractional, per-deck doses
+               instead of daily cliffs, with deck-health badges that show what
+               the defaults hide.</p>
+            <p class="piece-links">
+              <a href="https://ankiweb.net/shared/info/304166926">AnkiWeb</a>
+              <a href="https://github.com/ritornello-labs/anki-fractional-scheduler">GitHub</a>
+              <a href="https://github.com/ritornello-labs/anki-fractional-scheduler/releases/download/v0.5.0/fractional-new-card-scheduler.ankiaddon">.ankiaddon&nbsp;&#8595;</a>
+            </p>
           </div>
         </div>
       </li>
       <li class="piece">
-        <button class="piece-head" type="button" aria-expanded="false">
-          <span class="piece-title">Web Embed Tools</span>
-          <span class="piece-tagline">the web, resizable, inside your notes</span>
-          <span class="piece-pin" aria-hidden="true">:&#8214;</span>
-        </button>
-        <div class="piece-body">
-          <div class="piece-inner with-shot">
-            <button class="piece-thumb" type="button" data-full="assets/shots/web-embed.webp"
-                    aria-label="Enlarge screenshot: the embed toolbar in the editor">
-              <img src="assets/shots/web-embed-thumb.webp" alt="Web Embed Tools toolbar in the Anki editor" width="360" loading="lazy">
-            </button>
-            <div class="piece-text">
-              <p>Turn URLs in note fields into resizable embedded web views, so
-                 reference material lives on the card instead of a tab away.</p>
-              <p class="piece-links">
-                <a href="https://ankiweb.net/shared/info/1522170627">AnkiWeb</a>
-                <a href="https://github.com/ritornello-labs/anki-web-embed-tools">GitHub</a>
-                <a href="https://github.com/ritornello-labs/anki-web-embed-tools/releases/download/v0.2.0/web_embed_tools.ankiaddon">.ankiaddon&nbsp;&#8595;</a>
-              </p>
-            </div>
+        <div class="piece-grid with-shot">
+          <button class="piece-thumb" type="button" data-full="assets/shots/web-embed.webp"
+                  aria-label="Enlarge screenshot: the embed toolbar in the editor">
+            <img src="assets/shots/web-embed-thumb.webp" alt="Web Embed Tools toolbar in the Anki editor" width="360" loading="lazy">
+          </button>
+          <div class="piece-text">
+            <h3 class="piece-title">Web Embed Tools</h3>
+            <p>Turn URLs in note fields into resizable embedded web views, so
+               reference material lives on the card instead of a tab away.</p>
+            <p class="piece-links">
+              <a href="https://ankiweb.net/shared/info/1522170627">AnkiWeb</a>
+              <a href="https://github.com/ritornello-labs/anki-web-embed-tools">GitHub</a>
+              <a href="https://github.com/ritornello-labs/anki-web-embed-tools/releases/download/v0.2.0/web_embed_tools.ankiaddon">.ankiaddon&nbsp;&#8595;</a>
+            </p>
           </div>
         </div>
       </li>
       <li class="piece">
-        <button class="piece-head" type="button" aria-expanded="false">
-          <span class="piece-title">Study Triage</span>
-          <span class="piece-tagline">shrink an oversized day</span>
-          <span class="piece-pin" aria-hidden="true">:&#8214;</span>
-        </button>
-        <div class="piece-body">
-          <div class="piece-inner with-shot">
-            <button class="piece-thumb" type="button" data-full="assets/shots/study-triage.webp"
-                    aria-label="Enlarge screenshot: triage actions in the Tools menu">
-              <img src="assets/shots/study-triage-thumb.webp" alt="Study Triage actions in the Anki Tools menu" width="360" loading="lazy">
-            </button>
-            <div class="piece-text">
-              <p>One-keystroke ways to shrink an oversized day — zero new cards
-                 today, auto-accept triage — without touching your long-term
-                 scheduling.</p>
-              <p class="piece-links">
-                <a href="https://ankiweb.net/shared/info/1850611434">AnkiWeb</a>
-                <a href="https://github.com/ritornello-labs/study-triage">GitHub</a>
-                <a href="https://github.com/ritornello-labs/study-triage/releases/download/v0.3.13/study-triage.ankiaddon">.ankiaddon&nbsp;&#8595;</a>
-              </p>
-            </div>
+        <div class="piece-grid with-shot">
+          <button class="piece-thumb" type="button" data-full="assets/shots/study-triage.webp"
+                  aria-label="Enlarge screenshot: triage actions in the Tools menu">
+            <img src="assets/shots/study-triage-thumb.webp" alt="Study Triage actions in the Anki Tools menu" width="360" loading="lazy">
+          </button>
+          <div class="piece-text">
+            <h3 class="piece-title">Study Triage</h3>
+            <p>One-keystroke ways to shrink an oversized day — zero new cards
+               today, auto-accept triage — without touching your long-term
+               scheduling.</p>
+            <p class="piece-links">
+              <a href="https://ankiweb.net/shared/info/1850611434">AnkiWeb</a>
+              <a href="https://github.com/ritornello-labs/study-triage">GitHub</a>
+              <a href="https://github.com/ritornello-labs/study-triage/releases/download/v0.3.13/study-triage.ankiaddon">.ankiaddon&nbsp;&#8595;</a>
+            </p>
           </div>
         </div>
       </li>
     </ul>
+    </div>
+    </div>
   </section>
 
   <div class="staff" role="presentation"></div>
@@ -174,394 +155,329 @@
   <section class="movement" id="decks">
     <header class="movement-head">
       <span class="rehearsal" aria-hidden="true">B</span>
-      <h2>Decks</h2>
-      <p class="movement-sub">Interactive courses first, then the shelf.</p>
+      <div class="movement-titles">
+        <h2><button class="movement-toggle" type="button" aria-expanded="true">Decks<span class="caret" aria-hidden="true"></span></button></h2>
+        <p class="movement-sub">Three showcase decks, then the shelf by category.</p>
+      </div>
     </header>
+
+    <div class="movement-body">
+    <div class="movement-inner">
 
     <ul class="pieces">
       <li class="piece">
-        <button class="piece-head" type="button" aria-expanded="false">
-          <span class="piece-title">GeoTrainer</span>
-          <span class="piece-tagline">map drills that make you draw</span>
-          <span class="piece-pin" aria-hidden="true">:&#8214;</span>
-        </button>
-        <div class="piece-body">
-          <div class="piece-inner with-shot">
-            <button class="piece-thumb" type="button" data-full="assets/shots/geo-trainer.webp"
-                    aria-label="Enlarge screenshot: a which-country card on a borderless map">
-              <img src="assets/shots/geo-trainer-thumb.webp" alt="GeoTrainer card asking which country lies under a dot on a borderless map" width="360" loading="lazy">
-            </button>
-            <div class="piece-text">
-              <p>Interactive, map-based geography drills — name the region under
-                 a dot, place a silhouette, sketch it from memory — driven by a
-                 cross-platform engine inlined into the cards.</p>
-              <p class="piece-links">
-                <a href="https://ankiweb.net/shared/info/908455862">AnkiWeb</a>
-                <a href="https://github.com/ritornello-labs/anki-geo-trainer">GitHub</a>
-              </p>
-            </div>
+        <div class="piece-grid with-shot">
+          <button class="piece-thumb" type="button" data-full="assets/shots/geo-trainer.webp"
+                  aria-label="Enlarge screenshot: a which-country card on a borderless map">
+            <img src="assets/shots/geo-trainer-thumb.webp" alt="GeoTrainer card asking which country lies under a dot on a borderless map" width="360" loading="lazy">
+          </button>
+          <div class="piece-text">
+            <h3 class="piece-title">GeoTrainer</h3>
+            <p>Interactive, map-based geography drills — name the region under
+               a dot, place a silhouette, sketch it from memory — driven by a
+               cross-platform engine inlined into the cards.</p>
+            <p class="piece-links">
+              <a href="https://ankiweb.net/shared/info/908455862">AnkiWeb</a>
+              <a href="https://github.com/ritornello-labs/anki-geo-trainer">GitHub</a>
+            </p>
           </div>
         </div>
       </li>
       <li class="piece">
-        <button class="piece-head" type="button" aria-expanded="false">
-          <span class="piece-title">Sight Singing</span>
-          <span class="piece-tagline">a function-first ear &amp; reading course</span>
-          <span class="piece-pin" aria-hidden="true">:&#8214;</span>
-        </button>
-        <div class="piece-body">
-          <div class="piece-inner with-shot">
-            <button class="piece-thumb" type="button" data-full="assets/shots/sight-singing.webp"
-                    aria-label="Enlarge screenshot: a sing-this-melody card">
-              <img src="assets/shots/sight-singing-thumb.webp" alt="Sight Singing card showing a melody to sing in C major" width="360" loading="lazy">
-            </button>
-            <div class="piece-text">
-              <p>A function-first ear and reading course with rendered notation
-                 and audio playback, paired with its companion
-                 <a href="https://ankiweb.net/shared/info/166250534">Dictation</a> deck.</p>
-              <p class="piece-links">
-                <a href="https://ankiweb.net/shared/info/948253022">AnkiWeb</a>
-                <a href="https://github.com/ritornello-labs/sight-singing-deck">GitHub</a>
-                <a href="https://github.com/ritornello-labs/sight-singing-deck/releases/download/v2026.07.15/sight-singing-curriculum.apkg">.apkg&nbsp;&#8595;</a>
-              </p>
-            </div>
+        <div class="piece-grid with-shot">
+          <button class="piece-thumb" type="button" data-full="assets/shots/sight-singing.webp"
+                  aria-label="Enlarge screenshot: a sing-this-melody card">
+            <img src="assets/shots/sight-singing-thumb.webp" alt="Sight Singing card showing a melody to sing in C major" width="360" loading="lazy">
+          </button>
+          <div class="piece-text">
+            <h3 class="piece-title">Sight Singing</h3>
+            <p>A function-first ear and reading course with rendered notation
+               and audio playback, paired with its companion
+               <a href="https://ankiweb.net/shared/info/166250534">Dictation</a> deck.</p>
+            <p class="piece-links">
+              <a href="https://ankiweb.net/shared/info/948253022">AnkiWeb</a>
+              <a href="https://github.com/ritornello-labs/sight-singing-deck">GitHub</a>
+              <a href="https://github.com/ritornello-labs/sight-singing-deck/releases/download/v2026.07.15/sight-singing-curriculum.apkg">.apkg&nbsp;&#8595;</a>
+            </p>
           </div>
         </div>
       </li>
       <li class="piece">
-        <button class="piece-head" type="button" aria-expanded="false">
-          <span class="piece-title">HSK 3.0 Hanzi Handwriting</span>
-          <span class="piece-tagline">stroke-by-stroke, fully offline</span>
-          <span class="piece-pin" aria-hidden="true">:&#8214;</span>
-        </button>
-        <div class="piece-body">
-          <div class="piece-inner with-shot">
-            <button class="piece-thumb" type="button" data-full="assets/shots/hanzi.webp"
-                    aria-label="Enlarge screenshot: a handwriting practice card">
-              <img src="assets/shots/hanzi-thumb.webp" alt="Hanzi handwriting card with a stroke-order practice grid" width="360" loading="lazy">
-            </button>
-            <div class="piece-text">
-              <p>Stroke-by-stroke handwriting practice for the HSK 3.0 character
-                 set, with offline stroke-order data on every card.</p>
-              <p class="piece-links">
-                <a href="https://ankiweb.net/shared/info/959635611">AnkiWeb</a>
-              </p>
-            </div>
+        <div class="piece-grid with-shot">
+          <button class="piece-thumb" type="button" data-full="assets/shots/hanzi.webp"
+                  aria-label="Enlarge screenshot: a handwriting practice card">
+            <img src="assets/shots/hanzi-thumb.webp" alt="Hanzi handwriting card with a stroke-order practice grid" width="360" loading="lazy">
+          </button>
+          <div class="piece-text">
+            <h3 class="piece-title">HSK 3.0 Hanzi Handwriting</h3>
+            <p>Stroke-by-stroke handwriting practice for the HSK 3.0 character
+               set, with offline stroke-order data on every card.</p>
+            <p class="piece-links">
+              <a href="https://ankiweb.net/shared/info/959635611">AnkiWeb</a>
+            </p>
           </div>
         </div>
       </li>
     </ul>
 
-    <h3 class="programme-title">Programme I — Maps &amp; regions</h3>
+    <h3 class="programme-title">
+      <button class="group-toggle" type="button" aria-expanded="false">
+        Programme I — Maps &amp; regions
+        <span class="group-count">12 decks</span>
+        <span class="caret" aria-hidden="true"></span>
+      </button>
+    </h3>
+    <div class="group-body">
+    <div class="group-inner">
     <ul class="pieces pieces-compact">
       <li class="piece">
-        <button class="piece-head" type="button" aria-expanded="false">
-          <span class="piece-title">U.S. Regions and Divisions</span>
-          <span class="piece-pin" aria-hidden="true">:&#8214;</span>
-        </button>
-        <div class="piece-body">
-          <div class="piece-inner with-shot">
-            <button class="piece-thumb" type="button" data-full="assets/shots/us-regions.webp" aria-label="Enlarge screenshot">
-              <img src="assets/shots/us-regions-thumb.webp" alt="U.S. Regions and Divisions card with a locator map" width="360" loading="lazy">
-            </button>
-            <div class="piece-text">
-              <p>The Census Bureau's regions and divisions, drilled in both
-                 directions with locator maps.</p>
-              <p class="piece-links">
-                <a href="https://ankiweb.net/shared/info/778756695">AnkiWeb</a>
-                <a href="https://github.com/ritornello-labs/us-regions">GitHub</a>
-                <a href="https://github.com/ritornello-labs/us-regions/releases/download/v2026.07.27/us-regions.apkg">.apkg&nbsp;&#8595;</a>
-              </p>
-            </div>
+        <div class="piece-grid with-shot">
+          <button class="piece-thumb" type="button" data-full="assets/shots/us-regions.webp" aria-label="Enlarge screenshot">
+            <img src="assets/shots/us-regions-thumb.webp" alt="U.S. Regions and Divisions card with a locator map" width="360" loading="lazy">
+          </button>
+          <div class="piece-text">
+            <h3 class="piece-title">U.S. Regions and Divisions</h3>
+            <p>The Census Bureau's regions and divisions, drilled in both
+               directions with locator maps.</p>
+            <p class="piece-links">
+              <a href="https://ankiweb.net/shared/info/778756695">AnkiWeb</a>
+              <a href="https://github.com/ritornello-labs/us-regions">GitHub</a>
+              <a href="https://github.com/ritornello-labs/us-regions/releases/download/v2026.07.27/us-regions.apkg">.apkg&nbsp;&#8595;</a>
+            </p>
           </div>
         </div>
       </li>
       <li class="piece">
-        <button class="piece-head" type="button" aria-expanded="false">
-          <span class="piece-title">U.S. States</span>
-          <span class="piece-pin" aria-hidden="true">:&#8214;</span>
-        </button>
-        <div class="piece-body">
-          <div class="piece-inner with-shot">
-            <button class="piece-thumb" type="button" data-full="assets/shots/us-states.webp" aria-label="Enlarge screenshot">
-              <img src="assets/shots/us-states-thumb.webp" alt="U.S. States map-recognition card" width="360" loading="lazy">
-            </button>
-            <div class="piece-text">
-              <p>The fifty states by map recognition, with their Census region
-                 and division.</p>
-              <p class="piece-links">
-                <a href="https://ankiweb.net/shared/info/1539478471">AnkiWeb</a>
-              </p>
-            </div>
+        <div class="piece-grid with-shot">
+          <button class="piece-thumb" type="button" data-full="assets/shots/us-states.webp" aria-label="Enlarge screenshot">
+            <img src="assets/shots/us-states-thumb.webp" alt="U.S. States map-recognition card" width="360" loading="lazy">
+          </button>
+          <div class="piece-text">
+            <h3 class="piece-title">U.S. States</h3>
+            <p>The fifty states by map recognition, with their Census region
+               and division.</p>
+            <p class="piece-links">
+              <a href="https://ankiweb.net/shared/info/1539478471">AnkiWeb</a>
+            </p>
           </div>
         </div>
       </li>
       <li class="piece">
-        <button class="piece-head" type="button" aria-expanded="false">
-          <span class="piece-title">Brazilian States</span>
-          <span class="piece-pin" aria-hidden="true">:&#8214;</span>
-        </button>
-        <div class="piece-body">
-          <div class="piece-inner with-shot">
-            <button class="piece-thumb" type="button" data-full="assets/shots/brazilian-states.webp" aria-label="Enlarge screenshot">
-              <img src="assets/shots/brazilian-states-thumb.webp" alt="Brazilian States map-recognition card for Bahia" width="360" loading="lazy">
-            </button>
-            <div class="piece-text">
-              <p>The 26 states and the Federal District, drilled by map
-                 recognition.</p>
-              <p class="piece-links">
-                <a href="https://ankiweb.net/shared/info/147050418">AnkiWeb</a>
-              </p>
-            </div>
+        <div class="piece-grid with-shot">
+          <button class="piece-thumb" type="button" data-full="assets/shots/brazilian-states.webp" aria-label="Enlarge screenshot">
+            <img src="assets/shots/brazilian-states-thumb.webp" alt="Brazilian States map-recognition card for Bahia" width="360" loading="lazy">
+          </button>
+          <div class="piece-text">
+            <h3 class="piece-title">Brazilian States</h3>
+            <p>The 26 states and the Federal District, drilled by map
+               recognition.</p>
+            <p class="piece-links">
+              <a href="https://ankiweb.net/shared/info/147050418">AnkiWeb</a>
+            </p>
           </div>
         </div>
       </li>
       <li class="piece">
-        <button class="piece-head" type="button" aria-expanded="false">
-          <span class="piece-title">Brazilian DDD Codes</span>
-          <span class="piece-pin" aria-hidden="true">:&#8214;</span>
-        </button>
-        <div class="piece-body">
-          <div class="piece-inner with-shot">
-            <button class="piece-thumb" type="button" data-full="assets/shots/brazil-ddd.webp" aria-label="Enlarge screenshot">
-              <img src="assets/shots/brazil-ddd-thumb.webp" alt="Brazilian DDD Codes card with a coverage map" width="360" loading="lazy">
-            </button>
-            <div class="piece-text">
-              <p>Brazil's telephone area codes, anchored to maps of the areas
-                 they cover.</p>
-              <p class="piece-links">
-                <a href="https://ankiweb.net/shared/info/1860702413">AnkiWeb</a>
-                <a href="https://github.com/ritornello-labs/brazil-ddd-codes">GitHub</a>
-                <a href="https://github.com/ritornello-labs/brazil-ddd-codes/releases/download/v2026.07.24/brazil-ddd-codes.apkg">.apkg&nbsp;&#8595;</a>
-              </p>
-            </div>
+        <div class="piece-grid with-shot">
+          <button class="piece-thumb" type="button" data-full="assets/shots/brazil-ddd.webp" aria-label="Enlarge screenshot">
+            <img src="assets/shots/brazil-ddd-thumb.webp" alt="Brazilian DDD Codes card with a coverage map" width="360" loading="lazy">
+          </button>
+          <div class="piece-text">
+            <h3 class="piece-title">Brazilian DDD Codes</h3>
+            <p>Brazil's telephone area codes, anchored to maps of the areas
+               they cover.</p>
+            <p class="piece-links">
+              <a href="https://ankiweb.net/shared/info/1860702413">AnkiWeb</a>
+              <a href="https://github.com/ritornello-labs/brazil-ddd-codes">GitHub</a>
+              <a href="https://github.com/ritornello-labs/brazil-ddd-codes/releases/download/v2026.07.24/brazil-ddd-codes.apkg">.apkg&nbsp;&#8595;</a>
+            </p>
           </div>
         </div>
       </li>
       <li class="piece">
-        <button class="piece-head" type="button" aria-expanded="false">
-          <span class="piece-title">Regions of China</span>
-          <span class="piece-pin" aria-hidden="true">:&#8214;</span>
-        </button>
-        <div class="piece-body">
-          <div class="piece-inner with-shot">
-            <button class="piece-thumb" type="button" data-full="assets/shots/chinese-regions.webp" aria-label="Enlarge screenshot">
-              <img src="assets/shots/chinese-regions-thumb.webp" alt="Regions of China card with Hanzi and a map" width="360" loading="lazy">
-            </button>
-            <div class="piece-text">
-              <p>The PRC's regions: Hanzi, Pinyin, English, and map recall.</p>
-              <p class="piece-links">
-                <a href="https://ankiweb.net/shared/info/159990073">AnkiWeb</a>
-                <a href="https://github.com/ritornello-labs/chinese-regions">GitHub</a>
-                <a href="https://github.com/ritornello-labs/chinese-regions/releases/download/v2026.07.27/chinese-regions.apkg">.apkg&nbsp;&#8595;</a>
-              </p>
-            </div>
+        <div class="piece-grid with-shot">
+          <button class="piece-thumb" type="button" data-full="assets/shots/chinese-regions.webp" aria-label="Enlarge screenshot">
+            <img src="assets/shots/chinese-regions-thumb.webp" alt="Regions of China card with Hanzi and a map" width="360" loading="lazy">
+          </button>
+          <div class="piece-text">
+            <h3 class="piece-title">Regions of China</h3>
+            <p>The PRC's regions: Hanzi, Pinyin, English, and map recall.</p>
+            <p class="piece-links">
+              <a href="https://ankiweb.net/shared/info/159990073">AnkiWeb</a>
+              <a href="https://github.com/ritornello-labs/chinese-regions">GitHub</a>
+              <a href="https://github.com/ritornello-labs/chinese-regions/releases/download/v2026.07.27/chinese-regions.apkg">.apkg&nbsp;&#8595;</a>
+            </p>
           </div>
         </div>
       </li>
       <li class="piece">
-        <button class="piece-head" type="button" aria-expanded="false">
-          <span class="piece-title">Taiwan Divisions</span>
-          <span class="piece-pin" aria-hidden="true">:&#8214;</span>
-        </button>
-        <div class="piece-body">
-          <div class="piece-inner with-shot">
-            <button class="piece-thumb" type="button" data-full="assets/shots/taiwan.webp" aria-label="Enlarge screenshot">
-              <img src="assets/shots/taiwan-thumb.webp" alt="Taiwan Divisions map-to-name card for Tainan" width="360" loading="lazy">
-            </button>
-            <div class="piece-text">
-              <p>Taiwan's divisions with map-to-name, connections, and reverse
-                 cards.</p>
-              <p class="piece-links">
-                <a href="https://ankiweb.net/shared/info/1886250214">AnkiWeb</a>
-              </p>
-            </div>
+        <div class="piece-grid with-shot">
+          <button class="piece-thumb" type="button" data-full="assets/shots/taiwan.webp" aria-label="Enlarge screenshot">
+            <img src="assets/shots/taiwan-thumb.webp" alt="Taiwan Divisions map-to-name card for Tainan" width="360" loading="lazy">
+          </button>
+          <div class="piece-text">
+            <h3 class="piece-title">Taiwan Divisions</h3>
+            <p>Taiwan's divisions with map-to-name, connections, and reverse
+               cards.</p>
+            <p class="piece-links">
+              <a href="https://ankiweb.net/shared/info/1886250214">AnkiWeb</a>
+            </p>
           </div>
         </div>
       </li>
       <li class="piece">
-        <button class="piece-head" type="button" aria-expanded="false">
-          <span class="piece-title">Japan Geography</span>
-          <span class="piece-pin" aria-hidden="true">:&#8214;</span>
-        </button>
-        <div class="piece-body">
-          <div class="piece-inner with-shot">
-            <button class="piece-thumb" type="button" data-full="assets/shots/japan.webp" aria-label="Enlarge screenshot">
-              <img src="assets/shots/japan-thumb.webp" alt="Japan Geography map-recall card for Hokkaido" width="360" loading="lazy">
-            </button>
-            <div class="piece-text">
-              <p>Prefectures and regions of Japan with locator-map recall.</p>
-              <p class="piece-links">
-                <a href="https://ankiweb.net/shared/info/2144583750">AnkiWeb</a>
-              </p>
-            </div>
+        <div class="piece-grid with-shot">
+          <button class="piece-thumb" type="button" data-full="assets/shots/japan.webp" aria-label="Enlarge screenshot">
+            <img src="assets/shots/japan-thumb.webp" alt="Japan Geography map-recall card for Hokkaido" width="360" loading="lazy">
+          </button>
+          <div class="piece-text">
+            <h3 class="piece-title">Japan Geography</h3>
+            <p>Prefectures and regions of Japan with locator-map recall.</p>
+            <p class="piece-links">
+              <a href="https://ankiweb.net/shared/info/2144583750">AnkiWeb</a>
+            </p>
           </div>
         </div>
       </li>
       <li class="piece">
-        <button class="piece-head" type="button" aria-expanded="false">
-          <span class="piece-title">Turkey Regions</span>
-          <span class="piece-pin" aria-hidden="true">:&#8214;</span>
-        </button>
-        <div class="piece-body">
-          <div class="piece-inner with-shot">
-            <button class="piece-thumb" type="button" data-full="assets/shots/turkey.webp" aria-label="Enlarge screenshot">
-              <img src="assets/shots/turkey-thumb.webp" alt="Turkey Regions locator-map card" width="360" loading="lazy">
-            </button>
-            <div class="piece-text">
-              <p>Turkey's regions on locator maps.</p>
-              <p class="piece-links">
-                <a href="https://ankiweb.net/shared/info/1207470716">AnkiWeb</a>
-                <a href="https://github.com/ritornello-labs/country-subdivision-map-decks">GitHub</a>
-                <a href="https://github.com/ritornello-labs/country-subdivision-map-decks/releases/download/v2026.07.24/turkey-regions.apkg">.apkg&nbsp;&#8595;</a>
-              </p>
-            </div>
+        <div class="piece-grid with-shot">
+          <button class="piece-thumb" type="button" data-full="assets/shots/turkey.webp" aria-label="Enlarge screenshot">
+            <img src="assets/shots/turkey-thumb.webp" alt="Turkey Regions locator-map card" width="360" loading="lazy">
+          </button>
+          <div class="piece-text">
+            <h3 class="piece-title">Turkey Regions</h3>
+            <p>Turkey's regions on locator maps.</p>
+            <p class="piece-links">
+              <a href="https://ankiweb.net/shared/info/1207470716">AnkiWeb</a>
+              <a href="https://github.com/ritornello-labs/country-subdivision-map-decks">GitHub</a>
+              <a href="https://github.com/ritornello-labs/country-subdivision-map-decks/releases/download/v2026.07.24/turkey-regions.apkg">.apkg&nbsp;&#8595;</a>
+            </p>
           </div>
         </div>
       </li>
       <li class="piece">
-        <button class="piece-head" type="button" aria-expanded="false">
-          <span class="piece-title">South Africa Provinces</span>
-          <span class="piece-pin" aria-hidden="true">:&#8214;</span>
-        </button>
-        <div class="piece-body">
-          <div class="piece-inner with-shot">
-            <button class="piece-thumb" type="button" data-full="assets/shots/south-africa.webp" aria-label="Enlarge screenshot">
-              <img src="assets/shots/south-africa-thumb.webp" alt="South Africa Provinces locator-map card" width="360" loading="lazy">
-            </button>
-            <div class="piece-text">
-              <p>The nine provinces with locator-map recall.</p>
-              <p class="piece-links">
-                <a href="https://ankiweb.net/shared/info/1910958626">AnkiWeb</a>
-                <a href="https://github.com/ritornello-labs/country-subdivision-map-decks">GitHub</a>
-                <a href="https://github.com/ritornello-labs/country-subdivision-map-decks/releases/download/v2026.07.24/south-africa-provinces.apkg">.apkg&nbsp;&#8595;</a>
-              </p>
-            </div>
+        <div class="piece-grid with-shot">
+          <button class="piece-thumb" type="button" data-full="assets/shots/south-africa.webp" aria-label="Enlarge screenshot">
+            <img src="assets/shots/south-africa-thumb.webp" alt="South Africa Provinces locator-map card" width="360" loading="lazy">
+          </button>
+          <div class="piece-text">
+            <h3 class="piece-title">South Africa Provinces</h3>
+            <p>The nine provinces with locator-map recall.</p>
+            <p class="piece-links">
+              <a href="https://ankiweb.net/shared/info/1910958626">AnkiWeb</a>
+              <a href="https://github.com/ritornello-labs/country-subdivision-map-decks">GitHub</a>
+              <a href="https://github.com/ritornello-labs/country-subdivision-map-decks/releases/download/v2026.07.24/south-africa-provinces.apkg">.apkg&nbsp;&#8595;</a>
+            </p>
           </div>
         </div>
       </li>
       <li class="piece">
-        <button class="piece-head" type="button" aria-expanded="false">
-          <span class="piece-title">Mexico Federative Entities</span>
-          <span class="piece-pin" aria-hidden="true">:&#8214;</span>
-        </button>
-        <div class="piece-body">
-          <div class="piece-inner with-shot">
-            <button class="piece-thumb" type="button" data-full="assets/shots/mexico.webp" aria-label="Enlarge screenshot">
-              <img src="assets/shots/mexico-thumb.webp" alt="Mexico Federative Entities locator-map card" width="360" loading="lazy">
-            </button>
-            <div class="piece-text">
-              <p>All 32 federative entities on locator maps.</p>
-              <p class="piece-links">
-                <a href="https://ankiweb.net/shared/info/1177438513">AnkiWeb</a>
-                <a href="https://github.com/ritornello-labs/country-subdivision-map-decks">GitHub</a>
-                <a href="https://github.com/ritornello-labs/country-subdivision-map-decks/releases/download/v2026.07.24/mexico-federative-entities.apkg">.apkg&nbsp;&#8595;</a>
-              </p>
-            </div>
+        <div class="piece-grid with-shot">
+          <button class="piece-thumb" type="button" data-full="assets/shots/mexico.webp" aria-label="Enlarge screenshot">
+            <img src="assets/shots/mexico-thumb.webp" alt="Mexico Federative Entities locator-map card" width="360" loading="lazy">
+          </button>
+          <div class="piece-text">
+            <h3 class="piece-title">Mexico Federative Entities</h3>
+            <p>All 32 federative entities on locator maps.</p>
+            <p class="piece-links">
+              <a href="https://ankiweb.net/shared/info/1177438513">AnkiWeb</a>
+              <a href="https://github.com/ritornello-labs/country-subdivision-map-decks">GitHub</a>
+              <a href="https://github.com/ritornello-labs/country-subdivision-map-decks/releases/download/v2026.07.24/mexico-federative-entities.apkg">.apkg&nbsp;&#8595;</a>
+            </p>
           </div>
         </div>
       </li>
       <li class="piece">
-        <button class="piece-head" type="button" aria-expanded="false">
-          <span class="piece-title">Iran Provinces</span>
-          <span class="piece-pin" aria-hidden="true">:&#8214;</span>
-        </button>
-        <div class="piece-body">
-          <div class="piece-inner with-shot">
-            <button class="piece-thumb" type="button" data-full="assets/shots/iran.webp" aria-label="Enlarge screenshot">
-              <img src="assets/shots/iran-thumb.webp" alt="Iran Provinces locator-map card" width="360" loading="lazy">
-            </button>
-            <div class="piece-text">
-              <p>Iran's provinces on locator maps.</p>
-              <p class="piece-links">
-                <a href="https://ankiweb.net/shared/info/1452052368">AnkiWeb</a>
-                <a href="https://github.com/ritornello-labs/country-subdivision-map-decks">GitHub</a>
-                <a href="https://github.com/ritornello-labs/country-subdivision-map-decks/releases/download/v2026.07.24/iran-provinces.apkg">.apkg&nbsp;&#8595;</a>
-              </p>
-            </div>
+        <div class="piece-grid with-shot">
+          <button class="piece-thumb" type="button" data-full="assets/shots/iran.webp" aria-label="Enlarge screenshot">
+            <img src="assets/shots/iran-thumb.webp" alt="Iran Provinces locator-map card" width="360" loading="lazy">
+          </button>
+          <div class="piece-text">
+            <h3 class="piece-title">Iran Provinces</h3>
+            <p>Iran's provinces on locator maps.</p>
+            <p class="piece-links">
+              <a href="https://ankiweb.net/shared/info/1452052368">AnkiWeb</a>
+              <a href="https://github.com/ritornello-labs/country-subdivision-map-decks">GitHub</a>
+              <a href="https://github.com/ritornello-labs/country-subdivision-map-decks/releases/download/v2026.07.24/iran-provinces.apkg">.apkg&nbsp;&#8595;</a>
+            </p>
           </div>
         </div>
       </li>
       <li class="piece">
-        <button class="piece-head" type="button" aria-expanded="false">
-          <span class="piece-title">Nigerian States</span>
-          <span class="piece-pin" aria-hidden="true">:&#8214;</span>
-        </button>
-        <div class="piece-body">
-          <div class="piece-inner">
-            <div class="piece-text">
-              <p>Nigeria's 36 states and the Federal Capital Territory.</p>
-              <p class="piece-links">
-                <a href="https://ankiweb.net/shared/info/781697362">AnkiWeb</a>
-              </p>
-            </div>
+        <div class="piece-grid">
+          <div class="piece-text">
+            <h3 class="piece-title">Nigerian States</h3>
+            <p>Nigeria's 36 states and the Federal Capital Territory.</p>
+            <p class="piece-links">
+              <a href="https://ankiweb.net/shared/info/781697362">AnkiWeb</a>
+            </p>
           </div>
         </div>
       </li>
     </ul>
+    </div>
+    </div>
 
-    <h3 class="programme-title">Programme II — Sequences &amp; scripts</h3>
+    <h3 class="programme-title">
+      <button class="group-toggle" type="button" aria-expanded="false">
+        Programme II — Sequences &amp; scripts
+        <span class="group-count">3 decks</span>
+        <span class="caret" aria-hidden="true"></span>
+      </button>
+    </h3>
+    <div class="group-body">
+    <div class="group-inner">
     <ul class="pieces pieces-compact">
       <li class="piece">
-        <button class="piece-head" type="button" aria-expanded="false">
-          <span class="piece-title">Chinese Dynasties</span>
-          <span class="piece-pin" aria-hidden="true">:&#8214;</span>
-        </button>
-        <div class="piece-body">
-          <div class="piece-inner with-shot">
-            <button class="piece-thumb" type="button" data-full="assets/shots/chinese-dynasties.webp" aria-label="Enlarge screenshot">
-              <img src="assets/shots/chinese-dynasties-thumb.webp" alt="Chinese Dynasties card with a Tang-era map" width="360" loading="lazy">
-            </button>
-            <div class="piece-text">
-              <p>The dynasties in order, with era maps and timeline context.</p>
-              <p class="piece-links">
-                <a href="https://ankiweb.net/shared/info/145233963">AnkiWeb</a>
-              </p>
-            </div>
+        <div class="piece-grid with-shot">
+          <button class="piece-thumb" type="button" data-full="assets/shots/chinese-dynasties.webp" aria-label="Enlarge screenshot">
+            <img src="assets/shots/chinese-dynasties-thumb.webp" alt="Chinese Dynasties card with a Tang-era map" width="360" loading="lazy">
+          </button>
+          <div class="piece-text">
+            <h3 class="piece-title">Chinese Dynasties</h3>
+            <p>The dynasties in order, with era maps and timeline context.</p>
+            <p class="piece-links">
+              <a href="https://ankiweb.net/shared/info/145233963">AnkiWeb</a>
+            </p>
           </div>
         </div>
       </li>
       <li class="piece">
-        <button class="piece-head" type="button" aria-expanded="false">
-          <span class="piece-title">Bible Books</span>
-          <span class="piece-pin" aria-hidden="true">:&#8214;</span>
-        </button>
-        <div class="piece-body">
-          <div class="piece-inner with-shot">
-            <button class="piece-thumb" type="button" data-full="assets/shots/bible-books.webp" aria-label="Enlarge screenshot">
-              <img src="assets/shots/bible-books-thumb.webp" alt="Bible Books reference-drill card" width="360" loading="lazy">
-            </button>
-            <div class="piece-text">
-              <p>The books in canonical order, with reference drills; Catholic
-                 and Orthodox canons noted.</p>
-              <p class="piece-links">
-                <a href="https://ankiweb.net/shared/info/1866899589">AnkiWeb</a>
-              </p>
-            </div>
+        <div class="piece-grid with-shot">
+          <button class="piece-thumb" type="button" data-full="assets/shots/bible-books.webp" aria-label="Enlarge screenshot">
+            <img src="assets/shots/bible-books-thumb.webp" alt="Bible Books reference-drill card" width="360" loading="lazy">
+          </button>
+          <div class="piece-text">
+            <h3 class="piece-title">Bible Books</h3>
+            <p>The books in canonical order, with reference drills; Catholic
+               and Orthodox canons noted.</p>
+            <p class="piece-links">
+              <a href="https://ankiweb.net/shared/info/1866899589">AnkiWeb</a>
+            </p>
           </div>
         </div>
       </li>
       <li class="piece">
-        <button class="piece-head" type="button" aria-expanded="false">
-          <span class="piece-title">Traditional Chinese from Simplified</span>
-          <span class="piece-pin" aria-hidden="true">:&#8214;</span>
-        </button>
-        <div class="piece-body">
-          <div class="piece-inner with-shot">
-            <button class="piece-thumb" type="button" data-full="assets/shots/trad-simplified.webp" aria-label="Enlarge screenshot">
-              <img src="assets/shots/trad-simplified-thumb.webp" alt="Traditional-from-simplified character card" width="360" loading="lazy">
-            </button>
-            <div class="piece-text">
-              <p>Traditional character forms recalled from their simplified
-                 counterparts, with audio.</p>
-              <p class="piece-links">
-                <a href="https://ankiweb.net/shared/info/1213301457">AnkiWeb</a>
-              </p>
-            </div>
+        <div class="piece-grid with-shot">
+          <button class="piece-thumb" type="button" data-full="assets/shots/trad-simplified.webp" aria-label="Enlarge screenshot">
+            <img src="assets/shots/trad-simplified-thumb.webp" alt="Traditional-from-simplified character card" width="360" loading="lazy">
+          </button>
+          <div class="piece-text">
+            <h3 class="piece-title">Traditional Chinese from Simplified</h3>
+            <p>Traditional character forms recalled from their simplified
+               counterparts, with audio.</p>
+            <p class="piece-links">
+              <a href="https://ankiweb.net/shared/info/1213301457">AnkiWeb</a>
+            </p>
           </div>
         </div>
       </li>
     </ul>
+    </div>
+    </div>
+
+    </div>
+    </div>
   </section>
 
   <div class="staff" role="presentation"></div>
@@ -569,91 +485,73 @@
   <section class="movement" id="tooling">
     <header class="movement-head">
       <span class="rehearsal" aria-hidden="true">C</span>
-      <h2>Tooling</h2>
-      <p class="movement-sub">For people who build add-ons and decks themselves.</p>
+      <div class="movement-titles">
+        <h2><button class="movement-toggle" type="button" aria-expanded="true">Tooling<span class="caret" aria-hidden="true"></span></button></h2>
+        <p class="movement-sub">For people who build add-ons and decks themselves.</p>
+      </div>
     </header>
 
+    <div class="movement-body">
+    <div class="movement-inner">
     <ul class="pieces">
       <li class="piece">
-        <button class="piece-head" type="button" aria-expanded="false">
-          <span class="piece-title">anki-addon-workbench</span>
-          <span class="piece-tagline">disposable Anki, scriptable</span>
-          <span class="piece-pin" aria-hidden="true">:&#8214;</span>
-        </button>
-        <div class="piece-body">
-          <div class="piece-inner">
-            <div class="piece-text">
-              <p>Disposable-profile smoke tests, Docker/Xvfb runs, and screenshot /
-                 click / type GUI automation for developing Anki add-ons and decks
-                 without risking a real collection.</p>
-              <p class="piece-links">
-                <a href="https://github.com/ritornello-labs/anki-addon-workbench">GitHub</a>
-                <a href="https://pypi.org/project/anki-addon-workbench/">PyPI</a>
-              </p>
-            </div>
+        <div class="piece-grid">
+          <div class="piece-text">
+            <h3 class="piece-title">anki-addon-workbench</h3>
+            <p>Disposable-profile smoke tests, Docker/Xvfb runs, and screenshot /
+               click / type GUI automation for developing Anki add-ons and decks
+               without risking a real collection.</p>
+            <p class="piece-links">
+              <a href="https://github.com/ritornello-labs/anki-addon-workbench">GitHub</a>
+              <a href="https://pypi.org/project/anki-addon-workbench/">PyPI</a>
+            </p>
           </div>
         </div>
       </li>
       <li class="piece">
-        <button class="piece-head" type="button" aria-expanded="false">
-          <span class="piece-title">anki-addon-release</span>
-          <span class="piece-tagline">publishing that verifies itself</span>
-          <span class="piece-pin" aria-hidden="true">:&#8214;</span>
-        </button>
-        <div class="piece-body">
-          <div class="piece-inner">
-            <div class="piece-text">
-              <p>Deterministic packaging and browser-driven AnkiWeb publishing for
-                 add-ons and shared decks, with post-submit verification of the
-                 live listing.</p>
-              <p class="piece-links">
-                <a href="https://github.com/ritornello-labs/anki-addon-release">GitHub</a>
-                <a href="https://pypi.org/project/anki-addon-release/">PyPI</a>
-              </p>
-            </div>
+        <div class="piece-grid">
+          <div class="piece-text">
+            <h3 class="piece-title">anki-addon-release</h3>
+            <p>Deterministic packaging and browser-driven AnkiWeb publishing for
+               add-ons and shared decks, with post-submit verification of the
+               live listing.</p>
+            <p class="piece-links">
+              <a href="https://github.com/ritornello-labs/anki-addon-release">GitHub</a>
+              <a href="https://pypi.org/project/anki-addon-release/">PyPI</a>
+            </p>
           </div>
         </div>
       </li>
       <li class="piece">
-        <button class="piece-head" type="button" aria-expanded="false">
-          <span class="piece-title">anki-collection-diff</span>
-          <span class="piece-tagline">verify rollouts, don't trust them</span>
-          <span class="piece-pin" aria-hidden="true">:&#8214;</span>
-        </button>
-        <div class="piece-body">
-          <div class="piece-inner">
-            <div class="piece-text">
-              <p>Compare generated APKG files with a live collection through
-                 AnkiConnect, so deck rollouts can be verified instead of
-                 trusted.</p>
-              <p class="piece-links">
-                <a href="https://github.com/ritornello-labs/anki-collection-diff">GitHub</a>
-                <a href="https://pypi.org/project/anki-collection-diff/">PyPI</a>
-              </p>
-            </div>
+        <div class="piece-grid">
+          <div class="piece-text">
+            <h3 class="piece-title">anki-collection-diff</h3>
+            <p>Compare generated APKG files with a live collection through
+               AnkiConnect, so deck rollouts can be verified instead of
+               trusted.</p>
+            <p class="piece-links">
+              <a href="https://github.com/ritornello-labs/anki-collection-diff">GitHub</a>
+              <a href="https://pypi.org/project/anki-collection-diff/">PyPI</a>
+            </p>
           </div>
         </div>
       </li>
       <li class="piece">
-        <button class="piece-head" type="button" aria-expanded="false">
-          <span class="piece-title">safe-collection-operations</span>
-          <span class="piece-tagline">guarded natives for agents</span>
-          <span class="piece-pin" aria-hidden="true">:&#8214;</span>
-        </button>
-        <div class="piece-body">
-          <div class="piece-inner">
-            <div class="piece-text">
-              <p>Guarded native collection operations — like true Again grading on
-                 arbitrary cards — that other add-ons and local agents can compose
-                 safely.</p>
-              <p class="piece-links">
-                <a href="https://github.com/ritornello-labs/anki-addon-safe-collection-operations">GitHub</a>
-              </p>
-            </div>
+        <div class="piece-grid">
+          <div class="piece-text">
+            <h3 class="piece-title">safe-collection-operations</h3>
+            <p>Guarded native collection operations — like true Again grading on
+               arbitrary cards — that other add-ons and local agents can compose
+               safely.</p>
+            <p class="piece-links">
+              <a href="https://github.com/ritornello-labs/anki-addon-safe-collection-operations">GitHub</a>
+            </p>
           </div>
         </div>
       </li>
     </ul>
+    </div>
+    </div>
   </section>
 
 </main>
@@ -676,24 +574,29 @@
 </dialog>
 
 <script>
-  // Pieces: hover peeks (CSS), click pins open. Touch devices just toggle.
-  document.querySelectorAll('.piece-head').forEach(function (head) {
-    head.addEventListener('click', function () {
-      var piece = head.parentElement;
-      var pinned = piece.classList.toggle('pinned');
-      head.setAttribute('aria-expanded', pinned ? 'true' : 'false');
+  // Section and group accordions. Sections start open; deck groups start
+  // closed (aria-expanded in the markup is the source of truth).
+  function wireToggle(btn, target) {
+    btn.addEventListener('click', function () {
+      var open = btn.getAttribute('aria-expanded') !== 'true';
+      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+      target.classList.toggle('closed', !open);
     });
+  }
+  document.querySelectorAll('.movement-toggle').forEach(function (btn) {
+    wireToggle(btn, btn.closest('.movement').querySelector('.movement-body'));
+  });
+  document.querySelectorAll('.group-toggle').forEach(function (btn) {
+    var body = btn.closest('.programme-title').nextElementSibling;
+    body.classList.add('closed');
+    wireToggle(btn, body);
   });
 
-  // Screenshot lightbox: clicking a thumb pins its piece (so the row stays
-  // open behind the modal) and shows the full-size render.
+  // Screenshot lightbox.
   var lightbox = document.getElementById('lightbox');
   var lightboxImg = lightbox.querySelector('img');
   document.querySelectorAll('.piece-thumb').forEach(function (thumb) {
     thumb.addEventListener('click', function () {
-      var piece = thumb.closest('.piece');
-      piece.classList.add('pinned');
-      piece.querySelector('.piece-head').setAttribute('aria-expanded', 'true');
       lightboxImg.src = thumb.dataset.full;
       lightboxImg.alt = thumb.querySelector('img').alt;
       lightbox.showModal();
