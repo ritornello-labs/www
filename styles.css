@@ -368,6 +368,15 @@ a:hover { text-decoration-color: var(--blue); }
   color: color-mix(in srgb, var(--muted) 75%, transparent);
 }
 
+/* hovering anywhere on a deck category peeks it open; clicking the header
+   keeps it open (aria-expanded is the pinned state) */
+@media (hover: hover) {
+  .group:hover .group-body { grid-template-rows: 1fr; }
+  .group:hover .group-toggle { color: var(--blue); }
+  .group:hover .group-toggle .caret { border-top-color: var(--blue); }
+  .group:hover [aria-expanded="false"] .caret { transform: none; }
+}
+
 /* ---------- coda / footer ---------- */
 
 .coda {
