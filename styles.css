@@ -31,14 +31,6 @@
 
 * { box-sizing: border-box; }
 
-/* Light/dark mark variants toggled in CSS: media queries re-evaluate on a
-   live theme flip in every engine, which <picture source media> does not. */
-.img-dark { display: none; }
-@media (prefers-color-scheme: dark) {
-  .img-light { display: none; }
-  .img-dark { display: inline-block; }
-}
-
 html {
   scroll-behavior: smooth;
 }
@@ -217,7 +209,9 @@ a:hover { text-decoration-color: var(--blue); }
   color: var(--muted);
 }
 
-/* ---------- pieces (works within a movement) ---------- */
+/* ---------- pieces (works within a movement) ----------
+   Collapsed by default; hovering a piece opens it as a peek, clicking the
+   head pins it open (the :‖ mark turns red — "keep returning here"). */
 
 .pieces {
   list-style: none;
@@ -227,27 +221,79 @@ a:hover { text-decoration-color: var(--blue); }
 
 .piece {
   border-top: 1px solid var(--hairline);
-  padding: 1.5rem 0 1.75rem;
 }
-.pieces .piece:last-child { padding-bottom: 0.5rem; }
 
-.piece h3 {
+.piece-head {
+  display: flex;
+  align-items: baseline;
+  gap: 0.9rem;
+  width: 100%;
+  padding: 1.05rem 0;
+  margin: 0;
+  background: none;
+  border: 0;
+  cursor: pointer;
+  text-align: left;
+  font: inherit;
+  color: inherit;
+}
+
+.piece-title {
   font-family: var(--font-display);
   font-weight: 600;
   font-size: 1.25rem;
   letter-spacing: -0.005em;
-  margin: 0 0 0.5rem;
-}
-.piece h3 a {
   color: var(--ink);
-  text-decoration: none;
+  white-space: nowrap;
 }
-.piece h3 a:hover { color: var(--blue); }
 
-.piece p {
+.piece-tagline {
+  font-size: 0.9375rem;
+  color: var(--muted);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  flex: 1;
+  min-width: 0;
+}
+
+.piece-pin {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 1rem;
+  color: var(--hairline);
+  transition: color 140ms ease, transform 140ms ease;
+}
+.piece:hover .piece-pin { color: var(--muted); }
+.piece.pinned .piece-pin { color: var(--red); }
+
+.piece-head:focus-visible {
+  outline: 2px solid var(--blue);
+  outline-offset: 2px;
+}
+
+/* the collapsing body */
+.piece-body {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 300ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+.piece-inner { overflow: hidden; min-width: 0; }
+
+.piece.pinned .piece-body,
+.piece:has(:focus-visible) .piece-body {
+  grid-template-rows: 1fr;
+}
+@media (hover: hover) {
+  .piece:hover .piece-body { grid-template-rows: 1fr; }
+}
+
+.piece-inner p {
   max-width: 36rem;
   margin: 0;
 }
+
+.piece-inner > p:first-child { padding-top: 0.15rem; }
 
 .piece-links {
   margin-top: 0.7rem !important;
@@ -256,6 +302,38 @@ a:hover { text-decoration-color: var(--blue); }
   letter-spacing: 0.02em;
   display: flex;
   gap: 1.4rem;
+}
+
+.piece-shot {
+  display: block;
+  width: min(100%, 27.5rem);
+  height: auto;
+  margin: 1.1rem 0 1.5rem;
+  border: 1px solid var(--hairline);
+}
+@media (prefers-color-scheme: dark) {
+  .piece-shot { filter: brightness(0.9); }
+}
+
+.badge {
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--red);
+  border: 1px solid color-mix(in srgb, var(--red) 45%, transparent);
+  padding: 0.1rem 0.45rem;
+  white-space: nowrap;
+}
+
+.open-hint {
+  display: block;
+  margin-top: 0.15rem;
+  font-size: 0.8125rem;
+  color: color-mix(in srgb, var(--muted) 75%, transparent);
+}
+@media (hover: none) {
+  .open-hint { display: none; }
 }
 
 /* ---------- programme (dot-leader list) ---------- */
@@ -336,6 +414,17 @@ a:hover { text-decoration-color: var(--blue); }
   max-width: 30rem;
   margin: 1.6rem auto 0;
   padding: 0 var(--gutter);
+}
+
+/* ---------- light/dark mark variants ----------
+   Toggled in CSS (not <picture source media>): media queries re-evaluate on
+   a live theme flip in every engine. Kept last so these win their ties with
+   the .masthead-mark img / .hero-wordmark img display rules. */
+
+img.img-dark { display: none; }
+@media (prefers-color-scheme: dark) {
+  img.img-light { display: none; }
+  img.img-dark { display: block; }
 }
 
 /* ---------- entrance: one staggered reveal on load ---------- */

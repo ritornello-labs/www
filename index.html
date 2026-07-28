@@ -13,6 +13,11 @@
 <meta property="og:title" content="Ritornello">
 <meta property="og:description" content="Open tools, add-ons, and shared decks for serious spaced-repetition practice.">
 <meta property="og:url" content="https://ritornello.dev/">
+<meta property="og:image" content="https://ritornello.dev/assets/og-card.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://ritornello.dev/assets/og-card.png">
 </head>
 <body>
 
@@ -57,38 +62,94 @@
     <header class="movement-head">
       <span class="rehearsal" aria-hidden="true">A</span>
       <h2>Add-ons</h2>
-      <p class="movement-sub">Published on AnkiWeb, source on GitHub.</p>
+      <p class="movement-sub">Published on AnkiWeb, source on GitHub.
+        <span class="open-hint">Hover a title to peek; click to keep it open.</span></p>
     </header>
 
     <ul class="pieces">
       <li class="piece">
-        <h3><a href="https://ankiweb.net/shared/info/304166926">Fractional New-Card Scheduler</a></h3>
-        <p>Spread new cards through the week in fractional, per-deck doses
-           instead of daily cliffs, with deck-health badges that show what the
-           defaults hide.</p>
-        <p class="piece-links">
-          <a href="https://ankiweb.net/shared/info/304166926">AnkiWeb</a>
-          <a href="https://github.com/ritornello-labs/anki-fractional-scheduler">GitHub</a>
-        </p>
+        <button class="piece-head" type="button" aria-expanded="false">
+          <span class="piece-title">Chat With Your Cards</span>
+          <span class="piece-tagline">an AI chat dock inside the reviewer</span>
+          <span class="piece-pin" aria-hidden="true">:&#8214;</span>
+        </button>
+        <div class="piece-body">
+          <div class="piece-inner">
+            <p>Talk to your collection while you study: the current card rides
+               along as context, and the agent can search your decks, explain
+               the missing prerequisite, and propose new notes — every write
+               goes through a reviewable, revertible proposal.
+               <span class="badge">developer preview</span></p>
+            <p class="piece-links">
+              <a href="https://github.com/ritornello-labs/chat-with-your-cards">GitHub</a>
+            </p>
+            <img class="piece-shot" src="assets/shots/cwyc.webp"
+                 alt="Chat With Your Cards dock answering a question next to an Anki card"
+                 width="880" height="522" loading="lazy">
+          </div>
+        </div>
       </li>
       <li class="piece">
-        <h3><a href="https://ankiweb.net/shared/info/1522170627">Web Embed Tools</a></h3>
-        <p>Turn URLs in note fields into resizable embedded web views, so
-           reference material lives on the card instead of a tab away.</p>
-        <p class="piece-links">
-          <a href="https://ankiweb.net/shared/info/1522170627">AnkiWeb</a>
-          <a href="https://github.com/ritornello-labs/anki-web-embed-tools">GitHub</a>
-        </p>
+        <button class="piece-head" type="button" aria-expanded="false">
+          <span class="piece-title">Fractional New-Card Scheduler</span>
+          <span class="piece-tagline">fractional, per-deck new-card doses</span>
+          <span class="piece-pin" aria-hidden="true">:&#8214;</span>
+        </button>
+        <div class="piece-body">
+          <div class="piece-inner">
+            <p>Spread new cards through the week in fractional, per-deck doses
+               instead of daily cliffs, with deck-health badges that show what
+               the defaults hide.</p>
+            <p class="piece-links">
+              <a href="https://ankiweb.net/shared/info/304166926">AnkiWeb</a>
+              <a href="https://github.com/ritornello-labs/anki-fractional-scheduler">GitHub</a>
+            </p>
+            <img class="piece-shot" src="assets/shots/fractional.webp"
+                 alt="Fractional New-Card Scheduler configuration window"
+                 width="880" height="677" loading="lazy">
+          </div>
+        </div>
       </li>
       <li class="piece">
-        <h3><a href="https://ankiweb.net/shared/info/1850611434">Study Triage</a></h3>
-        <p>One-keystroke ways to shrink an oversized day — zero new cards
-           today, auto-accept triage — without touching your long-term
-           scheduling.</p>
-        <p class="piece-links">
-          <a href="https://ankiweb.net/shared/info/1850611434">AnkiWeb</a>
-          <a href="https://github.com/ritornello-labs/study-triage">GitHub</a>
-        </p>
+        <button class="piece-head" type="button" aria-expanded="false">
+          <span class="piece-title">Web Embed Tools</span>
+          <span class="piece-tagline">the web, resizable, inside your notes</span>
+          <span class="piece-pin" aria-hidden="true">:&#8214;</span>
+        </button>
+        <div class="piece-body">
+          <div class="piece-inner">
+            <p>Turn URLs in note fields into resizable embedded web views, so
+               reference material lives on the card instead of a tab away.</p>
+            <p class="piece-links">
+              <a href="https://ankiweb.net/shared/info/1522170627">AnkiWeb</a>
+              <a href="https://github.com/ritornello-labs/anki-web-embed-tools">GitHub</a>
+            </p>
+            <img class="piece-shot" src="assets/shots/web-embed.webp"
+                 alt="Web Embed Tools toolbar in the Anki editor"
+                 width="880" height="631" loading="lazy">
+          </div>
+        </div>
+      </li>
+      <li class="piece">
+        <button class="piece-head" type="button" aria-expanded="false">
+          <span class="piece-title">Study Triage</span>
+          <span class="piece-tagline">shrink an oversized day</span>
+          <span class="piece-pin" aria-hidden="true">:&#8214;</span>
+        </button>
+        <div class="piece-body">
+          <div class="piece-inner">
+            <p>One-keystroke ways to shrink an oversized day — zero new cards
+               today, auto-accept triage — without touching your long-term
+               scheduling.</p>
+            <p class="piece-links">
+              <a href="https://ankiweb.net/shared/info/1850611434">AnkiWeb</a>
+              <a href="https://github.com/ritornello-labs/study-triage">GitHub</a>
+            </p>
+            <img class="piece-shot" src="assets/shots/study-triage.webp"
+                 alt="Study Triage actions in the Anki Tools menu"
+                 width="880" height="627" loading="lazy">
+          </div>
+        </div>
       </li>
     </ul>
   </section>
@@ -99,41 +160,74 @@
     <header class="movement-head">
       <span class="rehearsal" aria-hidden="true">B</span>
       <h2>Decks</h2>
-      <p class="movement-sub">Interactive courses first, then the map shelf.</p>
+      <p class="movement-sub">Interactive courses first, then the shelf.</p>
     </header>
 
     <ul class="pieces">
       <li class="piece">
-        <h3><a href="https://ankiweb.net/shared/info/908455862">GeoTrainer</a></h3>
-        <p>Interactive, map-based geography drills — name the region under a
-           dot, place a silhouette, sketch it from memory — driven by a
-           cross-platform engine inlined into the cards.</p>
-        <p class="piece-links">
-          <a href="https://ankiweb.net/shared/info/908455862">AnkiWeb</a>
-          <a href="https://github.com/ritornello-labs/anki-geo-trainer">GitHub</a>
-        </p>
+        <button class="piece-head" type="button" aria-expanded="false">
+          <span class="piece-title">GeoTrainer</span>
+          <span class="piece-tagline">map drills that make you draw</span>
+          <span class="piece-pin" aria-hidden="true">:&#8214;</span>
+        </button>
+        <div class="piece-body">
+          <div class="piece-inner">
+            <p>Interactive, map-based geography drills — name the region under
+               a dot, place a silhouette, sketch it from memory — driven by a
+               cross-platform engine inlined into the cards.</p>
+            <p class="piece-links">
+              <a href="https://ankiweb.net/shared/info/908455862">AnkiWeb</a>
+              <a href="https://github.com/ritornello-labs/anki-geo-trainer">GitHub</a>
+            </p>
+            <img class="piece-shot" src="assets/shots/geo-trainer.webp"
+                 alt="GeoTrainer card asking which country lies under a dot on a borderless map"
+                 width="667" height="570" loading="lazy">
+          </div>
+        </div>
       </li>
       <li class="piece">
-        <h3><a href="https://ankiweb.net/shared/info/948253022">Sight Singing</a></h3>
-        <p>A function-first ear and reading course with rendered notation and
-           audio playback, paired with its companion
-           <a href="https://ankiweb.net/shared/info/166250534">Dictation</a> deck.</p>
-        <p class="piece-links">
-          <a href="https://ankiweb.net/shared/info/948253022">AnkiWeb</a>
-          <a href="https://github.com/ritornello-labs/sight-singing-deck">GitHub</a>
-        </p>
+        <button class="piece-head" type="button" aria-expanded="false">
+          <span class="piece-title">Sight Singing</span>
+          <span class="piece-tagline">a function-first ear &amp; reading course</span>
+          <span class="piece-pin" aria-hidden="true">:&#8214;</span>
+        </button>
+        <div class="piece-body">
+          <div class="piece-inner">
+            <p>A function-first ear and reading course with rendered notation
+               and audio playback, paired with its companion
+               <a href="https://ankiweb.net/shared/info/166250534">Dictation</a> deck.</p>
+            <p class="piece-links">
+              <a href="https://ankiweb.net/shared/info/948253022">AnkiWeb</a>
+              <a href="https://github.com/ritornello-labs/sight-singing-deck">GitHub</a>
+            </p>
+            <img class="piece-shot" src="assets/shots/sight-singing.webp"
+                 alt="Sight Singing card showing a melody to sing in C major"
+                 width="880" height="752" loading="lazy">
+          </div>
+        </div>
       </li>
       <li class="piece">
-        <h3><a href="https://ankiweb.net/shared/info/959635611">HSK 3.0 Hanzi Handwriting</a></h3>
-        <p>Stroke-by-stroke handwriting practice for the HSK 3.0 character
-           set, with offline stroke-order data on every card.</p>
-        <p class="piece-links">
-          <a href="https://ankiweb.net/shared/info/959635611">AnkiWeb</a>
-        </p>
+        <button class="piece-head" type="button" aria-expanded="false">
+          <span class="piece-title">HSK 3.0 Hanzi Handwriting</span>
+          <span class="piece-tagline">stroke-by-stroke, fully offline</span>
+          <span class="piece-pin" aria-hidden="true">:&#8214;</span>
+        </button>
+        <div class="piece-body">
+          <div class="piece-inner">
+            <p>Stroke-by-stroke handwriting practice for the HSK 3.0 character
+               set, with offline stroke-order data on every card.</p>
+            <p class="piece-links">
+              <a href="https://ankiweb.net/shared/info/959635611">AnkiWeb</a>
+            </p>
+            <img class="piece-shot" src="assets/shots/hanzi.webp"
+                 alt="Hanzi handwriting card with a stroke-order practice grid"
+                 width="880" height="978" loading="lazy">
+          </div>
+        </div>
       </li>
     </ul>
 
-    <h3 class="programme-title">Programme — the map &amp; regions shelf</h3>
+    <h3 class="programme-title">Programme I — Maps &amp; regions</h3>
     <ol class="programme">
       <li><a href="https://ankiweb.net/shared/info/778756695"><span>U.S. Regions and Divisions</span><span class="leader"></span><span class="venue">AnkiWeb</span></a></li>
       <li><a href="https://ankiweb.net/shared/info/1539478471"><span>U.S. States</span><span class="leader"></span><span class="venue">AnkiWeb</span></a></li>
@@ -147,6 +241,10 @@
       <li><a href="https://ankiweb.net/shared/info/1177438513"><span>Mexico Federative Entities</span><span class="leader"></span><span class="venue">AnkiWeb</span></a></li>
       <li><a href="https://ankiweb.net/shared/info/1452052368"><span>Iran Provinces</span><span class="leader"></span><span class="venue">AnkiWeb</span></a></li>
       <li><a href="https://ankiweb.net/shared/info/781697362"><span>Nigerian States</span><span class="leader"></span><span class="venue">AnkiWeb</span></a></li>
+    </ol>
+
+    <h3 class="programme-title">Programme II — Sequences &amp; scripts</h3>
+    <ol class="programme">
       <li><a href="https://ankiweb.net/shared/info/145233963"><span>Chinese Dynasties</span><span class="leader"></span><span class="venue">AnkiWeb</span></a></li>
       <li><a href="https://ankiweb.net/shared/info/1866899589"><span>Bible Books</span><span class="leader"></span><span class="venue">AnkiWeb</span></a></li>
       <li><a href="https://ankiweb.net/shared/info/1213301457"><span>Traditional Chinese from Simplified</span><span class="leader"></span><span class="venue">AnkiWeb</span></a></li>
@@ -164,42 +262,75 @@
 
     <ul class="pieces">
       <li class="piece">
-        <h3><a href="https://github.com/ritornello-labs/anki-addon-workbench">anki-addon-workbench</a></h3>
-        <p>Disposable-profile smoke tests, Docker/Xvfb runs, and screenshot /
-           click / type GUI automation for developing Anki add-ons and decks
-           without risking a real collection.</p>
-        <p class="piece-links">
-          <a href="https://github.com/ritornello-labs/anki-addon-workbench">GitHub</a>
-          <a href="https://pypi.org/project/anki-addon-workbench/">PyPI</a>
-        </p>
+        <button class="piece-head" type="button" aria-expanded="false">
+          <span class="piece-title">anki-addon-workbench</span>
+          <span class="piece-tagline">disposable Anki, scriptable</span>
+          <span class="piece-pin" aria-hidden="true">:&#8214;</span>
+        </button>
+        <div class="piece-body">
+          <div class="piece-inner">
+            <p>Disposable-profile smoke tests, Docker/Xvfb runs, and screenshot /
+               click / type GUI automation for developing Anki add-ons and decks
+               without risking a real collection.</p>
+            <p class="piece-links">
+              <a href="https://github.com/ritornello-labs/anki-addon-workbench">GitHub</a>
+              <a href="https://pypi.org/project/anki-addon-workbench/">PyPI</a>
+            </p>
+          </div>
+        </div>
       </li>
       <li class="piece">
-        <h3><a href="https://github.com/ritornello-labs/anki-addon-release">anki-addon-release</a></h3>
-        <p>Deterministic packaging and browser-driven AnkiWeb publishing for
-           add-ons and shared decks, with post-submit verification of the live
-           listing.</p>
-        <p class="piece-links">
-          <a href="https://github.com/ritornello-labs/anki-addon-release">GitHub</a>
-          <a href="https://pypi.org/project/anki-addon-release/">PyPI</a>
-        </p>
+        <button class="piece-head" type="button" aria-expanded="false">
+          <span class="piece-title">anki-addon-release</span>
+          <span class="piece-tagline">publishing that verifies itself</span>
+          <span class="piece-pin" aria-hidden="true">:&#8214;</span>
+        </button>
+        <div class="piece-body">
+          <div class="piece-inner">
+            <p>Deterministic packaging and browser-driven AnkiWeb publishing for
+               add-ons and shared decks, with post-submit verification of the
+               live listing.</p>
+            <p class="piece-links">
+              <a href="https://github.com/ritornello-labs/anki-addon-release">GitHub</a>
+              <a href="https://pypi.org/project/anki-addon-release/">PyPI</a>
+            </p>
+          </div>
+        </div>
       </li>
       <li class="piece">
-        <h3><a href="https://github.com/ritornello-labs/anki-collection-diff">anki-collection-diff</a></h3>
-        <p>Compare generated APKG files with a live collection through
-           AnkiConnect, so deck rollouts can be verified instead of trusted.</p>
-        <p class="piece-links">
-          <a href="https://github.com/ritornello-labs/anki-collection-diff">GitHub</a>
-          <a href="https://pypi.org/project/anki-collection-diff/">PyPI</a>
-        </p>
+        <button class="piece-head" type="button" aria-expanded="false">
+          <span class="piece-title">anki-collection-diff</span>
+          <span class="piece-tagline">verify rollouts, don't trust them</span>
+          <span class="piece-pin" aria-hidden="true">:&#8214;</span>
+        </button>
+        <div class="piece-body">
+          <div class="piece-inner">
+            <p>Compare generated APKG files with a live collection through
+               AnkiConnect, so deck rollouts can be verified instead of
+               trusted.</p>
+            <p class="piece-links">
+              <a href="https://github.com/ritornello-labs/anki-collection-diff">GitHub</a>
+              <a href="https://pypi.org/project/anki-collection-diff/">PyPI</a>
+            </p>
+          </div>
+        </div>
       </li>
       <li class="piece">
-        <h3><a href="https://github.com/ritornello-labs/anki-addon-safe-collection-operations">safe-collection-operations</a></h3>
-        <p>Guarded native collection operations — like true Again grading on
-           arbitrary cards — that other add-ons and local agents can compose
-           safely.</p>
-        <p class="piece-links">
-          <a href="https://github.com/ritornello-labs/anki-addon-safe-collection-operations">GitHub</a>
-        </p>
+        <button class="piece-head" type="button" aria-expanded="false">
+          <span class="piece-title">safe-collection-operations</span>
+          <span class="piece-tagline">guarded natives for agents</span>
+          <span class="piece-pin" aria-hidden="true">:&#8214;</span>
+        </button>
+        <div class="piece-body">
+          <div class="piece-inner">
+            <p>Guarded native collection operations — like true Again grading on
+               arbitrary cards — that other add-ons and local agents can compose
+               safely.</p>
+            <p class="piece-links">
+              <a href="https://github.com/ritornello-labs/anki-addon-safe-collection-operations">GitHub</a>
+            </p>
+          </div>
+        </div>
       </li>
     </ul>
   </section>
@@ -217,6 +348,17 @@
     project, not affiliated with or endorsed by Ankitects.
   </p>
 </footer>
+
+<script>
+  // Pieces: hover peeks (CSS), click pins open. Touch devices just toggle.
+  document.querySelectorAll('.piece-head').forEach(function (head) {
+    head.addEventListener('click', function () {
+      var piece = head.parentElement;
+      var pinned = piece.classList.toggle('pinned');
+      head.setAttribute('aria-expanded', pinned ? 'true' : 'false');
+    });
+  });
+</script>
 
 </body>
 </html>

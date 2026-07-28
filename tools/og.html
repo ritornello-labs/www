@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../assets/fonts.css">
+<style>
+  html, body { margin: 0; }
+  body {
+    width: 1200px;
+    height: 630px;
+    background: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 44px;
+    font-family: "IBM Plex Sans", sans-serif;
+  }
+  .wordmark { width: 760px; display: block; }
+  .tagline {
+    font-family: "Fraunces", serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 34px;
+    color: #5A616A;
+    margin: 0;
+  }
+  .staff {
+    position: relative;
+    width: 760px;
+    height: 33px;
+    background: repeating-linear-gradient(to bottom, #E2E4E7 0 1px, transparent 1px 8px);
+  }
+  .staff::after {
+    content: "";
+    position: absolute;
+    top: 9.5px;
+    right: 0;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #B3122F;
+    box-shadow: 0 8px 0 #B3122F;
+  }
+  .site {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 22px;
+    letter-spacing: 0.04em;
+    color: #2B5DA8;
+    margin: 0;
+  }
+</style>
+</head>
+<body>
+  <img class="wordmark" src="../assets/wordmark.svg" alt="">
+  <p class="tagline">open tools &amp; decks for serious spaced-repetition practice</p>
+  <div class="staff"></div>
+  <p class="site">ritornello.dev</p>
+</body>
+</html>

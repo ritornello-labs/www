@@ -22,3 +22,18 @@ python3 -m http.server 8493
 Push to `main`; GitHub Pages serves the repo root. `CNAME` pins the custom
 domain. DNS lives at Porkbun: apex `A` records to GitHub Pages plus a `www`
 CNAME to `ritornello-labs.github.io`.
+
+## Social card
+
+`assets/og-card.png` (1200×630) renders from `tools/og.html`:
+
+```bash
+"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" --headless=new --disable-gpu --screenshot=assets/og-card.png --window-size=1200,630 --hide-scrollbars "file://$PWD/tools/og.html"
+```
+
+## Screenshots
+
+`assets/shots/*.webp` are downscaled copies of real-Anki renders from the
+project repos (`docs/images/`, `release/screenshots/`, or
+`anki-shared-deck-assets`) — never HTML reconstructions, per workspace
+policy.
