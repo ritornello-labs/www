@@ -1,0 +1,464 @@
+{
+  "policy": {
+    "canonical_host": "https://ritornello.dev",
+    "derivatives": "Immutable gallery, GIF, and MP4 derivatives hosted from this directory.",
+    "sources": "Real Anki/workbench captures retained in their originating project repositories."
+  },
+  "projects": {
+    "chat-with-your-cards": {
+      "outputs": [
+        {
+          "bytes": 111241,
+          "file": "gallery-01.png",
+          "sha256": "f1dc6af0ed885611582068e8c8c83bacd8aa255ef099b2bb5942d6ab66c52447"
+        },
+        {
+          "bytes": 96023,
+          "file": "gallery-02.png",
+          "sha256": "ff7c6f58ae0e74477ce34f6443d656694f5805599844cef467a12c51728d7504"
+        },
+        {
+          "bytes": 824478,
+          "file": "preview.gif",
+          "sha256": "8ee829a56b90fa2c959100f98da18f784dcea3703193829f27ed6951ec55e5b8"
+        },
+        {
+          "bytes": 310603,
+          "file": "demo.mp4",
+          "sha256": "c9364b64b49287fa0ec2eefc08b3fcb28da56da47d9c683209f583d030945385"
+        }
+      ],
+      "sources": [
+        {
+          "caption": "Ask questions beside your collection",
+          "file": "chat-with-your-cards.png",
+          "sha256": "e30f1d0e7be69e1f68353d0b0a5a6994aa72d97752a1a69b860dda17e136a661"
+        },
+        {
+          "caption": "Explain the current reviewer card",
+          "file": "chat-with-your-cards-explain.png",
+          "sha256": "3218100e8654ffcfebbc5f5c89a594b03c65af98b54e981b1dc7c783b3ab3a2a"
+        },
+        {
+          "caption": "Review proposed changes before applying",
+          "file": "chat-with-your-cards-proposal.png",
+          "sha256": "81381c81793330ee7ac0beb4984e72d53d4a49b0c5cb99fcf14399482db584a7"
+        }
+      ],
+      "title": "Chat With Your Cards"
+    },
+    "chinese-regions": {
+      "outputs": [
+        {
+          "bytes": 346414,
+          "file": "gallery-01.png",
+          "sha256": "b421c6c960c0c9f5ac52a7ce039359286dbcb930cc683dff50d4ac49e98c620f"
+        },
+        {
+          "bytes": 310974,
+          "file": "gallery-02.png",
+          "sha256": "de1271c0ae9b782bb61e36b1ef8cce6f46478ba44389982e84d65741909d429f"
+        },
+        {
+          "bytes": 1304338,
+          "file": "preview.gif",
+          "sha256": "5e74124976c4c27f627fa44affea19ea055fa42517a200da99977c09b8067448"
+        },
+        {
+          "bytes": 342261,
+          "file": "demo.mp4",
+          "sha256": "bf8d300a823d3a8fa7d88d592f6d5e6e1d8babc3456c38533515a812e086d8b2"
+        }
+      ],
+      "sources": [
+        {
+          "caption": "Recognize provinces from locator maps",
+          "file": "readme-preview.png",
+          "sha256": "1d238b6ae3e258c467b8f999c05e77914e232dd15bc5a5fd7076e5ae0e5dd8a3"
+        },
+        {
+          "caption": "Study both directions",
+          "file": "china-regions-map-to-name-pair.png",
+          "sha256": "7edf40c76c04c6be3d30a74a4b95ca869fb511b79252b74b747c048d0e716310"
+        }
+      ],
+      "title": "Regions of China"
+    },
+    "dictation": {
+      "outputs": [
+        {
+          "bytes": 69248,
+          "file": "gallery-01.png",
+          "sha256": "b5fb6d17a7f9ad487144679e268b8e2a3cd0d38cad4bcd979e3ef2ce70a20a8a"
+        },
+        {
+          "bytes": 60163,
+          "file": "gallery-02.png",
+          "sha256": "eeef141d2371ffc597a726baf1a42a3891e814b630aa9eed10c2e4b30a7784b1"
+        },
+        {
+          "bytes": 380270,
+          "file": "preview.gif",
+          "sha256": "631933f412eeaa1d3cf0bba3f64e066600dde7b5a63c10d9d106fbbe44d73721"
+        },
+        {
+          "bytes": 184712,
+          "file": "demo.mp4",
+          "sha256": "d155f11ea82ebae0c2a6e2107f9ef7fda0d987b2a08f64c8097ff181072a3b81"
+        }
+      ],
+      "sources": [
+        {
+          "caption": "Transcribe what you hear",
+          "file": "dictation-front.png",
+          "sha256": "6e967be0a73fc65841d03cfd3f3ff4a68b6b4b1199c0c39e698835e224418347"
+        },
+        {
+          "caption": "Grade against the engraved answer",
+          "file": "dictation-back.png",
+          "sha256": "5bd1fa3e99ac87e30424ab66a1cc2df554afc9572f68e350b7fe24e3715b6e9c"
+        }
+      ],
+      "title": "Music Dictation"
+    },
+    "dynamic-cards": {
+      "outputs": [
+        {
+          "bytes": 180900,
+          "file": "gallery-01.png",
+          "sha256": "3aaf6b89d8e3faa748c26196dc6ad8f601985d349d0147a05dd5f9f61b223143"
+        },
+        {
+          "bytes": 134367,
+          "file": "gallery-02.png",
+          "sha256": "b6e5d403e7b00793243d81c9175ef6ccda67a0ec9e092bac4c00ba3edd9691a3"
+        },
+        {
+          "bytes": 1048950,
+          "file": "preview.gif",
+          "sha256": "fbc4480e1d130b83601a8799353fc61264ebe8cfe80ac03254ac46d2e183bcc0"
+        },
+        {
+          "bytes": 105264,
+          "file": "demo.mp4",
+          "sha256": "203a0a6bf046e93722b60936546da14ea5b46155b89224c510f9bde6ae3beb6a"
+        }
+      ],
+      "sources": [
+        {
+          "caption": "Generate a fresh problem on entry",
+          "file": "dynamic-front.png",
+          "sha256": "74258bbd690fb583cfd592b893f14ef027468feedb7d79c18016d3a4e8942bd7"
+        },
+        {
+          "caption": "Keep the same values through answer reveal",
+          "file": "dynamic-back.png",
+          "sha256": "dd5352df79486fc757d50e85c2721857e1c44d7254d81f50e9d0fcc1f84eddff"
+        }
+      ],
+      "title": "Dynamic Cards"
+    },
+    "fractional-scheduler": {
+      "outputs": [
+        {
+          "bytes": 109115,
+          "file": "gallery-01.png",
+          "sha256": "e989a511326b2600719ed27b2ee716e7222498759669abb1b64df63adb694c64"
+        },
+        {
+          "bytes": 82909,
+          "file": "gallery-02.png",
+          "sha256": "4821ad60fe70512e15b482e0237f360b13e65a4bfc227701e55cfe124a707c71"
+        },
+        {
+          "bytes": 221328,
+          "file": "preview.gif",
+          "sha256": "114f3db9719485f42d280fb5c44e806cc44751ee6a851b5db8b8f65ad16bffc4"
+        },
+        {
+          "bytes": 130870,
+          "file": "demo.mp4",
+          "sha256": "772600dd299197e978236bea644f04e6c8c2d57ef77245b93089af7fac6ba297"
+        }
+      ],
+      "sources": [
+        {
+          "caption": "Tune per-deck scheduling fractions",
+          "file": "config-window.png",
+          "sha256": "51d5d5c144d9408c2cdc9dc824b6e0a666823ef173031bf6379bc5a15820c383"
+        }
+      ],
+      "title": "Fractional Scheduler"
+    },
+    "geo-trainer": {
+      "outputs": [
+        {
+          "bytes": 80151,
+          "file": "gallery-01.png",
+          "sha256": "68a00e3329b1c77fb75c6841e901b8d9db2177371b31dfde12d8c0f5edd1163a"
+        },
+        {
+          "bytes": 84603,
+          "file": "gallery-02.png",
+          "sha256": "12eef7da77df0f9f47a540ea051bb97eb344880d90ff4437cc9841914cc86b75"
+        },
+        {
+          "bytes": 1780304,
+          "file": "preview.gif",
+          "sha256": "f7b73a6638c95d8774bcf537b995cb06177ce48104770f925a379f5704b86cac"
+        },
+        {
+          "bytes": 457537,
+          "file": "demo.mp4",
+          "sha256": "bd80b76f05ed11e0a2505f77dc9368d52af6609059ab6ad237fe1a1b55e0b1ff"
+        }
+      ],
+      "sources": [
+        {
+          "caption": "Identify countries from borderless maps",
+          "file": "01-which-borderless.png",
+          "sha256": "7940aa390bf46db9bf7b2dac5087c521701ad1e0baa36bbd3c70097a081be97d"
+        },
+        {
+          "caption": "Learn deserts and other physical geography",
+          "file": "02-deserts.png",
+          "sha256": "ebbd3f24bc39db7abeb5636e4d2d296efde153315030464fffc437fa2f4e0ed6"
+        },
+        {
+          "caption": "Draw the answer directly on the map",
+          "file": "03-draw-overlay.png",
+          "sha256": "6cf92dc985a40d32b608ea952af4adfd4beafe9de08ad2d98944b6c445947b82"
+        },
+        {
+          "caption": "Trace rivers and linear features",
+          "file": "04-river-trace.png",
+          "sha256": "50110d1ac44a2df74d671a375df8704f44f24ece979af879572a230f39d58960"
+        },
+        {
+          "caption": "Practice mountain ranges and regions",
+          "file": "05-ranges.png",
+          "sha256": "95a08a3a593256e4d4a7fe63d833b1be02256059a7265466c3836b3289989ae8"
+        },
+        {
+          "caption": "Review inside real Anki",
+          "file": "06-which-country-reviewer.png",
+          "sha256": "fd7082e542649a3e4d128dab75c72c63fb20776f8b6b96013975c921f46d4831"
+        },
+        {
+          "caption": "Place countries from memory",
+          "file": "07-place-reviewer.png",
+          "sha256": "aa7b0df47f889800acc6579014eba8346a7923d1190bebd63e70040c0bec6c45"
+        },
+        {
+          "caption": "Compare your trace with the answer",
+          "file": "08-trace-reviewer.png",
+          "sha256": "4cfa211679e8dcfc3492c78f3b96f4e618eb846ff3121452aaf8591b85eb9345"
+        }
+      ],
+      "title": "GeoTrainer"
+    },
+    "hanzi-handwriting": {
+      "outputs": [
+        {
+          "bytes": 49298,
+          "file": "gallery-01.png",
+          "sha256": "ed8876acc934074c199bce4081bcf980a4470bb018da10c622d0f3ae1b386dd1"
+        },
+        {
+          "bytes": 40687,
+          "file": "gallery-02.png",
+          "sha256": "5db2d01c672b487be500519cca1bbb3f6e2d4c0a0473f983987ef38583af69d5"
+        },
+        {
+          "bytes": 106126,
+          "file": "preview.gif",
+          "sha256": "b07636b6c629e21642e738104eb8489432944c9849184f2fee58d5d61340029a"
+        },
+        {
+          "bytes": 74403,
+          "file": "demo.mp4",
+          "sha256": "2494a113d12aafcffa2a00304bed214e4933b3d5ee5da9b1506a06c551ab89a3"
+        }
+      ],
+      "sources": [
+        {
+          "caption": "Write, reveal, and rewind individual strokes",
+          "file": "handwriting-stroke-add.png",
+          "sha256": "920d7db35f1a8ee8cde34f687196824e33fcea77710df59735bcb2b8efdfdbcd"
+        }
+      ],
+      "title": "HSK 3.0 Hanzi Handwriting"
+    },
+    "sight-singing": {
+      "outputs": [
+        {
+          "bytes": 72246,
+          "file": "gallery-01.png",
+          "sha256": "9bbe1d2719e6e250570445de126cc6de9810b9dd61a208d0e7c85c1dbd7154a5"
+        },
+        {
+          "bytes": 68528,
+          "file": "gallery-02.png",
+          "sha256": "246383d3ebd743dbe0627efec8d9e893fdd6edc42532431000d24a363a217222"
+        },
+        {
+          "bytes": 328788,
+          "file": "preview.gif",
+          "sha256": "94c8d75e9e5789ec48d2a87292fab23b8f5b74aa62747c8bbf5d23ce2d6bb0af"
+        },
+        {
+          "bytes": 138111,
+          "file": "demo.mp4",
+          "sha256": "830cc6e38ec1d6ea5e65bf7c0349812c0ecb89a142d6ba314a6efc879b118a10"
+        }
+      ],
+      "sources": [
+        {
+          "caption": "Read the prompt before singing",
+          "file": "sing-front.png",
+          "sha256": "a353fd9ad6140e7439f9e66d1fa9c1de4ec92f2628054aa18c6b0ee52e1c6743"
+        },
+        {
+          "caption": "Reveal notation and compare",
+          "file": "sing-back.png",
+          "sha256": "54465039ac0343d4eec34dffdb97d44ae59bb29d545738ed3d2ac53429a07456"
+        }
+      ],
+      "title": "Sight Singing"
+    },
+    "study-triage": {
+      "outputs": [
+        {
+          "bytes": 278789,
+          "file": "gallery-01.png",
+          "sha256": "fda132d86b35df664b8cde09a7df95c904f1a157d3ae998fa9799c5affd00d44"
+        },
+        {
+          "bytes": 63396,
+          "file": "gallery-02.png",
+          "sha256": "fcb656e84d7c2b8804f0618411cfa1f5eccc62007cf164c86d356dd83fac48e0"
+        },
+        {
+          "bytes": 632258,
+          "file": "preview.gif",
+          "sha256": "55e63f43002706cb9abce146e4ebd98570991a3aebe078ae0310b9649c8a76fe"
+        },
+        {
+          "bytes": 165372,
+          "file": "demo.mp4",
+          "sha256": "93ce49d1cb4548cf369494094ce294ecd539096218b3ed950ae9d4a407cff4f0"
+        }
+      ],
+      "sources": [
+        {
+          "caption": "Triage a deck from Anki's deck browser",
+          "file": "study-triage-workbench.png",
+          "sha256": "5e9964d7c0ae8a3c1bd70715546c7c6e56492c2a46692f745dcd7353c7d82aeb"
+        },
+        {
+          "caption": "Choose a safe, explicit triage action",
+          "file": "menu-open.png",
+          "sha256": "bb88b127c9628853d3a18f36e2975ac24f9f8011421f2b8d211f41ae7c41e9f9"
+        }
+      ],
+      "title": "Study Triage"
+    },
+    "taiwan-divisions": {
+      "outputs": [
+        {
+          "bytes": 95319,
+          "file": "gallery-01.png",
+          "sha256": "c2b54c53221bec9045110ed55f62fa3f3277790baf83ec9b14bcd2f7b7d85f5d"
+        },
+        {
+          "bytes": 98017,
+          "file": "gallery-02.png",
+          "sha256": "21016fd4dffa75d5b2dda8813e7599ccc2a01987c32a15cf684c43910ea65feb"
+        },
+        {
+          "bytes": 177292,
+          "file": "preview.gif",
+          "sha256": "9561fc636f207511dfc89479bd9208a5309a5abde068639c89f0a93598bf8101"
+        },
+        {
+          "bytes": 55884,
+          "file": "demo.mp4",
+          "sha256": "1708a605ce94faebb7c5e9331af534b05e6762e2e9c606269fcd41e03a8fec66"
+        }
+      ],
+      "sources": [
+        {
+          "caption": "Recall a division, then reveal its answer",
+          "file": "tainan-front-back.png",
+          "sha256": "b50394bc5f1a64de11545a0b15f5ac3957c0a5ae92c219104440839bdd6243c2"
+        }
+      ],
+      "title": "Taiwan Divisions"
+    },
+    "us-regions": {
+      "outputs": [
+        {
+          "bytes": 153613,
+          "file": "gallery-01.png",
+          "sha256": "ac3a3e2da0e15ca00be6c36e8627048b602525b728e89afe528d4b5b2a2cfdb3"
+        },
+        {
+          "bytes": 138299,
+          "file": "gallery-02.png",
+          "sha256": "c2405c705109dfe23f35698942a7caff40774dbc105b93163c466ea08fcb1f65"
+        },
+        {
+          "bytes": 406378,
+          "file": "preview.gif",
+          "sha256": "8d9cef5ae6ec2f5c6b6d7bc4943daea24ad20b02664c6b8010c3971232b1c5c4"
+        },
+        {
+          "bytes": 102122,
+          "file": "demo.mp4",
+          "sha256": "473909c425e4f066ea32424efd223e158ec9734154af8a383d37b69bd76974fb"
+        }
+      ],
+      "sources": [
+        {
+          "caption": "Move from map recall to member states",
+          "file": "readme-preview.png",
+          "sha256": "eb60486a7d43becf26b21a43e8701fe81675445e15cf6f6c823d2e90fc7265a8"
+        }
+      ],
+      "title": "U.S. Regions and Divisions"
+    },
+    "web-embed-tools": {
+      "outputs": [
+        {
+          "bytes": 137639,
+          "file": "gallery-01.png",
+          "sha256": "7b5e6ab24e436d7a26758d14b3c87c8f0c4a2b5dabe5c9e276f2f9ce6425f525"
+        },
+        {
+          "bytes": 131590,
+          "file": "gallery-02.png",
+          "sha256": "5b0dd8f3989a577357c86443ead47efd3c3c5298d31cda8575d91c149263118a"
+        },
+        {
+          "bytes": 241189,
+          "file": "preview.gif",
+          "sha256": "5e5ef9bd1e3ee41eae0107b7f83f28f34b983e3523416d3b5a35396496f2eb84"
+        },
+        {
+          "bytes": 202009,
+          "file": "demo.mp4",
+          "sha256": "7a3c1546b4d9d6b5397bfae7adde3b58e66de8d9925659f0e9cb300e0aba0af8"
+        }
+      ],
+      "sources": [
+        {
+          "caption": "Insert and resize embeds in Anki's editor",
+          "file": "editor-web-embed-toolbar.png",
+          "sha256": "3a9096d83a3a2de43b8e270e197bf58d26ae0572002a4a606b9af052fee53248"
+        }
+      ],
+      "title": "Web Embed Tools"
+    }
+  },
+  "release": "2026-07-30"
+}
