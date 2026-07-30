@@ -38,6 +38,19 @@ project repos (`docs/images/`, `release/screenshots/`, or
 `anki-shared-deck-assets`) — never HTML reconstructions, per workspace
 policy.
 
+## AnkiWeb media
+
+`media/ankiweb/<release>/` is the canonical public host for AnkiWeb listing
+images, GIF fallbacks, and MP4 demos. Release directories are immutable.
+Project listing files and READMEs link here instead of committing duplicate
+videos to every repository.
+
+Motion must be recorded from an actual disposable Anki session. Run
+`scripts/finalize_ankiweb_captures.py --release <date>` after copying final
+derivatives to validate the expected gallery/motion set and refresh its
+checksummed manifest. `scripts/render_ankiweb_review.py` builds the ignored
+local review page used before an upload session.
+
 ## Cache busting
 
 `index.html` links `styles.css?v=N`. Pages serves assets with
