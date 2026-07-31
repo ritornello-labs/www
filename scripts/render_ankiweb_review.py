@@ -11,7 +11,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 WORKSPACE = ROOT.parent
 OUTPUT = ROOT / ".tmp-ankiweb-review" / "index.html"
-RELEASE = "2026-07-31"
+RELEASE = "2026-07-31-v2"
 
 LISTINGS = (
     ("GeoTrainer", "geo-trainer", WORKSPACE / "anki-geo-trainer/release/ankiweb.md"),
