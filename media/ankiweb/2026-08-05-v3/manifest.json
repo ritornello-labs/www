@@ -1,0 +1,14 @@
+{
+  "release": "2026-08-05-v3",
+  "purpose": "Ritornello gallery corrections after full-window review",
+  "projects": {
+    "chat-with-your-cards": ["demo.mp4", "gallery-01.png", "gallery-02.png", "gallery-03.png"],
+    "fractional-scheduler": ["gallery-01.png", "gallery-02.png"],
+    "study-triage": ["demo.mp4", "gallery-01.png", "gallery-02.png"],
+    "geo-trainer": ["place.mp4", "river.mp4", "preview.gif", "gallery-01.png", "gallery-02.png"],
+    "chinese-regions": ["demo.mp4", "gallery-01.png", "gallery-02.png"],
+    "sight-singing": ["gallery-01.png", "gallery-02.png"],
+    "dictation": ["demo.mp4", "gallery-01.png", "gallery-02.png"],
+    "chinese-dynasties": ["dynasty-map-front.png", "dynasty-map-answer.png"]
+  }
+}

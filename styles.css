@@ -300,23 +300,6 @@ a:hover { text-decoration-color: var(--blue); }
   width: 100%;
   height: auto;
 }
-.piece-thumb[data-gallery]::after {
-  content: "\25B6  " attr(data-gallery-label);
-  position: absolute;
-  left: 0.38rem;
-  bottom: 0.38rem;
-  padding: 0.28rem 0.42rem;
-  border: 1px solid color-mix(in srgb, white 34%, transparent);
-  background: color-mix(in srgb, #0F1113 82%, transparent);
-  color: white;
-  font-family: var(--font-mono);
-  font-size: 0.6rem;
-  font-weight: 500;
-  letter-spacing: 0.04em;
-  line-height: 1;
-  box-shadow: 0 1px 5px color-mix(in srgb, #0F1113 30%, transparent);
-  pointer-events: none;
-}
 .piece-thumb-motion img {
   aspect-ratio: 640 / 546;
   object-fit: cover;

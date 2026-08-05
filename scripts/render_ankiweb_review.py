@@ -11,48 +11,66 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 WORKSPACE = ROOT.parent
 OUTPUT = ROOT / ".tmp-ankiweb-review" / "index.html"
-RELEASE = "2026-07-31-v2"
+RELEASE = "2026-08-05-v3"
 
 LISTINGS = (
-    ("GeoTrainer", "geo-trainer", WORKSPACE / "anki-geo-trainer/release/ankiweb.md"),
+    (
+        "GeoTrainer", "geo-trainer", WORKSPACE / "anki-geo-trainer/release/ankiweb.md",
+        RELEASE, ("gallery-01.png", "gallery-02.png"), ("place.mp4", "river.mp4"),
+    ),
     (
         "Hanzi Handwriting",
         "hanzi-handwriting",
         WORKSPACE / "anki-deck-styling/release/hanzi-handwriting.md",
+        "2026-07-31-v2", ("gallery-01.png", "gallery-02.png", "gallery-03.png"), ("demo.mp4",),
     ),
-    ("Sight Singing", "sight-singing", WORKSPACE / "sight-singing-deck/release/ankiweb.md"),
     (
-        "Music Dictation",
-        "dictation",
-        WORKSPACE / "sight-singing-deck/release/dictation-ankiweb.md",
+        "Sight Singing", "sight-singing", WORKSPACE / "sight-singing-deck/release/ankiweb.md",
+        RELEASE, ("gallery-01.png", "gallery-02.png"), (),
     ),
-    ("Regions of China", "chinese-regions", WORKSPACE / "chinese-regions/release/ankiweb.md"),
-    ("U.S. Regions", "us-regions", WORKSPACE / "us-regions/release/ankiweb.md"),
+    (
+        "Music Dictation", "dictation", WORKSPACE / "sight-singing-deck/release/dictation-ankiweb.md",
+        RELEASE, ("gallery-01.png", "gallery-02.png"), ("demo.mp4",),
+    ),
+    (
+        "Regions of China", "chinese-regions", WORKSPACE / "chinese-regions/release/ankiweb.md",
+        RELEASE, ("gallery-01.png", "gallery-02.png"), ("demo.mp4",),
+    ),
+    (
+        "U.S. Regions", "us-regions", WORKSPACE / "us-regions/release/ankiweb.md",
+        "2026-07-31-v2", ("gallery-01.png", "gallery-02.png"), ("demo.mp4",),
+    ),
     (
         "Taiwan Divisions",
         "taiwan-divisions",
         WORKSPACE / "anki-deck-styling/release/taiwan-divisions.md",
+        "2026-07-31-v2", ("gallery-01.png", "gallery-02.png", "gallery-03.png"), ("demo.mp4",),
     ),
     (
         "Web Embed Tools",
         "web-embed-tools",
         WORKSPACE / "anki-web-embed-tools/release/ankiweb.md",
+        "2026-07-31-v2", ("gallery-01.png", "gallery-02.png", "gallery-03.png"), ("demo.mp4",),
     ),
     (
         "Fractional Scheduler",
         "fractional-scheduler",
         WORKSPACE / "anki-fractional-scheduler/release/ankiweb.md",
+        RELEASE, ("gallery-01.png", "gallery-02.png"), (),
     ),
-    ("Study Triage", "study-triage", WORKSPACE / "study-triage/release/ankiweb-description.md"),
+    (
+        "Study Triage", "study-triage", WORKSPACE / "study-triage/release/ankiweb-description.md",
+        RELEASE, ("gallery-01.png", "gallery-02.png"), ("demo.mp4",),
+    ),
+    (
+        "Chinese Dynasties", "chinese-dynasties", WORKSPACE / "chinese-dynasties/release/ankiweb.md",
+        RELEASE, ("dynasty-map-front.png", "dynasty-map-answer.png"), (),
+    ),
     (
         "Chat With Your Cards — development preview",
         "chat-with-your-cards",
         WORKSPACE / "chat-with-your-cards/release/ankiweb-draft.md",
-    ),
-    (
-        "Dynamic Cards — development preview",
-        "dynamic-cards",
-        WORKSPACE / "anki-dynamic-cards/release/ankiweb-draft.md",
+        RELEASE, ("gallery-01.png", "gallery-02.png", "gallery-03.png"), ("demo.mp4",),
     ),
 )
 
@@ -81,7 +99,7 @@ def _inline(text: str) -> str:
 
 
 def _local_url(url: str) -> str:
-    prefix = f"https://ritornello.dev/media/ankiweb/{RELEASE}/"
+    prefix = "https://ritornello.dev/media/ankiweb/"
     if url.startswith(prefix):
         return "/media/ankiweb/" + url.removeprefix("https://ritornello.dev/media/ankiweb/")
     return html.escape(url)
@@ -139,21 +157,21 @@ def render() -> Path:
     OUTPUT.parent.mkdir(parents=True, exist_ok=True)
     cards = []
     listings = []
-    for title, slug, listing_path in LISTINGS:
-        media = f"/media/ankiweb/{RELEASE}/{slug}"
+    for title, slug, listing_path, media_release, images, videos in LISTINGS:
+        media = f"/media/ankiweb/{media_release}/{slug}"
+        image_tags = "".join(f'<img src="{media}/{name}" alt="">' for name in images)
+        video_tags = "".join(
+            f'<video controls muted preload="metadata" poster="{media}/{images[0]}"><source src="{media}/{name}" type="video/mp4"></video>'
+            for name in videos
+        )
+        media_links = " · ".join(f'<a href="{media}/{name}">{html.escape(name)}</a>' for name in videos)
         cards.append(
             f"""
             <article class="media-card">
               <h2>{html.escape(title)}</h2>
-              <img class="hero" src="{media}/gallery-02.png" alt="">
-              <div class="triptych">
-                <img src="{media}/gallery-01.png" alt="">
-                <img src="{media}/gallery-02.png" alt="">
-                <img src="{media}/gallery-03.png" alt="">
-              </div>
-              <p><a href="{media}/preview.gif">GIF</a> ·
-                 <a href="{media}/demo.mp4">MP4</a> ·
-                 <code>{html.escape(str(listing_path.relative_to(WORKSPACE)))}</code></p>
+              {video_tags}
+              <div class="triptych">{image_tags}</div>
+              <p>{media_links}{' · ' if media_links else ''}<code>{html.escape(str(listing_path.relative_to(WORKSPACE)))}</code></p>
             </article>
             """
         )
@@ -185,8 +203,9 @@ header p {{ margin: 0; color: #cbd5e1; }}
   box-shadow: 0 3px 12px #17203312; }}
 .media-card h2 {{ margin: 0 0 10px; font-size: 18px; }}
 .media-card p {{ margin: 10px 0 0; font-size: 12px; }}
+.media-card video {{ display: block; width: 100%; aspect-ratio: 16/10; object-fit: contain; border-radius: 9px; background: #111; }}
 .hero {{ width: 100%; aspect-ratio: 16/9; object-fit: cover; border-radius: 9px; background: #111; }}
-.triptych {{ display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px; margin-top: 6px; }}
+.triptych {{ display: grid; grid-template-columns: repeat(auto-fit, minmax(90px, 1fr)); gap: 6px; margin-top: 6px; }}
 .triptych img {{ width: 100%; aspect-ratio: 16/9; object-fit: cover; border-radius: 5px; background: #111; }}
 .section-title {{ padding: 28px 4vw 10px; margin: 0; }}
 .listings {{ display: grid; gap: 26px; padding: 12px 4vw 80px; }}

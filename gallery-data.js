@@ -8,7 +8,7 @@
         return {
           type: isVideo ? 'video' : 'image',
           src: base + slug + '/' + file,
-          poster: isVideo ? base + slug + '/gallery-01.png' : undefined,
+          poster: isVideo ? base + slug + '/gallery-' + String(index + 1).padStart(2, '0') + '.png' : undefined,
           caption: captions[index]
         };
       })
@@ -16,38 +16,27 @@
   }
 
   window.ritornelloGalleries = {
-    'dynamic-cards': gallery(
-      'Dynamic Cards',
-      'dynamic-cards',
-      ['demo.mp4', 'gallery-01.png', 'gallery-02.png', 'gallery-03.png'],
-      [
-        'See a generated card keep its values stable through reveal.',
-        'Answer a randomized arithmetic prompt.',
-        'Reveal the answer generated from the same seed.',
-        'Review another stable randomized card state.'
-      ]
-    ),
     'chat-with-your-cards': gallery(
       'Chat With Your Cards',
       'chat-with-your-cards',
       ['demo.mp4', 'gallery-01.png', 'gallery-02.png', 'gallery-03.png'],
       [
-        'Open the chat dock beside the complete Anki window.',
-        'Keep the collection visible while the dock is expanded.',
-        'Use the composer, attachments, pins, and proposal controls.',
-        'Invoke the selected Claude Code backend from the dock.'
-      ]
+        'Follow a real card from prerequisite search to explanation and a reviewable new-note proposal.',
+        'Review the proposed front and back before anything is written.',
+        'Ask for a plain-language explanation beside the card.',
+        'Find the prerequisite cards that bridge the current knowledge gap.'
+      ],
+      '2026-08-05-v3'
     ),
     'fractional-scheduler': gallery(
       'Fractional New-Card Scheduler',
       'fractional-scheduler',
-      ['demo.mp4', 'gallery-01.png', 'gallery-02.png', 'gallery-03.png'],
+      ['gallery-01.png', 'gallery-02.png'],
       [
-        'See fractional scheduling configured inside Anki.',
-        'Configure per-deck fractional new-card limits.',
-        'Inspect the scheduler state for a deck.',
-        'Apply the selected scheduling plan.'
-      ]
+        'Preview a one-card-every-three-days language trickle across four real subdecks.',
+        'Apply fractional limits to a realistic nested collection instead of an empty configuration.'
+      ],
+      '2026-08-05-v3'
     ),
     'web-embed-tools': gallery(
       'Web Embed Tools',
@@ -63,68 +52,51 @@
     'study-triage': gallery(
       'Study Triage',
       'study-triage',
-      ['demo.mp4', 'gallery-01.png', 'gallery-02.png', 'gallery-03.png'],
+      ['demo.mp4', 'gallery-01.png', 'gallery-02.png'],
       [
-        'See the one-keystroke triage flow in Anki.',
-        'Open the triage actions from Anki.',
-        'Choose a temporary workload reduction.',
-        'Return to a manageable review day.'
-      ]
+        'Mute a crowded new-card tree for today without changing tomorrow’s limits.',
+        'Start with new cards spread across a messy, expanded deck tree.',
+        'See every affected deck muted after the temporary triage action.'
+      ],
+      '2026-08-05-v3'
     ),
     'geo-trainer': gallery(
       'GeoTrainer',
       'geo-trainer',
       [
-        'demo.mp4',
+        'place.mp4',
+        'river.mp4',
         'gallery-01.png',
-        'gallery-02.png',
-        'gallery-03.png',
-        'gallery-04.png',
-        'gallery-05.png',
-        'gallery-06.png',
-        'gallery-07.png',
-        'gallery-08.png',
-        'gallery-09.png',
-        'gallery-10.png'
+        'gallery-02.png'
       ],
       [
-        'Place a geographic silhouette in the complete Anki reviewer.',
-        'Start a place-the-shape challenge with native review controls visible.',
-        'Compare the placement and choose an Anki grade.',
-        'Identify a country on a borderless map.',
-        'Recognize a desert by its location and shape.',
-        'Draw a geographic region from memory.',
-        'Trace the course of a river.',
-        'Recognize a mountain range.',
-        'Review a which-country answer.',
-        'Review a place-the-shape answer.',
-        'Review a tracing answer.'
+        'Place Alabama, reveal the correct state, and keep the complete Anki grading bar in view.',
+        'Trace the Amazon and compare the attempt with the highlighted river.',
+        'A fallback still of the place-the-shape prompt for browsers that cannot play video.',
+        'A fallback still of the river-tracing prompt for browsers that cannot play video.'
       ],
-      '2026-07-31-v2'
+      '2026-08-05-v3'
     ),
     'us-regions': gallery(
       'U.S. Regions and Divisions',
       'us-regions',
-      ['demo.mp4', 'gallery-01.png', 'gallery-02.png', 'gallery-03.png'],
+      ['demo.mp4', 'gallery-01.png', 'gallery-02.png'],
       [
         'See region and division recall in Anki.',
         'Recall the states and boundaries in a Census region.',
-        'Reveal the region with locator-map context.',
-        'Study the reverse direction from map to name.'
+        'Reveal the region with locator-map context.'
       ]
     ),
     'chinese-regions': gallery(
       'Regions of China',
       'chinese-regions',
-      ['demo.mp4', 'gallery-01.png', 'gallery-02.png', 'gallery-03.png', 'gallery-04.png'],
+      ['demo.mp4', 'gallery-01.png', 'gallery-02.png'],
       [
-        'Reveal a region, wait for its live Wikipedia reference, then grade it in Anki.',
-        'Recall a Chinese region from Hanzi in the complete reviewer.',
-        'Check the pinyin and loaded Wikipedia reference before grading.',
-        'Place a region from its member set and blank map.',
-        'Study the map-to-name direction with the answer beside it.'
+        'Reveal North China, load the live Wikipedia reference, and keep Anki’s grading bar visible.',
+        'Recall a Chinese region from Hanzi without the repeated background artifact.',
+        'Check the pinyin and fully rendered Wikipedia reference before grading.'
       ],
-      '2026-07-31-v2'
+      '2026-08-05-v3'
     ),
     'taiwan-divisions': gallery(
       'Taiwan Divisions',
@@ -140,24 +112,23 @@
     'sight-singing': gallery(
       'Sight Singing',
       'sight-singing',
-      ['demo.mp4', 'gallery-01.png', 'gallery-02.png', 'gallery-03.png'],
+      ['gallery-01.png', 'gallery-02.png'],
       [
-        'See a sight-singing exercise from prompt to playback.',
         'Sing the displayed melody.',
-        'Use scale-degree cues to check the phrase.',
-        'Reveal the answer and play the melody.'
-      ]
+        'Reveal the scale degrees and play the melody.'
+      ],
+      '2026-08-05-v3'
     ),
     'dictation': gallery(
       'Dictation',
       'dictation',
-      ['demo.mp4', 'gallery-01.png', 'gallery-02.png', 'gallery-03.png'],
+      ['demo.mp4', 'gallery-01.png', 'gallery-02.png'],
       [
-        'See a dictation exercise from playback to review.',
-        'Listen and transcribe the melody.',
-        'Enter notes and rhythm on the staff.',
-        'Compare the transcription with the answer.'
-      ]
+        'Transcribe a six-event DD9 melody and compare every event with the answer.',
+        'Start a later-stage six-event dictation exercise.',
+        'Compare the transcription with the complete target melody and native grading controls.'
+      ],
+      '2026-08-05-v3'
     ),
     'hanzi-handwriting': gallery(
       'HSK 3.0 Hanzi Handwriting',
