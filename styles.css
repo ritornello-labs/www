@@ -481,6 +481,7 @@ a:hover { text-decoration-color: var(--blue); }
   background: #0F1113;
 }
 .lightbox-media {
+  grid-column: 2;
   display: flex;
   min-width: 0;
   min-height: 0;
@@ -489,6 +490,8 @@ a:hover { text-decoration-color: var(--blue); }
   overflow: hidden;
   touch-action: pan-y;
 }
+.lightbox-prev { grid-column: 1; }
+.lightbox-next { grid-column: 3; }
 .lightbox-media img,
 .lightbox-media video {
   display: block;

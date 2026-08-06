@@ -121,43 +121,6 @@
       ],
       "title": "Music Dictation"
     },
-    "dynamic-cards": {
-      "outputs": [
-        {
-          "bytes": 180900,
-          "file": "gallery-01.png",
-          "sha256": "3aaf6b89d8e3faa748c26196dc6ad8f601985d349d0147a05dd5f9f61b223143"
-        },
-        {
-          "bytes": 134367,
-          "file": "gallery-02.png",
-          "sha256": "b6e5d403e7b00793243d81c9175ef6ccda67a0ec9e092bac4c00ba3edd9691a3"
-        },
-        {
-          "bytes": 1048950,
-          "file": "preview.gif",
-          "sha256": "fbc4480e1d130b83601a8799353fc61264ebe8cfe80ac03254ac46d2e183bcc0"
-        },
-        {
-          "bytes": 105264,
-          "file": "demo.mp4",
-          "sha256": "203a0a6bf046e93722b60936546da14ea5b46155b89224c510f9bde6ae3beb6a"
-        }
-      ],
-      "sources": [
-        {
-          "caption": "Generate a fresh problem on entry",
-          "file": "dynamic-front.png",
-          "sha256": "74258bbd690fb583cfd592b893f14ef027468feedb7d79c18016d3a4e8942bd7"
-        },
-        {
-          "caption": "Keep the same values through answer reveal",
-          "file": "dynamic-back.png",
-          "sha256": "dd5352df79486fc757d50e85c2721857e1c44d7254d81f50e9d0fcc1f84eddff"
-        }
-      ],
-      "title": "Dynamic Cards"
-    },
     "fractional-scheduler": {
       "outputs": [
         {

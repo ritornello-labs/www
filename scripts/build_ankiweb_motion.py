@@ -115,13 +115,6 @@ PROJECTS: dict[str, Project] = {
             Shot("chat-with-your-cards-proposal.png", "Review proposed changes before applying"),
         ),
     ),
-    "dynamic-cards": Project(
-        "Dynamic Cards",
-        (
-            Shot("dynamic-front.png", "Generate a fresh problem on entry"),
-            Shot("dynamic-back.png", "Keep the same values through answer reveal"),
-        ),
-    ),
 }
 
 

@@ -142,50 +142,6 @@
         "demo.mp4"
       ]
     },
-    "dynamic-cards": {
-      "files": [
-        {
-          "bytes": 60592,
-          "file": "demo.mp4",
-          "sha256": "e721cfdce9b6f8b06a2c80f6fe430ebe7a5a4fed7d1384d63e1febf64830f7ca"
-        },
-        {
-          "bytes": 112021,
-          "file": "dynamic-back.png",
-          "sha256": "dd5352df79486fc757d50e85c2721857e1c44d7254d81f50e9d0fcc1f84eddff"
-        },
-        {
-          "bytes": 123004,
-          "file": "dynamic-front.png",
-          "sha256": "74258bbd690fb583cfd592b893f14ef027468feedb7d79c18016d3a4e8942bd7"
-        },
-        {
-          "bytes": 263556,
-          "file": "gallery-01.png",
-          "sha256": "c4a713ab9a1889041480205ea87cd730c24dffbb6501837f2e82a308e220ed09"
-        },
-        {
-          "bytes": 247132,
-          "file": "gallery-02.png",
-          "sha256": "70114ffe035ea69e2f0950ece8fdfdec9446887445a7180ea2786b0101bec6da"
-        },
-        {
-          "bytes": 268600,
-          "file": "gallery-03.png",
-          "sha256": "71175834727fc685d775cd25848ca179b710c21a981c839f2623f00cffbc3d32"
-        },
-        {
-          "bytes": 331717,
-          "file": "preview.gif",
-          "sha256": "72172beb6446f4d93073ddcfc1146dfd1ec50dc6260ca4a044750e5ae10696a6"
-        }
-      ],
-      "gallery_count": 3,
-      "motion": [
-        "preview.gif",
-        "demo.mp4"
-      ]
-    },
     "fractional-scheduler": {
       "files": [
         {

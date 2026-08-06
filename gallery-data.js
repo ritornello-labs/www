@@ -19,14 +19,13 @@
     'chat-with-your-cards': gallery(
       'Chat With Your Cards',
       'chat-with-your-cards',
-      ['demo.mp4', 'gallery-01.png', 'gallery-02.png', 'gallery-03.png'],
+      ['demo.mp4', 'gallery-01.png', 'gallery-02.png'],
       [
-        'Follow a real card from prerequisite search to explanation and a reviewable new-note proposal.',
-        'Review the proposed front and back before anything is written.',
-        'Ask for a plain-language explanation beside the card.',
-        'Find the prerequisite cards that bridge the current knowledge gap.'
+        'Type a request beside the current card and watch a reviewable new-note proposal appear.',
+        'Ask for a focused companion card without leaving the reviewer.',
+        'Inspect the proposed front, back, deck, and tags before anything is written.'
       ],
-      '2026-08-05-v3'
+      '2026-08-06-v4'
     ),
     'fractional-scheduler': gallery(
       'Fractional New-Card Scheduler',
@@ -58,7 +57,7 @@
         'Start with new cards spread across a messy, expanded deck tree.',
         'See every affected deck muted after the temporary triage action.'
       ],
-      '2026-08-05-v3'
+      '2026-08-06-v4'
     ),
     'geo-trainer': gallery(
       'GeoTrainer',
@@ -70,12 +69,12 @@
         'gallery-02.png'
       ],
       [
-        'Place Alabama, reveal the correct state, and keep the complete Anki grading bar in view.',
-        'Trace the Amazon and compare the attempt with the highlighted river.',
-        'A fallback still of the place-the-shape prompt for browsers that cannot play video.',
-        'A fallback still of the river-tracing prompt for browsers that cannot play video.'
+        'Drag the Libyan Desert silhouette into place, reveal the answer, and keep the complete Anki grading bar in view.',
+        'Draw the Amazon course on the map and reveal GeoTrainer’s distance-based result.',
+        'The Libyan Desert place-the-shape prompt before the drag begins.',
+        'The completed Amazon trace with GeoTrainer’s grading result.'
       ],
-      '2026-08-05-v3'
+      '2026-08-06-v4'
     ),
     'us-regions': gallery(
       'U.S. Regions and Divisions',
@@ -124,11 +123,23 @@
       'dictation',
       ['demo.mp4', 'gallery-01.png', 'gallery-02.png'],
       [
-        'Transcribe a six-event DD9 melody and compare every event with the answer.',
-        'Start a later-stage six-event dictation exercise.',
-        'Compare the transcription with the complete target melody and native grading controls.'
+        'Enter a six-event DD9 transcription note by note, then compare it with the target melody.',
+        'Start a later-stage six-event dictation exercise with the native grading controls in view.',
+        'Compare the entered melody with the complete six-event target.'
       ],
-      '2026-08-05-v3'
+      '2026-08-06-v4'
+    ),
+    'brazil-ddd-codes': gallery(
+      'Brazilian DDD Codes',
+      'brazil-ddd-codes',
+      ['gallery-01.png', 'gallery-02.png', 'gallery-03.png', 'gallery-04.png'],
+      [
+        'Recall the coverage of DDD 68 from a blank municipal map.',
+        'Reveal the DDD 68 coverage area in Acre.',
+        'Recall the DDD code from the highlighted coverage area.',
+        'Reveal DDD 68 on the reverse card template.'
+      ],
+      '2026-08-06-v4'
     ),
     'hanzi-handwriting': gallery(
       'HSK 3.0 Hanzi Handwriting',

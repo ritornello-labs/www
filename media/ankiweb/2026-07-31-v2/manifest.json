@@ -112,40 +112,6 @@
         "demo.mp4"
       ]
     },
-    "dynamic-cards": {
-      "files": [
-        {
-          "bytes": 174470,
-          "file": "demo.mp4",
-          "sha256": "58172dfcd5b0f50618dce86adf9dc5c262066bc50d97fb91ac3d5d646da2e4a2"
-        },
-        {
-          "bytes": 196473,
-          "file": "gallery-01.png",
-          "sha256": "b7f86a1114a39816ffe8ced0f7864b2cc4bd118677336b6c14cac46d0fde7edc"
-        },
-        {
-          "bytes": 205120,
-          "file": "gallery-02.png",
-          "sha256": "04e6c709b0add21c3ce5b660dc6ba7b5a93d1bdc5680ddf5fbafa349ec681ade"
-        },
-        {
-          "bytes": 209544,
-          "file": "gallery-03.png",
-          "sha256": "74e54adeadb8aa49d9c7eaefbd9d22d21f7b0ec6388fb23c0b91b0ee21834c2a"
-        },
-        {
-          "bytes": 445614,
-          "file": "preview.gif",
-          "sha256": "b2b62fbbf788f7b3ec063794bf4591fca192af6ed39cc702ce8aaddfc8a977d2"
-        }
-      ],
-      "gallery_count": 3,
-      "motion": [
-        "preview.gif",
-        "demo.mp4"
-      ]
-    },
     "fractional-scheduler": {
       "files": [
         {

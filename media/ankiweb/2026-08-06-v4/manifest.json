@@ -1,0 +1,140 @@
+{
+  "policy": {
+    "canonical_host": "https://ritornello.dev",
+    "capture_standard": "Motion is recorded from actual Anki/workbench UI interaction; gallery images are distinct real states from the same workflows.",
+    "repository_policy": "Hosted derivatives live here; project repositories link to them instead of committing duplicate videos."
+  },
+  "projects": {
+    "brazil-ddd-codes": {
+      "files": [
+        {
+          "bytes": 341375,
+          "file": "gallery-01.png",
+          "sha256": "ceb07f4fc959ac492b9a5b5da991b1d7573386b067adcb19c46cc89dfb3ed2ec"
+        },
+        {
+          "bytes": 355510,
+          "file": "gallery-02.png",
+          "sha256": "f864b46a7878fff00afb24558c09cc0423ab38fe2fa756171ca0a64c50b6b175"
+        },
+        {
+          "bytes": 323245,
+          "file": "gallery-03.png",
+          "sha256": "ca7042227a0ee9030633e849ec322e21b74e050e61fbd8054e40b9092dcdbb53"
+        },
+        {
+          "bytes": 327398,
+          "file": "gallery-04.png",
+          "sha256": "766f65b37cfeec69d9508b57038ce5d7291882660e9b207089d8bd7c7bd66e98"
+        }
+      ],
+      "gallery_count": 4,
+      "motion": []
+    },
+    "chat-with-your-cards": {
+      "files": [
+        {
+          "bytes": 100838,
+          "file": "demo.mp4",
+          "sha256": "f025e82e9594620c74d956a5afd087d191c6fbb4b52f9fd601d33fd439b0411f"
+        },
+        {
+          "bytes": 70653,
+          "file": "gallery-01.png",
+          "sha256": "03045f215b32b27a32fd4280acda38c6483f82932aab4c04b787c5212ab9641b"
+        },
+        {
+          "bytes": 154299,
+          "file": "gallery-02.png",
+          "sha256": "7f6c6d4b55d89b04eee545423b19663cac798531e23869c72b964a29e48bcd18"
+        }
+      ],
+      "gallery_count": 2,
+      "motion": [
+        "demo.mp4"
+      ]
+    },
+    "dictation": {
+      "files": [
+        {
+          "bytes": 63022,
+          "file": "demo.mp4",
+          "sha256": "7750c469b47758d925864a10383ca80d4a17f1df6aee5af2739b1b29313e9ab6"
+        },
+        {
+          "bytes": 89942,
+          "file": "gallery-01.png",
+          "sha256": "d02e8664d5645b37580bed919274f1c8e21ec663fde4b91dba64ff5b40ee8f46"
+        },
+        {
+          "bytes": 92708,
+          "file": "gallery-02.png",
+          "sha256": "8548a9c27304eb7b76b4cf0b5e97df78d42301a3e0b4cb82a5ca5b89d2323d14"
+        }
+      ],
+      "gallery_count": 2,
+      "motion": [
+        "demo.mp4"
+      ]
+    },
+    "geo-trainer": {
+      "files": [
+        {
+          "bytes": 70627,
+          "file": "gallery-01.png",
+          "sha256": "7e165e4fc9c7d2524fd4d104c770fb8b4d9af9ac88db69f8b306aae0b1401e50"
+        },
+        {
+          "bytes": 78437,
+          "file": "gallery-02.png",
+          "sha256": "15f5008c95ca62ef80a4cff7bc14eab649b9af2dddab144ad5347aad8c79f208"
+        },
+        {
+          "bytes": 42559,
+          "file": "place.mp4",
+          "sha256": "903769405f51b3755da3effa32f16df9d085420d48725fd4672c5d1ffe635bbe"
+        },
+        {
+          "bytes": 109233,
+          "file": "preview.gif",
+          "sha256": "73a2a6bce96b4191b6578c6d69969249f5fd14fec256a277c7c59ea46191f34b"
+        },
+        {
+          "bytes": 38867,
+          "file": "river.mp4",
+          "sha256": "197726a8ed4a6305b3e78908dc93483bc8ac846902464ff24064faec9fa0f5b9"
+        }
+      ],
+      "gallery_count": 2,
+      "motion": [
+        "place.mp4",
+        "preview.gif",
+        "river.mp4"
+      ]
+    },
+    "study-triage": {
+      "files": [
+        {
+          "bytes": 79575,
+          "file": "demo.mp4",
+          "sha256": "671b159d0559eda73d64635e64f21ee9d8381a11b9682dccc7304a1e09d90fd6"
+        },
+        {
+          "bytes": 112765,
+          "file": "gallery-01.png",
+          "sha256": "ce0d41aaf837d3722a468997f6cf1718f59c68c8dc0c01db6a1eeb45ab880f2d"
+        },
+        {
+          "bytes": 86348,
+          "file": "gallery-02.png",
+          "sha256": "40fae35e12a1331c610b5881f99d6206561892f181e76f7dc3b7f4e25db8281f"
+        }
+      ],
+      "gallery_count": 2,
+      "motion": [
+        "demo.mp4"
+      ]
+    }
+  },
+  "release": "2026-08-06-v4"
+}

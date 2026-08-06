@@ -27,8 +27,7 @@ def finalize(release: str) -> Path:
 
     projects: dict[str, object] = {}
     for project_dir in sorted(path for path in release_dir.iterdir() if path.is_dir()):
-        required = (project_dir / "demo.mp4", project_dir / "preview.gif")
-        missing = [path.name for path in required if not path.is_file()]
+        missing: list[str] = []
         galleries = sorted(project_dir.glob("gallery-*.png"))
         if len(galleries) < 2:
             missing.append("at least two gallery-*.png files")
@@ -40,6 +39,7 @@ def finalize(release: str) -> Path:
             for path in project_dir.iterdir()
             if path.is_file() and path.suffix.lower() in {".gif", ".mp4", ".png"}
         )
+        motion = [path.name for path in files if path.suffix.lower() in {".gif", ".mp4"}]
         projects[project_dir.name] = {
             "files": [
                 {
@@ -50,7 +50,7 @@ def finalize(release: str) -> Path:
                 for path in files
             ],
             "gallery_count": len(galleries),
-            "motion": ["preview.gif", "demo.mp4"],
+            "motion": motion,
         }
 
     manifest = {

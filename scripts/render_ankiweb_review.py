@@ -11,12 +11,12 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 WORKSPACE = ROOT.parent
 OUTPUT = ROOT / ".tmp-ankiweb-review" / "index.html"
-RELEASE = "2026-08-05-v3"
+RELEASE = "2026-08-06-v4"
 
 LISTINGS = (
     (
         "GeoTrainer", "geo-trainer", WORKSPACE / "anki-geo-trainer/release/ankiweb.md",
-        RELEASE, ("gallery-01.png", "gallery-02.png"), ("place.mp4", "river.mp4"),
+        "2026-08-06-v4", ("gallery-01.png", "gallery-02.png"), ("place.mp4", "river.mp4"),
     ),
     (
         "Hanzi Handwriting",
@@ -26,15 +26,15 @@ LISTINGS = (
     ),
     (
         "Sight Singing", "sight-singing", WORKSPACE / "sight-singing-deck/release/ankiweb.md",
-        RELEASE, ("gallery-01.png", "gallery-02.png"), (),
+        "2026-08-05-v3", ("gallery-01.png", "gallery-02.png"), (),
     ),
     (
         "Music Dictation", "dictation", WORKSPACE / "sight-singing-deck/release/dictation-ankiweb.md",
-        RELEASE, ("gallery-01.png", "gallery-02.png"), ("demo.mp4",),
+        "2026-08-06-v4", ("gallery-01.png", "gallery-02.png"), ("demo.mp4",),
     ),
     (
         "Regions of China", "chinese-regions", WORKSPACE / "chinese-regions/release/ankiweb.md",
-        RELEASE, ("gallery-01.png", "gallery-02.png"), ("demo.mp4",),
+        "2026-08-05-v3", ("gallery-01.png", "gallery-02.png"), ("demo.mp4",),
     ),
     (
         "U.S. Regions", "us-regions", WORKSPACE / "us-regions/release/ankiweb.md",
@@ -56,21 +56,25 @@ LISTINGS = (
         "Fractional Scheduler",
         "fractional-scheduler",
         WORKSPACE / "anki-fractional-scheduler/release/ankiweb.md",
-        RELEASE, ("gallery-01.png", "gallery-02.png"), (),
+        "2026-08-05-v3", ("gallery-01.png", "gallery-02.png"), (),
     ),
     (
         "Study Triage", "study-triage", WORKSPACE / "study-triage/release/ankiweb-description.md",
-        RELEASE, ("gallery-01.png", "gallery-02.png"), ("demo.mp4",),
+        "2026-08-06-v4", ("gallery-01.png", "gallery-02.png"), ("demo.mp4",),
     ),
     (
         "Chinese Dynasties", "chinese-dynasties", WORKSPACE / "chinese-dynasties/release/ankiweb.md",
-        RELEASE, ("dynasty-map-front.png", "dynasty-map-answer.png"), (),
+        "2026-08-05-v3", ("dynasty-map-front.png", "dynasty-map-answer.png"), (),
     ),
     (
         "Chat With Your Cards — development preview",
         "chat-with-your-cards",
         WORKSPACE / "chat-with-your-cards/release/ankiweb-draft.md",
-        RELEASE, ("gallery-01.png", "gallery-02.png", "gallery-03.png"), ("demo.mp4",),
+        "2026-08-06-v4", ("gallery-01.png", "gallery-02.png"), ("demo.mp4",),
+    ),
+    (
+        "Brazilian DDD Codes", "brazil-ddd-codes", WORKSPACE / "brazil-ddd-codes/release/ankiweb.md",
+        "2026-08-06-v4", ("gallery-01.png", "gallery-02.png", "gallery-03.png", "gallery-04.png"), (),
     ),
 )
 
