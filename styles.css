@@ -300,6 +300,31 @@ a:hover { text-decoration-color: var(--blue); }
   width: 100%;
   height: auto;
 }
+.piece-thumb.is-video::after {
+  content: "\25B6";
+  position: absolute;
+  z-index: 1;
+  inset: 50% auto auto 50%;
+  translate: -50% -50%;
+  display: grid;
+  width: 2.75rem;
+  height: 2.75rem;
+  place-items: center;
+  border: 1px solid color-mix(in srgb, white 72%, transparent);
+  border-radius: 50%;
+  background: color-mix(in srgb, #0F1113 76%, transparent);
+  box-shadow: 0 0.35rem 1.1rem color-mix(in srgb, #0F1113 35%, transparent);
+  color: white;
+  font-size: 0.9rem;
+  line-height: 1;
+  pointer-events: none;
+  transition: scale 140ms ease, background-color 140ms ease;
+}
+.piece-thumb.is-video:hover::after,
+.piece-thumb.is-video:focus-visible::after {
+  scale: 1.06;
+  background: color-mix(in srgb, #0F1113 88%, transparent);
+}
 .piece-thumb-motion img {
   aspect-ratio: 640 / 546;
   object-fit: cover;
@@ -527,14 +552,17 @@ a:hover { text-decoration-color: var(--blue); }
   inset: 50% auto auto 50%;
   translate: -50% -50%;
   display: grid;
-  width: 1.35rem;
-  height: 1.35rem;
+  width: 1.55rem;
+  height: 1.55rem;
   place-items: center;
+  border: 1px solid color-mix(in srgb, white 68%, transparent);
   border-radius: 50%;
-  background: color-mix(in srgb, #0F1113 78%, transparent);
+  background: color-mix(in srgb, #0F1113 84%, transparent);
+  box-shadow: 0 0.2rem 0.55rem color-mix(in srgb, #0F1113 45%, transparent);
   color: white;
-  font-size: 0.58rem;
+  font-size: 0.62rem;
   line-height: 1;
+  pointer-events: none;
 }
 .lightbox-thumb[aria-current="true"] {
   border-color: var(--red);
