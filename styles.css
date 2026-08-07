@@ -74,6 +74,10 @@ a:hover { text-decoration-color: var(--blue); }
   color: var(--muted);
   text-decoration-color: color-mix(in srgb, var(--muted) 40%, transparent);
 }
+.masthead-nav {
+  display: flex;
+  gap: 1rem;
+}
 .masthead-nav a:hover { color: var(--blue); text-decoration-color: var(--blue); }
 
 /* ---------- hero ---------- */
