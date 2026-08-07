@@ -67,9 +67,9 @@ LISTINGS = (
         "2026-08-05-v3", ("dynasty-map-front.png", "dynasty-map-answer.png"), (),
     ),
     (
-        "Chat With Your Cards — development preview",
+        "Chat With Your Cards — v0.1.0 public preview",
         "chat-with-your-cards",
-        WORKSPACE / "chat-with-your-cards/release/ankiweb-draft.md",
+        WORKSPACE / "chat-with-your-cards/release/ankiweb.md",
         "2026-08-06-v4", ("gallery-01.png", "gallery-02.png"), ("demo.mp4",),
     ),
     (

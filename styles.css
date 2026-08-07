@@ -325,6 +325,24 @@ a:hover { text-decoration-color: var(--blue); }
   scale: 1.06;
   background: color-mix(in srgb, #0F1113 88%, transparent);
 }
+.piece-thumb-count {
+  position: absolute;
+  z-index: 2;
+  inset: 0.55rem 0.55rem auto auto;
+  padding: 0.28rem 0.48rem;
+  border: 1px solid color-mix(in srgb, white 60%, transparent);
+  border-radius: 999px;
+  background: color-mix(in srgb, #0F1113 78%, transparent);
+  box-shadow: 0 0.2rem 0.7rem color-mix(in srgb, #0F1113 28%, transparent);
+  color: white;
+  font-family: var(--font-mono);
+  font-size: 0.625rem;
+  font-weight: 600;
+  letter-spacing: 0.055em;
+  line-height: 1;
+  text-transform: uppercase;
+  pointer-events: none;
+}
 .piece-thumb-motion img {
   aspect-ratio: 640 / 546;
   object-fit: cover;

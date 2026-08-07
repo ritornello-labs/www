@@ -72,9 +72,10 @@
                along as context, and the agent can search your decks, explain
                the missing prerequisite, and propose new notes — every write
                goes through a reviewable, revertible proposal.
-               <span class="badge">developer preview</span></p>
+               <span class="badge">public preview</span></p>
             <p class="piece-links">
               <a href="https://github.com/ritornello-labs/chat-with-your-cards">GitHub</a>
+              <a href="https://github.com/ritornello-labs/chat-with-your-cards/releases/download/v0.1.0/chat-with-your-cards.ankiaddon">Download v0.1.0</a>
             </p>
           </div>
         </div>
@@ -637,7 +638,7 @@
   </div>
 </dialog>
 
-<script src="gallery-data.js?v=4"></script>
+<script src="gallery-data.js?v=5"></script>
 <script>
   // Section and group accordions. Sections start open; deck groups start
   // closed (aria-expanded in the markup is the source of truth).
@@ -749,6 +750,18 @@
     var thumbGallery = window.ritornelloGalleries[thumb.dataset.gallery];
     if (thumbGallery && thumbGallery.items[0] && thumbGallery.items[0].type === 'video') {
       thumb.classList.add('is-video');
+    }
+    if (thumbGallery && thumbGallery.items.length > 1) {
+      var mediaCount = document.createElement('span');
+      mediaCount.className = 'piece-thumb-count';
+      mediaCount.textContent = thumbGallery.items.length + ' samples';
+      mediaCount.setAttribute('aria-hidden', 'true');
+      thumb.appendChild(mediaCount);
+      thumb.setAttribute(
+        'aria-label',
+        (thumb.getAttribute('aria-label') || 'Open media gallery') +
+          ' (' + thumbGallery.items.length + ' samples)'
+      );
     }
 
     thumb.addEventListener('click', function () {
