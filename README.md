@@ -47,9 +47,16 @@ videos to every repository.
 
 Motion must be recorded from an actual disposable Anki session. Run
 `scripts/finalize_ankiweb_captures.py --release <date>` after copying final
-derivatives to validate the expected gallery/motion set and refresh its
-checksummed manifest. `scripts/render_ankiweb_review.py` builds the ignored
-local review page used before an upload session.
+derivatives to check each project's still set and refresh its checksummed
+manifest. `scripts/render_ankiweb_review.py` builds the ignored local review
+page from the current listing sources before an upload session. The
+`2026-09-23-v5` release adds template-by-template card clips and real
+interaction captures; public listing text links to these hosted files.
+
+Gallery buttons show a play indicator when their first item is a video, and a
+small count describing the available workflows, games, or templates. The modal
+uses the same hosted media as the listing sources, with stills alongside clips
+for visitors who cannot play video.
 
 ## Cache busting
 

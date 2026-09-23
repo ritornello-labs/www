@@ -28,9 +28,9 @@ def finalize(release: str) -> Path:
     projects: dict[str, object] = {}
     for project_dir in sorted(path for path in release_dir.iterdir() if path.is_dir()):
         missing: list[str] = []
-        galleries = sorted(project_dir.glob("gallery-*.png"))
+        galleries = sorted(project_dir.glob("*.png"))
         if len(galleries) < 2:
-            missing.append("at least two gallery-*.png files")
+            missing.append("at least two authentic PNG stills")
         if missing:
             raise FileNotFoundError(f"{project_dir.name}: missing {', '.join(missing)}")
 
@@ -49,7 +49,7 @@ def finalize(release: str) -> Path:
                 }
                 for path in files
             ],
-            "gallery_count": len(galleries),
+            "still_count": len(galleries),
             "motion": motion,
         }
 

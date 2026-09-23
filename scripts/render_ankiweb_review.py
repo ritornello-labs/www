@@ -11,75 +11,70 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 WORKSPACE = ROOT.parent
 OUTPUT = ROOT / ".tmp-ankiweb-review" / "index.html"
-RELEASE = "2026-08-06-v4"
+RELEASE = "2026-09-23-v5"
 
 LISTINGS = (
     (
         "GeoTrainer", "geo-trainer", WORKSPACE / "anki-geo-trainer/release/ankiweb.md",
-        "2026-08-06-v4", ("gallery-01.png", "gallery-02.png"), ("place.mp4", "river.mp4"),
     ),
     (
         "Hanzi Handwriting",
         "hanzi-handwriting",
         WORKSPACE / "anki-deck-styling/release/hanzi-handwriting.md",
-        "2026-07-31-v2", ("gallery-01.png", "gallery-02.png", "gallery-03.png"), ("demo.mp4",),
     ),
     (
         "Sight Singing", "sight-singing", WORKSPACE / "sight-singing-deck/release/ankiweb.md",
-        "2026-08-05-v3", ("gallery-01.png", "gallery-02.png"), (),
     ),
     (
         "Music Dictation", "dictation", WORKSPACE / "sight-singing-deck/release/dictation-ankiweb.md",
-        "2026-08-06-v4", ("gallery-01.png", "gallery-02.png"), ("demo.mp4",),
     ),
     (
         "Regions of China", "chinese-regions", WORKSPACE / "chinese-regions/release/ankiweb.md",
-        "2026-08-05-v3", ("gallery-01.png", "gallery-02.png"), ("demo.mp4",),
     ),
     (
         "U.S. Regions", "us-regions", WORKSPACE / "us-regions/release/ankiweb.md",
-        "2026-07-31-v2", ("gallery-01.png", "gallery-02.png"), ("demo.mp4",),
     ),
     (
         "Taiwan Divisions",
         "taiwan-divisions",
         WORKSPACE / "anki-deck-styling/release/taiwan-divisions.md",
-        "2026-07-31-v2", ("gallery-01.png", "gallery-02.png", "gallery-03.png"), ("demo.mp4",),
     ),
     (
         "Web Embed Tools",
         "web-embed-tools",
         WORKSPACE / "anki-web-embed-tools/release/ankiweb.md",
-        "2026-07-31-v2", ("gallery-01.png", "gallery-02.png", "gallery-03.png"), ("demo.mp4",),
     ),
     (
         "Fractional Scheduler",
         "fractional-scheduler",
         WORKSPACE / "anki-fractional-scheduler/release/ankiweb.md",
-        "2026-08-05-v3", ("gallery-01.png", "gallery-02.png"), (),
     ),
     (
         "Study Triage", "study-triage", WORKSPACE / "study-triage/release/ankiweb-description.md",
-        "2026-08-06-v4", ("gallery-01.png", "gallery-02.png"), ("demo.mp4",),
     ),
     (
         "Chinese Dynasties", "chinese-dynasties", WORKSPACE / "chinese-dynasties/release/ankiweb.md",
-        "2026-08-05-v3", ("dynasty-map-front.png", "dynasty-map-answer.png"), (),
     ),
     (
         "Chat With Your Cards — v0.1.0 public preview",
         "chat-with-your-cards",
         WORKSPACE / "chat-with-your-cards/release/ankiweb.md",
-        "2026-08-06-v4", ("gallery-01.png", "gallery-02.png"), ("demo.mp4",),
     ),
     (
         "Brazilian DDD Codes", "brazil-ddd-codes", WORKSPACE / "brazil-ddd-codes/release/ankiweb.md",
-        "2026-08-06-v4", ("gallery-01.png", "gallery-02.png", "gallery-03.png", "gallery-04.png"), (),
+    ),
+    (
+        "U.S. States", "us-states", WORKSPACE / "anki-deck-styling/release/us-states.md",
+    ),
+    (
+        "Brazilian States", "brazilian-states",
+        WORKSPACE / "anki-deck-styling/release/brazilian-states.md",
     ),
 )
 
 IMAGE_RE = re.compile(r"!\[(?P<alt>[^\]]*)\]\((?P<url>[^)]+)\)")
 LINK_RE = re.compile(r"(?<!!)\[(?P<label>[^\]]+)\]\((?P<url>[^)]+)\)")
+MEDIA_URL_RE = re.compile(r"https://ritornello\.dev/media/ankiweb/[^\s)\"<>]+")
 
 
 def _inline(text: str) -> str:
@@ -161,14 +156,18 @@ def render() -> Path:
     OUTPUT.parent.mkdir(parents=True, exist_ok=True)
     cards = []
     listings = []
-    for title, slug, listing_path, media_release, images, videos in LISTINGS:
-        media = f"/media/ankiweb/{media_release}/{slug}"
-        image_tags = "".join(f'<img src="{media}/{name}" alt="">' for name in images)
+    for title, slug, listing_path in LISTINGS:
+        markdown = listing_path.read_text(encoding="utf-8")
+        media_urls = list(dict.fromkeys(MEDIA_URL_RE.findall(markdown)))
+        images = [_local_url(url) for url in media_urls if url.lower().endswith((".png", ".gif", ".webp"))]
+        videos = [_local_url(url) for url in media_urls if url.lower().endswith(".mp4")]
+        image_tags = "".join(f'<img src="{url}" alt="">' for url in images)
+        poster = next((url for url in images if url.endswith(".png")), images[0] if images else "")
         video_tags = "".join(
-            f'<video controls muted preload="metadata" poster="{media}/{images[0]}"><source src="{media}/{name}" type="video/mp4"></video>'
-            for name in videos
+            f'<video controls muted preload="metadata" poster="{poster}"><source src="{url}" type="video/mp4"></video>'
+            for url in videos
         )
-        media_links = " · ".join(f'<a href="{media}/{name}">{html.escape(name)}</a>' for name in videos)
+        media_links = " · ".join(f'<a href="{url}">{html.escape(Path(url).name)}</a>' for url in videos)
         cards.append(
             f"""
             <article class="media-card">
@@ -183,7 +182,7 @@ def render() -> Path:
             f"""
             <article class="listing" id="{slug}">
               <div class="listing-label">{html.escape(title)}</div>
-              {_body(listing_path.read_text(encoding="utf-8"))}
+              {_body(markdown)}
             </article>
             """
         )
