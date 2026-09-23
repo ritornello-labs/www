@@ -83,7 +83,7 @@
         'See every affected deck muted after the temporary triage action.'
       ],
       '2026-09-23-v5',
-      '1 workflow · 2 stills'
+      '3 samples'
     ),
     'geo-trainer': gallery(
       'GeoTrainer',
@@ -164,7 +164,7 @@
         'Check Huádōng against the loaded East China reference before grading.'
       ],
       '2026-09-23-v5',
-      '1 clip · 2 stills'
+      '3 samples'
     ),
     'chinese-dynasties': gallery(
       'Chinese Dynasties',
@@ -232,7 +232,7 @@
         'All three accepted strokes of 万 stay visible when the writing exercise is complete.'
       ],
       '2026-09-23-v5',
-      '1 exercise · 3 stills'
+      '4 samples'
     )
   };
 })();
