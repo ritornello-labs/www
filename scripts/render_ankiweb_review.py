@@ -73,12 +73,23 @@ LISTINGS = (
 )
 
 IMAGE_RE = re.compile(r"!\[(?P<alt>[^\]]*)\]\((?P<url>[^)]+)\)")
+LINKED_IMAGE_RE = re.compile(
+    r"\[!\[(?P<alt>[^\]]*)\]\((?P<image>[^)]+)\)\]\((?P<link>[^)]+)\)"
+)
 LINK_RE = re.compile(r"(?<!!)\[(?P<label>[^\]]+)\]\((?P<url>[^)]+)\)")
 MEDIA_URL_RE = re.compile(r"https://ritornello\.dev/media/ankiweb/[^\s)\"<>]+")
 
 
 def _inline(text: str) -> str:
     escaped = html.escape(text)
+    escaped = LINKED_IMAGE_RE.sub(
+        lambda match: (
+            f'<a href="{_local_url(match.group("link"))}">'
+            f'<img alt="{match.group("alt")}" src="{_local_url(match.group("image"))}">'
+            "</a>"
+        ),
+        escaped,
+    )
     escaped = IMAGE_RE.sub(
         lambda match: (
             f'<img alt="{html.escape(match.group("alt"))}" '
