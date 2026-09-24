@@ -18,7 +18,7 @@
     };
   }
 
-  function templateGallery(title, slug, templates) {
+  function templateGallery(title, slug, templates, release) {
     var files = [];
     var captions = [];
     templates.forEach(function (template) {
@@ -27,7 +27,7 @@
       captions.push(template.video);
       captions.push(template.still);
     });
-    return gallery(title, slug, files, captions, '2026-09-23-v5', templates.length + ' templates');
+    return gallery(title, slug, files, captions, release || '2026-09-23-v5', templates.length + ' templates');
   }
 
   window.ritornelloGalleries = {
@@ -143,7 +143,7 @@
       {slug: 'state-to-region', video: 'Place Colorado in its Census region, then reveal the West.', still: 'Colorado’s Census region and locator-map answer.'},
       {slug: 'state-to-division', video: 'Place Kentucky in its Census division, then reveal East South Central.', still: 'Kentucky’s Census division and locator-map answer.'},
       {slug: 'connections', video: 'Recall the states and waterways bordering Tennessee, then reveal its connections.', still: 'Tennessee’s neighboring-state connections card.'}
-    ]),
+    ], '2026-09-23-v6'),
     'brazilian-states': templateGallery('Brazilian States', 'brazilian-states', [
       {slug: 'map-to-state', video: 'Identify Amazonas from its highlighted map, then reveal the state name.', still: 'Amazonas revealed from a highlighted-state map.'},
       {slug: 'state-to-capital', video: 'Recall Bahia’s capital, then reveal Salvador.', still: 'Salvador revealed as the capital of Bahia.'},
@@ -153,7 +153,7 @@
       {slug: 'abbreviation-to-state', video: 'Expand PE into Pernambuco, then reveal the state.', still: 'Pernambuco revealed from its PE abbreviation.'},
       {slug: 'state-to-abbreviation', video: 'Recall Mato Grosso do Sul’s abbreviation, then reveal MS.', still: 'MS revealed as Mato Grosso do Sul’s abbreviation.'},
       {slug: 'population', video: 'Estimate São Paulo’s population, then reveal the 2022 figure.', still: 'São Paulo’s 2022 population answer card.'}
-    ]),
+    ], '2026-09-23-v6'),
     'chinese-regions': gallery(
       'Regions of China',
       'chinese-regions',

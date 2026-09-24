@@ -1,0 +1,398 @@
+{
+  "policy": {
+    "canonical_host": "https://ritornello.dev",
+    "capture_standard": "Motion is recorded from actual Anki/workbench UI interaction; gallery images are distinct real states from the same workflows.",
+    "repository_policy": "Hosted derivatives live here; project repositories link to them instead of committing duplicate videos."
+  },
+  "projects": {
+    "brazilian-states": {
+      "files": [
+        {
+          "bytes": 24815,
+          "file": "abbreviation-to-state-front.png",
+          "sha256": "e0cc223deab490e52e102acc40c17b7884082a4d7aa6b275c224aefe6a3d9c2a"
+        },
+        {
+          "bytes": 109755,
+          "file": "abbreviation-to-state.gif",
+          "sha256": "bda5be001e0a71e3f4742cc60defd19d5f451e2cdfb52b2fc8a6452c38ea744c"
+        },
+        {
+          "bytes": 122354,
+          "file": "abbreviation-to-state.mp4",
+          "sha256": "180c5ba301cc6a3627817510539a1294a5e1b884d6f883303515a52814c2bcd0"
+        },
+        {
+          "bytes": 128063,
+          "file": "abbreviation-to-state.png",
+          "sha256": "f9891f74ea436a05c0c29ba510885a46dee70c44687f845012029ea00a6d22bb"
+        },
+        {
+          "bytes": 32517,
+          "file": "capital-to-state-front.png",
+          "sha256": "3fc5e72cf09e210331cf7766ea5fc04515a731f27874ae04c668b603767ddc2f"
+        },
+        {
+          "bytes": 101130,
+          "file": "capital-to-state.gif",
+          "sha256": "50fc4d8257715c30703c72fe99140fc3b1f15e7f6a692ee52b0b62e69a2f5f82"
+        },
+        {
+          "bytes": 205792,
+          "file": "capital-to-state.mp4",
+          "sha256": "7b56862aa209b61f418ba5881eb7a97686d1590be785babc60dbf4f983b15cc0"
+        },
+        {
+          "bytes": 425203,
+          "file": "capital-to-state.png",
+          "sha256": "7e5ef5f8cf8791cc875cd4f70028890380b2f1a524c7494dd1b3ab20c49afcfe"
+        },
+        {
+          "bytes": 65890,
+          "file": "map-to-state-front.png",
+          "sha256": "5c343be200805a983ca5477401cd9947e3fb504ec34e2ebe74ab0f1aec0e7d97"
+        },
+        {
+          "bytes": 106884,
+          "file": "map-to-state.gif",
+          "sha256": "3945b4c7a8329c9914c1bb1556e5adfd2a6af0122307da0c0671d1cc9d976e70"
+        },
+        {
+          "bytes": 190243,
+          "file": "map-to-state.mp4",
+          "sha256": "5b68fcd264105be29ca731ae2d44cac28a5f8c7608da719b402b67423a8ef2ae"
+        },
+        {
+          "bytes": 293533,
+          "file": "map-to-state.png",
+          "sha256": "b132cd1da867c6c3fb25617b88aabb43257d32a43e9e4a23208c8cb8122384a1"
+        },
+        {
+          "bytes": 27375,
+          "file": "neighbors-front.png",
+          "sha256": "651ddaf93e00812f953aee075221578bfee23faa0aacfc883c020476037ce420"
+        },
+        {
+          "bytes": 78974,
+          "file": "neighbors.gif",
+          "sha256": "186713883febebfcde25d92be91cbe72234c0278552b54eeb649dd3396f5e458"
+        },
+        {
+          "bytes": 141804,
+          "file": "neighbors.mp4",
+          "sha256": "cc5468f19b6eba14d4b988c8d8f353352244220896454079a44ce4e4301bbc3c"
+        },
+        {
+          "bytes": 281834,
+          "file": "neighbors.png",
+          "sha256": "4d11025ebe256e8c79b561c6b26cf26a44e6029a35d2bd754ba25891a19bd2e8"
+        },
+        {
+          "bytes": 24434,
+          "file": "population-front.png",
+          "sha256": "18396a0a1529113c25b0d76be227f197de93c5f20701aefa364c6d7d22abf4c2"
+        },
+        {
+          "bytes": 116669,
+          "file": "population.gif",
+          "sha256": "5dd0d413bfc70d1c266e68e7a2a617b1d63a29fcc2c197499c21926854a48822"
+        },
+        {
+          "bytes": 136704,
+          "file": "population.mp4",
+          "sha256": "53c4ecc6f7fbbfcbfbe8988730eca07ba3d27c9d8d96d3901d0775c89fbd5a18"
+        },
+        {
+          "bytes": 140025,
+          "file": "population.png",
+          "sha256": "eb1960daf0ff348d38e6831bddb15f5a33acf14179bb9ad312bdf1fe3934284a"
+        },
+        {
+          "bytes": 144499,
+          "file": "state-on-map-front.png",
+          "sha256": "a0c0e9768397edde043422bebeca61811a1c66074f6ccc24330f4ec91bd634c7"
+        },
+        {
+          "bytes": 101047,
+          "file": "state-on-map.gif",
+          "sha256": "c6112e8f324718a58ed99754a7563fbc25dfae34206006e561ade4df535cc140"
+        },
+        {
+          "bytes": 167742,
+          "file": "state-on-map.mp4",
+          "sha256": "18cb57de434ac3a9094c54d5b1c3e7729f7f83c9f388fc865cfc0175eff71395"
+        },
+        {
+          "bytes": 278672,
+          "file": "state-on-map.png",
+          "sha256": "c4a483d206bf53b9b403ba47a2f0b6df5a401765ad253e8c741d0feac0a555a2"
+        },
+        {
+          "bytes": 25440,
+          "file": "state-to-abbreviation-front.png",
+          "sha256": "f84fe7ceff4746d22fcb306fb7bba17aa4741f79b180e6ba8240d4d4f5bb8483"
+        },
+        {
+          "bytes": 121615,
+          "file": "state-to-abbreviation.gif",
+          "sha256": "b27f64d95be07f2f6e1a10af2f5176561c1081bd1b06bfffb263a78b296b1d52"
+        },
+        {
+          "bytes": 125719,
+          "file": "state-to-abbreviation.mp4",
+          "sha256": "cc288f0c3d6a080096647b857b1e65b638e8c6b54f419e6badc5a15e8c06cc09"
+        },
+        {
+          "bytes": 139572,
+          "file": "state-to-abbreviation.png",
+          "sha256": "2c647a4f6d68a1df4b7fd48901e8118f586383cc37b0a68814e068447ab9386c"
+        },
+        {
+          "bytes": 31164,
+          "file": "state-to-capital-front.png",
+          "sha256": "6fda2b8ead40e82fbd794313b1cdc9ac7e38e23995fb7578ea0026278a2f74c9"
+        },
+        {
+          "bytes": 95875,
+          "file": "state-to-capital.gif",
+          "sha256": "af9689643f0c1308aaa854ce27908e4228fb7f8e511b23c28e9c5649f808a292"
+        },
+        {
+          "bytes": 167985,
+          "file": "state-to-capital.mp4",
+          "sha256": "215b4c949520f97f9346348bb1c784d9fe4b58beed66615030c7e9afcd7085a9"
+        },
+        {
+          "bytes": 452790,
+          "file": "state-to-capital.png",
+          "sha256": "58f2df6d0467beacd3c89d9bce7ca6e138f949161e3b51de4316cdcbcddee0f0"
+        }
+      ],
+      "motion": [
+        "abbreviation-to-state.gif",
+        "abbreviation-to-state.mp4",
+        "capital-to-state.gif",
+        "capital-to-state.mp4",
+        "map-to-state.gif",
+        "map-to-state.mp4",
+        "neighbors.gif",
+        "neighbors.mp4",
+        "population.gif",
+        "population.mp4",
+        "state-on-map.gif",
+        "state-on-map.mp4",
+        "state-to-abbreviation.gif",
+        "state-to-abbreviation.mp4",
+        "state-to-capital.gif",
+        "state-to-capital.mp4"
+      ],
+      "still_count": 16
+    },
+    "us-states": {
+      "files": [
+        {
+          "bytes": 308519,
+          "file": "abbreviation-to-state-front.png",
+          "sha256": "87acf8a325e669801378b21adb95affc01c6294f663f05a4eb2d863d8ba959d4"
+        },
+        {
+          "bytes": 274617,
+          "file": "abbreviation-to-state.gif",
+          "sha256": "f9b6bc8c95f0f0f99c178f980a64e39488b508d281bd9cc1725ed8287a75dbbc"
+        },
+        {
+          "bytes": 331582,
+          "file": "abbreviation-to-state.mp4",
+          "sha256": "e95ca4c75a5445b1b4853c295e6eccea46ca637e4425fb79860aa321b2947f44"
+        },
+        {
+          "bytes": 321176,
+          "file": "abbreviation-to-state.png",
+          "sha256": "7bd1cfa111b3d3e50c2ee4d6826eb1c6543af00aef53d0a4f529a36ca4bf34b4"
+        },
+        {
+          "bytes": 284332,
+          "file": "capital-to-state-front.png",
+          "sha256": "adf936cb8b91b755a6d5bf6f9fdd21ca881b34515e98f29f0f68d9cb7ca8652c"
+        },
+        {
+          "bytes": 337055,
+          "file": "capital-to-state.gif",
+          "sha256": "c13e12b0d9cb6fb25dca3a334aea2266ea9e489e3629a8bf02bf8f9aa2a2a436"
+        },
+        {
+          "bytes": 318056,
+          "file": "capital-to-state.mp4",
+          "sha256": "f540b7d10302a784e97c9b7cf9b02070349815a4226267857034d7297777ce65"
+        },
+        {
+          "bytes": 280436,
+          "file": "capital-to-state.png",
+          "sha256": "175b601f136e9603a9ced60456fefd053e1921b65e908eb29b62d7875876d816"
+        },
+        {
+          "bytes": 423908,
+          "file": "connections-front.png",
+          "sha256": "a1f143bb385c3b970d897f44d36ac464ffb0a9302d5a485b076c5cf97fc4d8a6"
+        },
+        {
+          "bytes": 329286,
+          "file": "connections.gif",
+          "sha256": "cb88fb3ecf4fe0ae4a3fc31bd1e25ff7824d2ac82a5f0f9594d5af38fbf1c3a6"
+        },
+        {
+          "bytes": 240351,
+          "file": "connections.mp4",
+          "sha256": "d3f8707efa1cffca0b6fe38ce366fec01738d10ebc251d54149866b52d94d94f"
+        },
+        {
+          "bytes": 291000,
+          "file": "connections.png",
+          "sha256": "029c711bccc659826bb92156fc0b9106d4e2d49fe8df7aa690e4a7a5bc780db7"
+        },
+        {
+          "bytes": 349233,
+          "file": "map-to-state-front.png",
+          "sha256": "ea75e92dd2fb7a0d7d856ee996ae4db442eebc3f8a9c0770c9dc4ec6f8980af2"
+        },
+        {
+          "bytes": 345511,
+          "file": "map-to-state.gif",
+          "sha256": "1650f16e76b8f936d5b1e3fed8e4e7d91975e1ca216e1a78fcc209858ece317d"
+        },
+        {
+          "bytes": 194013,
+          "file": "map-to-state.mp4",
+          "sha256": "a4b39a756d1690321dd055ceb2ab80dd89004a09ece88e83dc9b15b77ab7d2db"
+        },
+        {
+          "bytes": 268811,
+          "file": "map-to-state.png",
+          "sha256": "f3d6d82c21bcfa0ccae8fb538acd1d25bcda03e3918206ee5d7f890e674327be"
+        },
+        {
+          "bytes": 350222,
+          "file": "state-on-map-front.png",
+          "sha256": "48cff2a77b264bbb51e7b052643418bb37c4f4590bcb90bfad7cee4cd76bfb31"
+        },
+        {
+          "bytes": 317971,
+          "file": "state-on-map.gif",
+          "sha256": "217bc9a8504d81df6fd6a2f54fa575877255e44821bae474091a6750f82564cc"
+        },
+        {
+          "bytes": 222248,
+          "file": "state-on-map.mp4",
+          "sha256": "3726bc41b9fa8da3c4f21421a6d4145d29f065423b1b998f0429527cfe0ec9a8"
+        },
+        {
+          "bytes": 278165,
+          "file": "state-on-map.png",
+          "sha256": "480d09898ce62e197d5767842ff835065f4ee236951f0fdfc33227042e551f59"
+        },
+        {
+          "bytes": 329488,
+          "file": "state-to-abbreviation-front.png",
+          "sha256": "47021c5e23700b877b0846bdfbd28cb506badb6b31c16a22939b2c6cc54873fe"
+        },
+        {
+          "bytes": 282880,
+          "file": "state-to-abbreviation.gif",
+          "sha256": "24ef8f35542c88f01872fc6cb3000095590f2f905ee92e0a7330d3b498a2e8fb"
+        },
+        {
+          "bytes": 339932,
+          "file": "state-to-abbreviation.mp4",
+          "sha256": "f5795a8ec2c024d3deef39b848c1b79a6c172c92738d6acde84f9b9c4cd671d2"
+        },
+        {
+          "bytes": 326600,
+          "file": "state-to-abbreviation.png",
+          "sha256": "1fc639a1acb8c15d77baabb6f9eb88af71774d46825e76b692a0164aae147024"
+        },
+        {
+          "bytes": 294200,
+          "file": "state-to-capital-front.png",
+          "sha256": "cc22aaf5c8fb0a8ee2fe7103b0074263fc78bb7ceafe1266151f902ada132979"
+        },
+        {
+          "bytes": 255422,
+          "file": "state-to-capital.gif",
+          "sha256": "1965653fc6b24f89aa6c61b3a25665e49f79c1bad589df0a324b7c7129be81f8"
+        },
+        {
+          "bytes": 330315,
+          "file": "state-to-capital.mp4",
+          "sha256": "99f0178c7016e4db9eacf33b2c49aefb7f9a783ac4ac8a1481e001e64d54f92f"
+        },
+        {
+          "bytes": 314898,
+          "file": "state-to-capital.png",
+          "sha256": "ea92df8fb69f9afbb184a5d1e97f00a92381fc5d640894786538365fa6c67044"
+        },
+        {
+          "bytes": 390685,
+          "file": "state-to-division-front.png",
+          "sha256": "aa9b018ffcc2831aca7fa58ee9007f1eacdf76055de9b1717e6b08f69ffb36b1"
+        },
+        {
+          "bytes": 315977,
+          "file": "state-to-division.gif",
+          "sha256": "dd307ef9b27d7863fb4d7071d1d7feb737458f76c8739bbfec5848a4f439d675"
+        },
+        {
+          "bytes": 232808,
+          "file": "state-to-division.mp4",
+          "sha256": "cd1d8c78f27e540a2b29fddf88a1cec941768951fe92f6e641667a29b8def019"
+        },
+        {
+          "bytes": 287942,
+          "file": "state-to-division.png",
+          "sha256": "ac85c6cf0107f60a36f5bd1090d8cdcdd264cdb6de6eb91ffff3f61c3634bf02"
+        },
+        {
+          "bytes": 396347,
+          "file": "state-to-region-front.png",
+          "sha256": "90c22919ce63421ab26acc5590061e96abd744783ced8423e7c3e75e632b70c0"
+        },
+        {
+          "bytes": 300753,
+          "file": "state-to-region.gif",
+          "sha256": "ab101aed4b62060e4c6d12ed300b379130a414afce552ba4bb34f0ff4ec6c90d"
+        },
+        {
+          "bytes": 236395,
+          "file": "state-to-region.mp4",
+          "sha256": "827f7458e72c3423f8b83b214d2cfd048c16e1e9c0ec4a46b653adcf0e34dc44"
+        },
+        {
+          "bytes": 287017,
+          "file": "state-to-region.png",
+          "sha256": "0376d6098ea5eeedad97cbd5b1f92afb38cd9df5c09ee0df74314dc5fe9388ca"
+        }
+      ],
+      "motion": [
+        "abbreviation-to-state.gif",
+        "abbreviation-to-state.mp4",
+        "capital-to-state.gif",
+        "capital-to-state.mp4",
+        "connections.gif",
+        "connections.mp4",
+        "map-to-state.gif",
+        "map-to-state.mp4",
+        "state-on-map.gif",
+        "state-on-map.mp4",
+        "state-to-abbreviation.gif",
+        "state-to-abbreviation.mp4",
+        "state-to-capital.gif",
+        "state-to-capital.mp4",
+        "state-to-division.gif",
+        "state-to-division.mp4",
+        "state-to-region.gif",
+        "state-to-region.mp4"
+      ],
+      "still_count": 18
+    }
+  },
+  "release": "2026-09-23-v6"
+}

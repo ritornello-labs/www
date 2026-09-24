@@ -52,6 +52,9 @@ manifest. `scripts/render_ankiweb_review.py` builds the ignored local review
 page from the current listing sources before an upload session. The
 `2026-09-23-v5` release adds template-by-template card clips and real
 interaction captures; public listing text links to these hosted files.
+`2026-09-23-v6` supersedes the U.S. and Brazilian States template galleries:
+the reference cards now wait for the lazy Wikipedia pane to load before their
+answer stills are taken. The previous release remains unchanged.
 
 Gallery buttons show a play indicator when their first item is a video, and a
 small count describing the available workflows, games, or templates. The modal
