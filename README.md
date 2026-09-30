@@ -69,3 +69,5 @@ in browsers that cached the old file — bump `N` whenever `styles.css`
 changes so the pair updates atomically.
 
 Support continued development: [ritornello.dev/support](https://ritornello.dev/support).
+
+The stable contribution URL is `https://ritornello.dev/support`. Only `support/index.html` holds the payment-provider link; listings, READMEs and funding files link to the stable page.
