@@ -67,3 +67,5 @@ for visitors who cannot play video.
 `max-age=600`, so a stylesheet change can lag the HTML by up to 10 minutes
 in browsers that cached the old file — bump `N` whenever `styles.css`
 changes so the pair updates atomically.
+
+Support continued development: [ritornello.dev/support](https://ritornello.dev/support).
