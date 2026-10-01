@@ -76,13 +76,13 @@
     'study-triage': gallery(
       'Study Triage',
       'study-triage',
-      [{file: 'demo.mp4', poster: 'gallery-01.png'}, 'gallery-01.png', 'gallery-02.png'],
+      ['preview.gif', 'gallery-01.png', 'gallery-02.png'],
       [
         'Mute a crowded new-card tree for today without changing tomorrow’s limits.',
         'Start with new cards spread across a messy, expanded deck tree.',
         'See every affected deck muted after the temporary triage action.'
       ],
-      '2026-09-23-v5',
+      '2026-09-30-v2',
       '3 samples'
     ),
     'geo-trainer': gallery(

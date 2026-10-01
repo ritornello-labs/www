@@ -1,0 +1,39 @@
+{
+  "policy": {
+    "canonical_host": "https://ritornello.dev",
+    "capture_standard": "Motion is recorded from actual Anki/workbench UI interaction; gallery images are distinct real states from the same workflows.",
+    "repository_policy": "Hosted derivatives live here; project repositories link to them instead of committing duplicate videos."
+  },
+  "projects": {
+    "study-triage": {
+      "files": [
+        {
+          "bytes": 77824,
+          "file": "demo.mp4",
+          "sha256": "309f47d4c19d62b3edc713759a031faa2404dc2199c156cf73382dca5448be2c"
+        },
+        {
+          "bytes": 65557,
+          "file": "gallery-01.png",
+          "sha256": "dd1dba0b3d78c64e738d1ef8650a66a0ba55bb4ce9c396a0d30502eaea242d78"
+        },
+        {
+          "bytes": 56790,
+          "file": "gallery-02.png",
+          "sha256": "7eb1823f6802fd6f3366782029dd79c95a6c68df39b4a9b4f4c01573a51550ab"
+        },
+        {
+          "bytes": 125845,
+          "file": "preview.gif",
+          "sha256": "cc5b06ca76077e004edd7a0237006533a0f8dc7ba87d683f44e54bfa3b824f56"
+        }
+      ],
+      "motion": [
+        "demo.mp4",
+        "preview.gif"
+      ],
+      "still_count": 2
+    }
+  },
+  "release": "2026-09-30-v2"
+}
