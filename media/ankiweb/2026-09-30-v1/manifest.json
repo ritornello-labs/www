@@ -1,0 +1,26 @@
+{
+  "policy": {
+    "canonical_host": "https://ritornello.dev",
+    "capture_standard": "Motion is recorded from actual Anki/workbench UI interaction; gallery images are distinct real states from the same workflows.",
+    "repository_policy": "Hosted derivatives live here; project repositories link to them instead of committing duplicate videos."
+  },
+  "projects": {
+    "chinese-dynasties": {
+      "files": [
+        {
+          "bytes": 425325,
+          "file": "northern-wei-map-answer.png",
+          "sha256": "37a27196b20e0d9291b85c1c7cb71bacc11f1aa159c68c38fa0320e8b8b64c5f"
+        },
+        {
+          "bytes": 160317,
+          "file": "northern-wei-map-front.png",
+          "sha256": "973724467d40d95a697773224849db340e90605131ba69e9f77c47647fdc6a44"
+        }
+      ],
+      "motion": [],
+      "still_count": 2
+    }
+  },
+  "release": "2026-09-30-v1"
+}

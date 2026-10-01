@@ -169,12 +169,12 @@
     'chinese-dynasties': gallery(
       'Chinese Dynasties',
       'chinese-dynasties',
-      ['dynasty-map-front.png', 'dynasty-map-answer.png'],
+      ['northern-wei-map-front.png', 'northern-wei-map-answer.png'],
       [
-        'Recall the territory of the Xia dynasty from a blank historical-map prompt.',
-        'Compare the answer with the reviewed Xia dynasty map and source attribution.'
+        'Recall the territory of the Northern Wei from a blank historical-map prompt.',
+        'Compare the answer with the reviewed Northern Wei map and source attribution.'
       ],
-      '2026-08-05-v3',
+      '2026-09-30-v1',
       'front · answer'
     ),
     'taiwan-divisions': gallery(
