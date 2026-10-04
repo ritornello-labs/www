@@ -23,6 +23,12 @@
       "file": "draw.gif",
       "bytes": 75168,
       "sha256": "4181de22ad0817aa8e0a406ef3b672150db35650ac62bd486cf9b3e4f12a0f26"
+    },
+    {
+      "file": "place-back.png",
+      "bytes": 110571,
+      "sha256": "0dc2465743db42c893434a9cfc86442cc6ff8c61d0e73b02f069c5c447fe663f",
+      "purpose": "reduced-motion website thumbnail from the same native Anki game capture"
     }
   ]
 }
