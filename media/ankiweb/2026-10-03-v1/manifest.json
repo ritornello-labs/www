@@ -1,0 +1,28 @@
+{
+  "date": "2026-10-03",
+  "approved": true,
+  "source": "anki-addon-workbench recording of Anki 25.09 in disposable profile, seeded by current 50-state/200-card APKG",
+  "artifact_sha256": "a8c60baf97589e8c93ad19dc5b63d91d33b6805f1aaffb3a297c44c80fa7f6d9",
+  "items": [
+    {
+      "file": "point.gif",
+      "bytes": 73071,
+      "sha256": "27d9b07d34a5b34b29b56d1a0cbc1c7599041054dc55dd70a8fc37fff6ff43f1"
+    },
+    {
+      "file": "place.gif",
+      "bytes": 125921,
+      "sha256": "d314c38f69460e20b7bf5955607545ad3f16d42b3d1498ee516ba85bd71f0d86"
+    },
+    {
+      "file": "sketch.gif",
+      "bytes": 73274,
+      "sha256": "afd98154a60ed8fa4b962b887c2a75042f7c49bd791e8ef2ac4b955241042a0e"
+    },
+    {
+      "file": "draw.gif",
+      "bytes": 75168,
+      "sha256": "4181de22ad0817aa8e0a406ef3b672150db35650ac62bd486cf9b3e4f12a0f26"
+    }
+  ]
+}
