@@ -111,6 +111,19 @@
       '2026-10-03-v2',
       '4 games'
     ),
+    'geo-trainer-china-subdivisions': gallery(
+      'GeoTrainer: China Provinces & Regions',
+      'geo-trainer-china-subdivisions',
+      ['point.gif', 'place.gif', 'sketch.gif', 'draw.gif'],
+      [
+        'Identify Sichuan from a dot on a map without internal borders.',
+        'Drag Sichuan into place and compare its position with the correct location.',
+        'Sketch Sichuan in context, then compare shape, position and size.',
+        'Draw Sichuan from memory on a blank canvas and reveal the true outline.'
+      ],
+      '2026-10-03-v3',
+      '4 games'
+    ),
     'geo-trainer': gallery(
       'GeoTrainer',
       'geo-trainer',
