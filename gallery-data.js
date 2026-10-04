@@ -98,6 +98,19 @@
       '2026-10-03-v1',
       '4 games'
     ),
+    'geo-trainer-brazil-states': gallery(
+      'GeoTrainer: Brazilian States',
+      'geo-trainer-brazil-states',
+      ['point.gif', 'place.gif', 'sketch.gif', 'draw.gif'],
+      [
+        'Identify Bahia from a dot on a map without internal borders.',
+        'Drag Bahia into place and compare its position with the correct location.',
+        'Sketch Bahia in context, then compare shape, position and size.',
+        'Draw Bahia from memory on a blank canvas and reveal the true outline.'
+      ],
+      '2026-10-03-v2',
+      '4 games'
+    ),
     'geo-trainer': gallery(
       'GeoTrainer',
       'geo-trainer',
