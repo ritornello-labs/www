@@ -124,6 +124,19 @@
       '2026-10-03-v3',
       '4 games'
     ),
+    'geo-trainer-reference-lines-time': gallery(
+      'GeoTrainer: Reference Lines & Time',
+      'geo-trainer-reference-lines-time',
+      ['globe.gif', 'utc.gif', 'date-line.gif', 'atlas.gif'],
+      [
+        'Rotate the globe, place the Tropic of Cancer, and reveal its 23.5° N parallel.',
+        'Convert 22:00 UTC−3 to 01:00 UTC on the next day.',
+        'Recall eastward and westward date-line adjustments, then reveal the illustrated answer.',
+        'Recall Kathmandu’s UTC+5:45 offset, then reveal Nepal Time and its map.'
+      ],
+      '2026-10-04-v1',
+      '4 demos'
+    ),
     'geo-trainer': gallery(
       'GeoTrainer',
       'geo-trainer',
