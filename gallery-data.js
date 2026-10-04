@@ -85,6 +85,19 @@
       '2026-09-30-v2',
       '3 samples'
     ),
+    'geo-trainer-us-states': gallery(
+      'GeoTrainer: U.S. States',
+      'geo-trainer-us-states',
+      ['point.gif', 'place.gif', 'sketch.gif', 'draw.gif'],
+      [
+        'Identify Texas from a dot on a map without internal borders.',
+        'Drag Texas into place and compare its position with the correct location.',
+        'Sketch Texas in context, then compare shape, position and size.',
+        'Draw Texas from memory on a blank canvas and reveal the true outline.'
+      ],
+      '2026-10-03-v1',
+      '4 games'
+    ),
     'geo-trainer': gallery(
       'GeoTrainer',
       'geo-trainer',
