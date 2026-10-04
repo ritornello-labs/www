@@ -97,8 +97,6 @@
         'draw-back.png',
         {file: 'river.mp4', poster: 'river-front.png'},
         'river-back.png',
-        {file: 'current.mp4', poster: 'current-front.png'},
-        'current-back.png',
         {file: 'globe.mp4', poster: 'globe-front.png'},
         'globe-back.png',
         {file: 'point.mp4', poster: 'point-front.png'},
@@ -113,15 +111,13 @@
         'The freehand and true Italy outlines overlaid for shape grading.',
         'Trace the Amazon’s course and reveal the distance-based result.',
         'The completed Amazon river trace and grading result.',
-        'Trace the Gulf Stream in the correct direction and reveal the route score.',
-        'A Gulf Stream trace graded Good for route and direction.',
         'Draw an ellipse around Iceland on the globe and reveal the placement score.',
         'The Iceland ellipse earns Good for coverage and footprint.',
         'Identify the country marked by a dot, then reveal the answer.',
         'The dot’s country, Albania, highlighted after the reveal.'
       ],
       '2026-09-23-v5',
-      '7 games'
+      '6 games'
     ),
     'us-regions': gallery(
       'U.S. Regions and Divisions',
