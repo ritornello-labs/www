@@ -137,6 +137,20 @@
       '2026-10-04-v1',
       '4 demos'
     ),
+    'geo-trainer-physical-geography': gallery(
+      'GeoTrainer: Physical Geography',
+      'geo-trainer-physical-geography',
+      ['river.gif', 'place.gif', 'sketch.gif', 'biome.gif', 'koppen.gif'],
+      [
+        'Zoom and pan the map, trace the Amazon, and compare your course with the river.',
+        'Drag the Sahara into position and compare its placement with the answer.',
+        'Sketch the Tibetan Plateau and compare its position and shape with the answer.',
+        'Recall tropical moist forest vegetation, then reveal a credited photo gallery.',
+        'Identify the Af tropical rainforest distribution and reveal the climate name.'
+      ],
+      '2026-10-04-v1',
+      '5 demos'
+    ),
     'geo-trainer': gallery(
       'GeoTrainer',
       'geo-trainer',

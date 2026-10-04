@@ -146,7 +146,7 @@
     },
     "geo-trainer-physical-geography": {
       "title": "GeoTrainer: Physical Geography",
-      "status": "approved-for-publication",
+      "status": "published-pending-review",
       "notes": 404,
       "cards": 963,
       "media_files": 223,
@@ -207,7 +207,14 @@
           "capture_backend": "ffmpeg-x11grab"
         }
       ],
-      "approval": "Explicit user approval in this chat on 2026-10-04: Okay, I love it. We should proceed."
+      "approval": "Explicit user approval in this chat on 2026-10-04: Okay, I love it. We should proceed.",
+      "ankiweb_id": "1832856685",
+      "release": "v2026.10.04",
+      "canonical_ankiweb_artifact": {
+        "file": "geo-trainer-physical-geography.apkg",
+        "bytes": 28296089,
+        "sha256": "d957dc921bb167c4b40edceb474887923117b6bd3ddea0e50d11953029882639"
+      }
     }
   }
 }
