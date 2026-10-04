@@ -151,6 +151,20 @@
       '2026-10-04-v1',
       '5 demos'
     ),
+    'geo-trainer-plate-tectonics': gallery(
+      'GeoTrainer: Plate Tectonics',
+      'geo-trainer-plate-tectonics',
+      ['point.gif', 'place.gif', 'sketch.gif', 'trace.gif', 'concept.gif'],
+      [
+        'Identify the African Plate from a changing dot, then reveal its outline.',
+        'Drag the Arabian Plate into position and compare with the answer.',
+        'Sketch the Arabian Plate and compare its position and shape.',
+        'Zoom, pan and trace the San Andreas Fault; compare the course and feedback.',
+        'Recall the San Andreas Fault boundary type, then reveal transform and its locator map.'
+      ],
+      '2026-10-04-v1',
+      '5 demos'
+    ),
     'geo-trainer': gallery(
       'GeoTrainer',
       'geo-trainer',
