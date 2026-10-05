@@ -256,6 +256,19 @@
       '2026-10-05-v1',
       '4 demos'
     ),
+    'geo-trainer-argentina-subdivisions': gallery(
+      'GeoTrainer: Argentine Provinces & Buenos Aires City',
+      'geo-trainer-argentina-subdivisions',
+      ['point.gif', 'place.gif', 'sketch.gif', 'draw.gif'],
+      [
+        'Identify Córdoba from a dot on a borderless map; reveal its name and outline.',
+        'Drag Córdoba into place, then compare its location with native distance feedback.',
+        'Sketch Córdoba in context and compare its shape and position.',
+        'Draw Córdoba from memory on a square canvas and compare its outline.'
+      ],
+      '2026-10-05-v1',
+      '4 demos'
+    ),
     'geo-trainer': gallery(
       'GeoTrainer',
       'geo-trainer',
