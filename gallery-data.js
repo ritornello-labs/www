@@ -191,6 +191,19 @@
       '2026-10-04-v1',
       '6 demos'
     ),
+    'geo-trainer-india-subdivisions': gallery(
+      'GeoTrainer: Indian States & Union Territories',
+      'geo-trainer-india-subdivisions',
+      ['point.gif', 'place.gif', 'sketch.gif', 'draw.gif'],
+      [
+        'Identify Maharashtra from a dot on a borderless map; reveal its name and outline.',
+        'Drag Maharashtra into place, then compare its location with native distance feedback.',
+        'Sketch Maharashtra in context and compare its shape and position.',
+        'Draw Maharashtra from memory on a square canvas and compare its outline.'
+      ],
+      '2026-10-04-v1',
+      '4 demos'
+    ),
     'geo-trainer': gallery(
       'GeoTrainer',
       'geo-trainer',
