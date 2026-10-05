@@ -176,6 +176,21 @@
       '2026-10-04-v1',
       '2 demos'
     ),
+    'geo-trainer-world-countries': gallery(
+      'GeoTrainer: World Countries',
+      'geo-trainer-world-countries',
+      ['point.gif', 'place.gif', 'sketch.gif', 'draw.gif', 'membership.gif', 'concept.gif'],
+      [
+        'Identify Italy from a dot on a map without internal borders; reveal its name and outline.',
+        'Drag Italy into place, then compare its location with native distance feedback.',
+        'Sketch France in context, then compare shape and position.',
+        'Draw Italy from memory on a square canvas; compare its outline, including missed islands.',
+        'Zoom and pan Europe, select all 27 EU members, and reveal the membership feedback.',
+        'Recall the Southern Cone grouping basis, then reveal its complete locator map.'
+      ],
+      '2026-10-04-v1',
+      '6 demos'
+    ),
     'geo-trainer': gallery(
       'GeoTrainer',
       'geo-trainer',
