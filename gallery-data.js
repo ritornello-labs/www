@@ -165,6 +165,17 @@
       '2026-10-04-v1',
       '5 demos'
     ),
+    'geo-trainer-islands-archipelagos': gallery(
+      'GeoTrainer: Islands & Archipelagos',
+      'geo-trainer-islands-archipelagos',
+      ['globe.gif', 'concept.gif'],
+      [
+        'Rotate the globe, draw an ellipse around Japan, move and resize it, then reveal coverage and center-offset feedback.',
+        'Recall the Japanese archipelago’s surrounding waters, then reveal the complete locator map.'
+      ],
+      '2026-10-04-v1',
+      '2 demos'
+    ),
     'geo-trainer': gallery(
       'GeoTrainer',
       'geo-trainer',
