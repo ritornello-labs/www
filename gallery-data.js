@@ -269,6 +269,19 @@
       '2026-10-05-v1',
       '4 demos'
     ),
+    'geo-trainer-indonesia-subdivisions': gallery(
+      'GeoTrainer: Indonesian Provinces',
+      'geo-trainer-indonesia-subdivisions',
+      ['point.gif', 'place.gif', 'sketch.gif', 'draw.gif'],
+      [
+        'Identify Kalimantan Utara from a dot on a borderless map; reveal its name and outline.',
+        'Drag Kalimantan Utara into place, then compare its location with native distance feedback.',
+        'Sketch Kalimantan Utara in context and compare its shape and position.',
+        'Draw Kalimantan Utara from memory on a square canvas and compare its outline.'
+      ],
+      '2026-10-05-v1',
+      '4 demos'
+    ),
     'geo-trainer': gallery(
       'GeoTrainer',
       'geo-trainer',
