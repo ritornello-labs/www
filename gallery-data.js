@@ -217,6 +217,19 @@
       '2026-10-04-v1',
       '4 demos'
     ),
+    'geo-trainer-canada-subdivisions': gallery(
+      'GeoTrainer: Canadian Provinces & Territories',
+      'geo-trainer-canada-subdivisions',
+      ['point.gif', 'place.gif', 'sketch.gif', 'draw.gif'],
+      [
+        'Identify Ontario from a dot on a borderless map; reveal its name and outline.',
+        'Drag Ontario into place, then compare its location with native distance feedback.',
+        'Sketch Ontario in context and compare its shape and position.',
+        'Draw Ontario from memory on a square canvas and compare its outline.'
+      ],
+      '2026-10-04-v1',
+      '4 demos'
+    ),
     'geo-trainer': gallery(
       'GeoTrainer',
       'geo-trainer',
