@@ -204,6 +204,19 @@
       '2026-10-04-v1',
       '4 demos'
     ),
+    'geo-trainer-russia-subdivisions': gallery(
+      'GeoTrainer: Russian Regions',
+      'geo-trainer-russia-subdivisions',
+      ['point.gif', 'place.gif', 'sketch.gif', 'draw.gif'],
+      [
+        'Identify Sakha Republic from a dot on a borderless map; reveal its name and outline.',
+        'Drag Sakha Republic into place, then compare its location with native distance feedback.',
+        'Sketch Sakha Republic in context and compare its shape and position.',
+        'Draw Sakha Republic from memory on a square canvas and compare its outline.'
+      ],
+      '2026-10-04-v1',
+      '4 demos'
+    ),
     'geo-trainer': gallery(
       'GeoTrainer',
       'geo-trainer',
