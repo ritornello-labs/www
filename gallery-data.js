@@ -230,6 +230,19 @@
       '2026-10-04-v1',
       '4 demos'
     ),
+    'geo-trainer-australia-subdivisions': gallery(
+      'GeoTrainer: Australian States & Territories',
+      'geo-trainer-australia-subdivisions',
+      ['point.gif', 'place.gif', 'sketch.gif', 'draw.gif'],
+      [
+        'Identify Queensland from a dot on a borderless map; reveal its name and outline.',
+        'Drag Queensland into place, then compare its location with native distance feedback.',
+        'Sketch Queensland in context and compare its shape and position.',
+        'Draw Queensland from memory on a square canvas and compare its outline.'
+      ],
+      '2026-10-04-v1',
+      '4 demos'
+    ),
     'geo-trainer': gallery(
       'GeoTrainer',
       'geo-trainer',
