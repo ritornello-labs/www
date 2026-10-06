@@ -372,14 +372,12 @@
     'chinese-regions': gallery(
       'Regions of China',
       'chinese-regions',
-      [{file: 'demo.mp4', poster: 'gallery-01.png'}, 'gallery-01.png', 'gallery-02.png'],
+      ['demo.gif'],
       [
-        'Read East China in pinyin, reveal the answer and loaded reference, then grade the card.',
-        'Recall the pinyin for 华东 on a clean, full-window card front.',
-        'Check Huádōng against the loaded East China reference before grading.'
+        'Read East China in pinyin, reveal the answer and loaded reference, then grade the card.'
       ],
       '2026-09-23-v5',
-      '3 samples'
+      '1 demo'
     ),
     'chinese-dynasties': gallery(
       'Chinese Dynasties',
@@ -439,15 +437,12 @@
     'hanzi-handwriting': gallery(
       'HSK 3.0 Hanzi Handwriting',
       'hanzi-handwriting',
-      [{file: 'demo.mp4', poster: 'gallery-01.png'}, 'gallery-01.png', 'gallery-02.png', 'gallery-03.png'],
+      ['preview.gif'],
       [
-        'Write 万 with a mouse: three wrong strokes trigger a brief hint, then correct strokes remain until the character is complete.',
-        'Begin writing 万 from memory on the blank practice grid.',
-        'After three wrong attempts, a purple first-stroke hint appears briefly without revealing the whole character.',
-        'All three accepted strokes of 万 stay visible when the writing exercise is complete.'
+        'Write 万 with a mouse: three wrong strokes trigger a brief hint, then correct strokes remain until the character is complete.'
       ],
       '2026-09-23-v5',
-      '4 samples'
+      '1 demo'
     )
   };
 })();
