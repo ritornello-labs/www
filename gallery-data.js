@@ -282,40 +282,62 @@
       '2026-10-05-v1',
       '4 demos'
     ),
-    'geo-trainer': gallery(
-      'GeoTrainer',
-      'geo-trainer',
-      [
-        {file: 'place.mp4', poster: 'place-front.png'},
-        'place-back.png',
-        {file: 'sketch.mp4', poster: 'sketch-front.png'},
-        'sketch-back.png',
-        {file: 'draw.mp4', poster: 'draw-front.png'},
-        'draw-back.png',
-        {file: 'river.mp4', poster: 'river-front.png'},
-        'river-back.png',
-        {file: 'globe.mp4', poster: 'globe-front.png'},
-        'globe-back.png',
-        {file: 'point.mp4', poster: 'point-front.png'},
-        'point-back.png'
-      ],
-      [
-        'Drag the Libyan Desert silhouette onto a blank map and reveal the placement score.',
-        'The Libyan Desert placement after GeoTrainer grades the distance.',
-        'Sketch Italy in its map position, then compare shape and placement with the answer.',
-        'GeoTrainer compares the freehand Italy sketch with the true outline.',
-        'Draw Italy’s outline from memory on a blank canvas and reveal the overlay.',
-        'The freehand and true Italy outlines overlaid for shape grading.',
-        'Trace the Amazon’s course and reveal the distance-based result.',
-        'The completed Amazon river trace and grading result.',
-        'Draw an ellipse around Iceland on the globe and reveal the placement score.',
-        'The Iceland ellipse earns Good for coverage and footprint.',
-        'Identify the country marked by a dot, then reveal the answer.',
-        'The dot’s country, Albania, highlighted after the reveal.'
-      ],
-      '2026-09-23-v5',
-      '6 games'
-    ),
+    'geo-trainer': {
+        "title": "GeoTrainer: Full Edition",
+        "badge": "10 demos",
+        "items": [
+            {
+                "type": "image",
+                "src": "media/ankiweb/2026-10-05-v1/geo-trainer-full/identify.gif",
+                "caption": "Identify — Italy — actual Anki practice."
+            },
+            {
+                "type": "image",
+                "src": "media/ankiweb/2026-10-05-v1/geo-trainer-full/place.gif",
+                "caption": "Place — California — actual Anki practice."
+            },
+            {
+                "type": "image",
+                "src": "media/ankiweb/2026-10-05-v1/geo-trainer-full/sketch.gif",
+                "caption": "Sketch — France — actual Anki practice."
+            },
+            {
+                "type": "image",
+                "src": "media/ankiweb/2026-10-05-v1/geo-trainer-full/draw.gif",
+                "caption": "Draw — Maharashtra, India — actual Anki practice."
+            },
+            {
+                "type": "image",
+                "src": "media/ankiweb/2026-10-05-v1/geo-trainer-full/membership.gif",
+                "caption": "Select members — actual Anki practice."
+            },
+            {
+                "type": "image",
+                "src": "media/ankiweb/2026-10-05-v1/geo-trainer-full/river.gif",
+                "caption": "Trace a river — actual Anki practice."
+            },
+            {
+                "type": "image",
+                "src": "media/ankiweb/2026-10-05-v1/geo-trainer-full/marshall-globe.gif",
+                "caption": "Place an archipelago — actual Anki practice."
+            },
+            {
+                "type": "image",
+                "src": "media/ankiweb/2026-10-05-v1/geo-trainer-full/reference-globe.gif",
+                "caption": "Place a reference line — actual Anki practice."
+            },
+            {
+                "type": "image",
+                "src": "media/ankiweb/2026-10-05-v1/geo-trainer-full/utc.gif",
+                "caption": "Convert UTC and date — actual Anki practice."
+            },
+            {
+                "type": "image",
+                "src": "media/ankiweb/2026-10-05-v1/geo-trainer-full/biome.gif",
+                "caption": "Recall a concept — actual Anki practice."
+            }
+        ]
+    },
     'us-regions': gallery(
       'U.S. Regions and Divisions',
       'us-regions',
