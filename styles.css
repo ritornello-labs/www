@@ -253,6 +253,7 @@ a:hover { text-decoration-color: var(--blue); }
 }
 
 .piece {
+  scroll-margin-top: 1.5rem;
   border-top: 1px solid var(--hairline);
   padding: 1.5rem 0 1.6rem;
 }

@@ -9,7 +9,7 @@
 <meta name="theme-color" content="#FFFFFF" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#0F1113" media="(prefers-color-scheme: dark)">
 <link rel="stylesheet" href="assets/fonts.css">
-<link rel="stylesheet" href="styles.css?v=12">
+<link rel="stylesheet" href="styles.css?v=13">
 <meta property="og:title" content="Ritornello">
 <meta property="og:description" content="Spaced-repetition decks and power-user tools, built around Anki.">
 <meta property="og:url" content="https://ritornello.dev/">
@@ -62,7 +62,7 @@
     <div class="movement-body">
     <div class="movement-inner">
     <ul class="pieces">
-      <li class="piece">
+      <li class="piece" id="chat-with-your-cards">
         <div class="piece-grid with-shot">
           <button class="piece-thumb" type="button" data-gallery="chat-with-your-cards"
                   aria-label="Open media gallery: Chat With Your Cards">
@@ -73,9 +73,9 @@
             <p>Talk to your collection while you study: the current card rides
                along as context, and the agent can search your decks, explain
                the missing prerequisite, and propose new notes — every write
-               goes through a reviewable, revertible proposal.
-               <span class="badge">public preview</span></p>
+               goes through a reviewable, revertible proposal.</p>
             <p class="piece-links">
+              <a href="#chat-with-your-cards" aria-label="Link to Chat With Your Cards">Link</a>
               <a href="https://ankiweb.net/shared/info/1873801775">AnkiWeb</a>
               <a href="https://github.com/ritornello-labs/chat-with-your-cards">GitHub</a>
               <a href="https://github.com/ritornello-labs/chat-with-your-cards/releases/download/v0.1.0/chat-with-your-cards.ankiaddon">Download v0.1.0</a>
@@ -83,7 +83,7 @@
           </div>
         </div>
       </li>
-      <li class="piece">
+      <li class="piece" id="fractional-scheduler">
         <div class="piece-grid with-shot">
           <button class="piece-thumb" type="button" data-gallery="fractional-scheduler"
                   aria-label="Open media gallery: Fractional New-Card Scheduler">
@@ -95,6 +95,7 @@
                instead of daily cliffs, with deck-health badges that show what
                the defaults hide.</p>
             <p class="piece-links">
+              <a href="#fractional-scheduler" aria-label="Link to Fractional New-Card Scheduler">Link</a>
               <a href="https://ankiweb.net/shared/info/304166926">AnkiWeb</a>
               <a href="https://github.com/ritornello-labs/anki-fractional-scheduler">GitHub</a>
               <a href="https://github.com/ritornello-labs/anki-fractional-scheduler/releases/download/v0.5.0/fractional-new-card-scheduler.ankiaddon">.ankiaddon&nbsp;&#8595;</a>
@@ -102,7 +103,7 @@
           </div>
         </div>
       </li>
-      <li class="piece">
+      <li class="piece" id="web-embed-tools">
         <div class="piece-grid with-shot">
           <button class="piece-thumb" type="button" data-gallery="web-embed-tools"
                   aria-label="Open media gallery: Web Embed Tools">
@@ -113,6 +114,7 @@
             <p>Turn URLs in note fields into resizable embedded web views, so
                reference material lives on the card instead of a tab away.</p>
             <p class="piece-links">
+              <a href="#web-embed-tools" aria-label="Link to Web Embed Tools">Link</a>
               <a href="https://ankiweb.net/shared/info/1522170627">AnkiWeb</a>
               <a href="https://github.com/ritornello-labs/anki-web-embed-tools">GitHub</a>
               <a href="https://github.com/ritornello-labs/anki-web-embed-tools/releases/download/v0.2.0/web_embed_tools.ankiaddon">.ankiaddon&nbsp;&#8595;</a>
@@ -120,7 +122,7 @@
           </div>
         </div>
       </li>
-      <li class="piece">
+      <li class="piece" id="study-triage">
         <div class="piece-grid with-shot">
           <button class="piece-thumb" type="button" data-gallery="study-triage"
                   aria-label="Open media gallery: Study Triage">
@@ -132,6 +134,7 @@
                today, auto-accept triage — without touching your long-term
                scheduling.</p>
             <p class="piece-links">
+              <a href="#study-triage" aria-label="Link to Study Triage">Link</a>
               <a href="https://ankiweb.net/shared/info/1850611434">AnkiWeb</a>
               <a href="https://github.com/ritornello-labs/study-triage">GitHub</a>
               <a href="https://github.com/ritornello-labs/study-triage/releases/download/v0.3.14/study-triage.ankiaddon">.ankiaddon&nbsp;&#8595;</a>
@@ -169,7 +172,7 @@
     <div class="group-body">
     <div class="group-inner">
     <ul class="pieces pieces-compact">
-      <li class="piece">
+      <li class="piece" id="geo-trainer">
         <div class="piece-grid with-shot">
           <button class="piece-thumb piece-thumb-motion" type="button" data-gallery="geo-trainer"
                   aria-label="Open media gallery: GeoTrainer">
@@ -183,6 +186,7 @@
             <p>4,232 cards: map games and geography concepts across countries, subdivisions,
                landscapes, tectonics, islands and time. Ten animated demonstrations. GitHub download includes study guides.</p>
             <p class="piece-links">
+              <a href="#geo-trainer" aria-label="Link to GeoTrainer">Link</a>
               <a href="https://ankiweb.net/shared/info/908455862">AnkiWeb</a>
               <a href="https://github.com/ritornello-labs/anki-geo-trainer">GitHub</a>
               <a href="https://github.com/ritornello-labs/anki-geo-trainer/releases/tag/v2026.10.05">Release</a>
@@ -192,7 +196,7 @@
           </div>
         </div>
       </li>
-      <li class="piece">
+      <li class="piece" id="us-regions">
         <div class="piece-grid with-shot">
           <button class="piece-thumb" type="button" data-gallery="us-regions"
                   aria-label="Open media gallery: U.S. Regions and Divisions">
@@ -203,6 +207,7 @@
             <p>The Census Bureau's regions and divisions, drilled in both
                directions with locator maps.</p>
             <p class="piece-links">
+              <a href="#us-regions" aria-label="Link to U.S. Regions and Divisions">Link</a>
               <a href="https://ankiweb.net/shared/info/778756695">AnkiWeb</a>
               <a href="https://github.com/ritornello-labs/us-regions">GitHub</a>
               <a href="https://github.com/ritornello-labs/us-regions/releases/download/v2026.07.27/us-regions.apkg">.apkg&nbsp;&#8595;</a>
@@ -210,7 +215,7 @@
           </div>
         </div>
       </li>
-      <li class="piece">
+      <li class="piece" id="us-states">
         <div class="piece-grid with-shot">
           <button class="piece-thumb" type="button" data-gallery="us-states" aria-label="Open media gallery: U.S. States">
             <img src="assets/shots/us-states-thumb.webp" alt="U.S. States map-recognition card" width="360" loading="lazy">
@@ -221,12 +226,13 @@
                placement, capitals, postal codes, connections, and Census
                regions and divisions.</p>
             <p class="piece-links">
+              <a href="#us-states" aria-label="Link to U.S. States">Link</a>
               <a href="https://ankiweb.net/shared/info/1539478471">AnkiWeb</a>
             </p>
           </div>
         </div>
       </li>
-      <li class="piece">
+      <li class="piece" id="brazilian-states">
         <div class="piece-grid with-shot">
           <button class="piece-thumb" type="button" data-gallery="brazilian-states" aria-label="Open media gallery: Brazilian States">
             <img src="assets/shots/brazilian-states-thumb.webp" alt="Brazilian States map-recognition card for Bahia" width="360" loading="lazy">
@@ -237,6 +243,7 @@
                map recognition and placement, capitals, abbreviations,
                neighboring states, and population.</p>
             <p class="piece-links">
+              <a href="#brazilian-states" aria-label="Link to Brazilian States">Link</a>
               <a href="https://ankiweb.net/shared/info/147050418">AnkiWeb</a>
             </p>
           </div>
@@ -253,6 +260,7 @@
             <p>Brazil's telephone area codes, anchored to maps of the areas
                they cover.</p>
             <p class="piece-links">
+              <a href="#brazilian-ddd-codes" aria-label="Link to Brazilian DDD Codes">Link</a>
               <a href="https://ankiweb.net/shared/info/1860702413">AnkiWeb</a>
               <a href="https://github.com/ritornello-labs/brazil-ddd-codes">GitHub</a>
               <a href="https://github.com/ritornello-labs/brazil-ddd-codes/releases/download/v2026.07.24/brazil-ddd-codes.apkg">.apkg&nbsp;&#8595;</a>
@@ -260,7 +268,7 @@
           </div>
         </div>
       </li>
-      <li class="piece">
+      <li class="piece" id="chinese-regions">
         <div class="piece-grid with-shot">
           <button class="piece-thumb" type="button" data-gallery="chinese-regions"
                   aria-label="Open media gallery: Regions of China">
@@ -273,6 +281,7 @@
             <h3 class="piece-title">Regions of China</h3>
             <p>The PRC's regions: Hanzi, Pinyin, English, and map recall.</p>
             <p class="piece-links">
+              <a href="#chinese-regions" aria-label="Link to Regions of China">Link</a>
               <a href="https://ankiweb.net/shared/info/1361353897">AnkiWeb</a>
               <a href="https://github.com/ritornello-labs/chinese-regions">GitHub</a>
               <a href="https://github.com/ritornello-labs/chinese-regions/releases/download/v2026.10.02/china-regions-release-2026-10-02.apkg">.apkg&nbsp;&#8595;</a>
@@ -280,7 +289,7 @@
           </div>
         </div>
       </li>
-      <li class="piece">
+      <li class="piece" id="taiwan-divisions">
         <div class="piece-grid with-shot">
           <button class="piece-thumb" type="button" data-gallery="taiwan-divisions"
                   aria-label="Open media gallery: Taiwan Divisions">
@@ -291,12 +300,13 @@
             <p>Taiwan's divisions with map-to-name, connections, and reverse
                cards.</p>
             <p class="piece-links">
+              <a href="#taiwan-divisions" aria-label="Link to Taiwan Divisions">Link</a>
               <a href="https://ankiweb.net/shared/info/1886250214">AnkiWeb</a>
             </p>
           </div>
         </div>
       </li>
-      <li class="piece">
+      <li class="piece" id="japan-geography">
         <div class="piece-grid with-shot">
           <button class="piece-thumb" type="button" data-full="assets/shots/japan.webp" aria-label="Enlarge screenshot">
             <img src="assets/shots/japan-thumb.webp" alt="Japan Geography map-recall card for Hokkaido" width="360" loading="lazy">
@@ -305,12 +315,13 @@
             <h3 class="piece-title">Japan Geography</h3>
             <p>Prefectures and regions of Japan with locator-map recall.</p>
             <p class="piece-links">
+              <a href="#japan-geography" aria-label="Link to Japan Geography">Link</a>
               <a href="https://ankiweb.net/shared/info/2144583750">AnkiWeb</a>
             </p>
           </div>
         </div>
       </li>
-      <li class="piece">
+      <li class="piece" id="turkey-regions">
         <div class="piece-grid with-shot">
           <button class="piece-thumb" type="button" data-full="assets/shots/turkey.webp" aria-label="Enlarge screenshot">
             <img src="assets/shots/turkey-thumb.webp" alt="Turkey Regions locator-map card" width="360" loading="lazy">
@@ -319,6 +330,7 @@
             <h3 class="piece-title">Turkey Regions</h3>
             <p>Turkey's regions on locator maps.</p>
             <p class="piece-links">
+              <a href="#turkey-regions" aria-label="Link to Turkey Regions">Link</a>
               <a href="https://ankiweb.net/shared/info/1207470716">AnkiWeb</a>
               <a href="https://github.com/ritornello-labs/country-subdivision-map-decks">GitHub</a>
               <a href="https://github.com/ritornello-labs/country-subdivision-map-decks/releases/download/v2026.07.24/turkey-regions.apkg">.apkg&nbsp;&#8595;</a>
@@ -326,7 +338,7 @@
           </div>
         </div>
       </li>
-      <li class="piece">
+      <li class="piece" id="south-africa-provinces">
         <div class="piece-grid with-shot">
           <button class="piece-thumb" type="button" data-full="assets/shots/south-africa.webp" aria-label="Enlarge screenshot">
             <img src="assets/shots/south-africa-thumb.webp" alt="South Africa Provinces locator-map card" width="360" loading="lazy">
@@ -335,6 +347,7 @@
             <h3 class="piece-title">South Africa Provinces</h3>
             <p>The nine provinces with locator-map recall.</p>
             <p class="piece-links">
+              <a href="#south-africa-provinces" aria-label="Link to South Africa Provinces">Link</a>
               <a href="https://ankiweb.net/shared/info/1910958626">AnkiWeb</a>
               <a href="https://github.com/ritornello-labs/country-subdivision-map-decks">GitHub</a>
               <a href="https://github.com/ritornello-labs/country-subdivision-map-decks/releases/download/v2026.07.24/south-africa-provinces.apkg">.apkg&nbsp;&#8595;</a>
@@ -342,7 +355,7 @@
           </div>
         </div>
       </li>
-      <li class="piece">
+      <li class="piece" id="mexico-federative-entities">
         <div class="piece-grid with-shot">
           <button class="piece-thumb" type="button" data-full="assets/shots/mexico.webp" aria-label="Enlarge screenshot">
             <img src="assets/shots/mexico-thumb.webp" alt="Mexico Federative Entities locator-map card" width="360" loading="lazy">
@@ -351,6 +364,7 @@
             <h3 class="piece-title">Mexico Federative Entities</h3>
             <p>All 32 federative entities on locator maps.</p>
             <p class="piece-links">
+              <a href="#mexico-federative-entities" aria-label="Link to Mexico Federative Entities">Link</a>
               <a href="https://ankiweb.net/shared/info/1177438513">AnkiWeb</a>
               <a href="https://github.com/ritornello-labs/country-subdivision-map-decks">GitHub</a>
               <a href="https://github.com/ritornello-labs/country-subdivision-map-decks/releases/download/v2026.07.24/mexico-federative-entities.apkg">.apkg&nbsp;&#8595;</a>
@@ -358,7 +372,7 @@
           </div>
         </div>
       </li>
-      <li class="piece">
+      <li class="piece" id="iran-provinces">
         <div class="piece-grid with-shot">
           <button class="piece-thumb" type="button" data-full="assets/shots/iran.webp" aria-label="Enlarge screenshot">
             <img src="assets/shots/iran-thumb.webp" alt="Iran Provinces locator-map card" width="360" loading="lazy">
@@ -367,6 +381,7 @@
             <h3 class="piece-title">Iran Provinces</h3>
             <p>Iran's provinces on locator maps.</p>
             <p class="piece-links">
+              <a href="#iran-provinces" aria-label="Link to Iran Provinces">Link</a>
               <a href="https://ankiweb.net/shared/info/1452052368">AnkiWeb</a>
               <a href="https://github.com/ritornello-labs/country-subdivision-map-decks">GitHub</a>
               <a href="https://github.com/ritornello-labs/country-subdivision-map-decks/releases/download/v2026.07.24/iran-provinces.apkg">.apkg&nbsp;&#8595;</a>
@@ -374,12 +389,13 @@
           </div>
         </div>
       </li>
-      <li class="piece">
+      <li class="piece" id="nigerian-states">
         <div class="piece-grid">
           <div class="piece-text">
             <h3 class="piece-title">Nigerian States</h3>
             <p>Nigeria's 36 states and the Federal Capital Territory.</p>
             <p class="piece-links">
+              <a href="#nigerian-states" aria-label="Link to Nigerian States">Link</a>
               <a href="https://ankiweb.net/shared/info/781697362">AnkiWeb</a>
             </p>
           </div>
@@ -401,7 +417,7 @@
     <div class="group-body">
     <div class="group-inner">
     <ul class="pieces pieces-compact">
-      <li class="piece">
+      <li class="piece" id="sight-singing">
         <div class="piece-grid with-shot">
           <button class="piece-thumb" type="button" data-gallery="sight-singing"
                   aria-label="Open media gallery: Sight Singing">
@@ -413,6 +429,7 @@
                and audio playback, paired with its companion
                <a href="https://ankiweb.net/shared/info/166250534">Dictation</a> deck.</p>
             <p class="piece-links">
+              <a href="#sight-singing" aria-label="Link to Sight Singing">Link</a>
               <a href="https://ankiweb.net/shared/info/948253022">AnkiWeb</a>
               <a href="https://github.com/ritornello-labs/sight-singing-deck">GitHub</a>
               <a href="https://github.com/ritornello-labs/sight-singing-deck/releases/download/v2026.07.15/sight-singing-curriculum.apkg">.apkg&nbsp;&#8595;</a>
@@ -420,7 +437,7 @@
           </div>
         </div>
       </li>
-      <li class="piece">
+      <li class="piece" id="dictation">
         <div class="piece-grid with-shot">
           <button class="piece-thumb" type="button" data-gallery="dictation"
                   aria-label="Open media gallery: Dictation">
@@ -431,6 +448,7 @@
             <p>Hear a melody, transcribe it onto the staff — the listening
                half of the Sight Singing course.</p>
             <p class="piece-links">
+              <a href="#dictation" aria-label="Link to Dictation">Link</a>
               <a href="https://ankiweb.net/shared/info/166250534">AnkiWeb</a>
               <a href="https://github.com/ritornello-labs/sight-singing-deck">GitHub</a>
               <a href="https://github.com/ritornello-labs/sight-singing-deck/releases/download/v2026.07.15/dictation-curriculum.apkg">.apkg&nbsp;&#8595;</a>
@@ -454,7 +472,7 @@
     <div class="group-body">
     <div class="group-inner">
     <ul class="pieces pieces-compact">
-      <li class="piece">
+      <li class="piece" id="hanzi-handwriting">
         <div class="piece-grid with-shot">
           <button class="piece-thumb" type="button" data-gallery="hanzi-handwriting"
                   aria-label="Open media gallery: HSK 3.0 Hanzi Handwriting">
@@ -469,13 +487,14 @@
                strokes trigger a hint; accepted strokes remain on the practice
                grid until the character is complete.</p>
             <p class="piece-links">
+              <a href="#hanzi-handwriting" aria-label="Link to HSK 3.0 Hanzi Handwriting">Link</a>
               <a href="https://ankiweb.net/shared/info/959635611">AnkiWeb</a>
               <a href="https://github.com/ritornello-labs/www/releases/download/v2026.09.30/hanzi-handwriting-release.apkg">.apkg&nbsp;&#8595;</a>
             </p>
           </div>
         </div>
       </li>
-      <li class="piece">
+      <li class="piece" id="traditional-chinese-from-simplified">
         <div class="piece-grid with-shot">
           <button class="piece-thumb" type="button" data-full="assets/shots/trad-simplified.webp" aria-label="Enlarge screenshot">
             <img src="assets/shots/trad-simplified-thumb.webp" alt="Traditional-from-simplified character card" width="360" loading="lazy">
@@ -485,6 +504,7 @@
             <p>Traditional character forms recalled from their simplified
                counterparts, with audio.</p>
             <p class="piece-links">
+              <a href="#traditional-chinese-from-simplified" aria-label="Link to Traditional Chinese from Simplified">Link</a>
               <a href="https://ankiweb.net/shared/info/1213301457">AnkiWeb</a>
             </p>
           </div>
@@ -506,7 +526,7 @@
     <div class="group-body">
     <div class="group-inner">
     <ul class="pieces pieces-compact">
-      <li class="piece">
+      <li class="piece" id="chinese-dynasties">
         <div class="piece-grid with-shot">
           <button class="piece-thumb" type="button" data-gallery="chinese-dynasties" aria-label="Open media gallery: Chinese Dynasties">
             <img src="media/ankiweb/2026-09-30-v1/chinese-dynasties/northern-wei-map-front.png" alt="Chinese Dynasties blank map prompt for Northern Wei territory" width="360" loading="lazy">
@@ -515,13 +535,14 @@
             <h3 class="piece-title">Chinese Dynasties</h3>
             <p>The dynasties in order, with era maps and timeline context.</p>
             <p class="piece-links">
+              <a href="#chinese-dynasties" aria-label="Link to Chinese Dynasties">Link</a>
               <a href="https://ankiweb.net/shared/info/145233963">AnkiWeb</a>
               <a href="https://github.com/ritornello-labs/chinese-dynasties/releases/latest">GitHub release</a>
             </p>
           </div>
         </div>
       </li>
-      <li class="piece">
+      <li class="piece" id="bible-books">
         <div class="piece-grid with-shot">
           <button class="piece-thumb" type="button" data-full="assets/shots/bible-books.webp" aria-label="Enlarge screenshot">
             <img src="assets/shots/bible-books-thumb.webp" alt="Bible Books reference-drill card" width="360" loading="lazy">
@@ -531,6 +552,7 @@
             <p>The books in canonical order, with reference drills; Catholic
                and Orthodox canons noted.</p>
             <p class="piece-links">
+              <a href="#bible-books" aria-label="Link to Bible Books">Link</a>
               <a href="https://ankiweb.net/shared/info/1866899589">AnkiWeb</a>
             </p>
           </div>
@@ -559,7 +581,7 @@
     <div class="movement-body">
     <div class="movement-inner">
     <ul class="pieces">
-      <li class="piece">
+      <li class="piece" id="anki-addon-workbench">
         <div class="piece-grid">
           <div class="piece-text">
             <h3 class="piece-title">anki-addon-workbench</h3>
@@ -567,13 +589,14 @@
                click / type GUI automation for developing Anki add-ons and decks
                without risking a real collection.</p>
             <p class="piece-links">
+              <a href="#anki-addon-workbench" aria-label="Link to anki-addon-workbench">Link</a>
               <a href="https://github.com/ritornello-labs/anki-addon-workbench">GitHub</a>
               <a href="https://pypi.org/project/anki-addon-workbench/">PyPI</a>
             </p>
           </div>
         </div>
       </li>
-      <li class="piece">
+      <li class="piece" id="anki-addon-release">
         <div class="piece-grid">
           <div class="piece-text">
             <h3 class="piece-title">anki-addon-release</h3>
@@ -581,13 +604,14 @@
                add-ons and shared decks, with post-submit verification of the
                live listing.</p>
             <p class="piece-links">
+              <a href="#anki-addon-release" aria-label="Link to anki-addon-release">Link</a>
               <a href="https://github.com/ritornello-labs/anki-addon-release">GitHub</a>
               <a href="https://pypi.org/project/anki-addon-release/">PyPI</a>
             </p>
           </div>
         </div>
       </li>
-      <li class="piece">
+      <li class="piece" id="anki-collection-diff">
         <div class="piece-grid">
           <div class="piece-text">
             <h3 class="piece-title">anki-collection-diff</h3>
@@ -595,13 +619,14 @@
                AnkiConnect, so deck rollouts can be verified instead of
                trusted.</p>
             <p class="piece-links">
+              <a href="#anki-collection-diff" aria-label="Link to anki-collection-diff">Link</a>
               <a href="https://github.com/ritornello-labs/anki-collection-diff">GitHub</a>
               <a href="https://pypi.org/project/anki-collection-diff/">PyPI</a>
             </p>
           </div>
         </div>
       </li>
-      <li class="piece">
+      <li class="piece" id="safe-collection-operations">
         <div class="piece-grid">
           <div class="piece-text">
             <h3 class="piece-title">safe-collection-operations</h3>
@@ -609,6 +634,7 @@
                arbitrary cards — that other add-ons and local agents can compose
                safely.</p>
             <p class="piece-links">
+              <a href="#safe-collection-operations" aria-label="Link to safe-collection-operations">Link</a>
               <a href="https://github.com/ritornello-labs/anki-addon-safe-collection-operations">GitHub</a>
             </p>
           </div>
@@ -674,6 +700,39 @@
     var body = btn.closest('.programme-title').nextElementSibling;
     body.classList.add('closed');
     wireToggle(btn, body);
+  });
+
+  // Reveal fragment targets even inside collapsed sections and programmes.
+  function revealFragment(initial) {
+    var id;
+    try { id = decodeURIComponent(window.location.hash.slice(1)); }
+    catch (error) { return; }
+    var target = document.getElementById(id);
+    if (!target) return;
+    var bodies = [];
+    for (var parent = target.parentElement; parent; parent = parent.parentElement) {
+      if (!parent.matches('.movement-body, .group-body')) continue;
+      parent.style.transition = 'none';
+      parent.classList.remove('closed');
+      var toggle = parent.matches('.movement-body')
+        ? parent.closest('.movement').querySelector('.movement-toggle')
+        : parent.previousElementSibling.querySelector('.group-toggle');
+      toggle.setAttribute('aria-expanded', 'true');
+      bodies.push(parent);
+    }
+    // Finish expansion before scrolling; restore accordion animations afterward.
+    target.getBoundingClientRect();
+    bodies.forEach(function (body) { body.style.transition = ''; });
+    target.scrollIntoView({ block: 'start', behavior: initial ? 'instant' : 'auto' });
+  }
+  revealFragment(true);
+  window.addEventListener('load', function () { revealFragment(true); });
+  window.addEventListener('hashchange', function () { revealFragment(false); });
+  // Clicking the same fragment again should reopen a manually collapsed group.
+  document.querySelectorAll('.piece-links a[href^="#"]').forEach(function (link) {
+    link.addEventListener('click', function () {
+      if (link.hash === window.location.hash) revealFragment(false);
+    });
   });
 
   // Media gallery. Buttons with only data-full retain the original

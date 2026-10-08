@@ -71,3 +71,18 @@ changes so the pair updates atomically.
 Support continued development: [ritornello.dev/support](https://ritornello.dev/support).
 
 The stable contribution URL is `https://ritornello.dev/support`. Only `support/index.html` holds the payment-provider link; listings, READMEs and funding files link to the stable page.
+
+## Project links
+
+Every listing has a stable fragment ID and a Link action. For example,
+[Chat With Your Cards](https://ritornello.dev/#chat-with-your-cards) links
+directly to its listing. Fragment navigation opens any containing section
+and deck programme, including when following browser history.
+
+Publication requires the shared local hooks and the quiet required CI check.
+The workflow and checker are pinned together to an immutable tool commit.
+Install hooks from that reviewed checkout with
+`PYTHONPATH=/path/to/anki-addon-release/src python3 -m anki_addon_release.publication_hooks`.
+Before pushing, the hooks inspect staged objects and all outgoing commits against
+the actual destination. Existing media bytes are retained; new listing media still
+require the established native-Anki capture and visual approval process.
