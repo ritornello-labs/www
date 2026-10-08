@@ -1,0 +1,206 @@
+{
+  "edition": "2026-10-07-v7",
+  "source": "Native Anki workbench captures",
+  "approved_media": [
+    {
+      "slug": "us-states",
+      "file": "map.gif",
+      "sha256": "a00cab13ec5401babac3c178569d7a054f5d6a7923483b547eac313a800ae9f6"
+    },
+    {
+      "slug": "us-states",
+      "file": "capital.gif",
+      "sha256": "c4dbed1d229db72b1aaf2baf27d01ddc93130164ee76401ccb8350bc141fbc1e"
+    },
+    {
+      "slug": "us-states",
+      "file": "capital-reverse.gif",
+      "sha256": "928e92cb385f89112ab97735068bb5c3b53f1f5dde630f5d0f2292694508c153"
+    },
+    {
+      "slug": "us-states",
+      "file": "locate.gif",
+      "sha256": "053aa6b140100810bf23e6066a3dec2e3a0f4f246e27d87f1bda408d6cc5acf1"
+    },
+    {
+      "slug": "us-states",
+      "file": "postal.gif",
+      "sha256": "d8011797c0cb7021125b8f5bf54b259f733b4acebf1482ed04e0394cee541556"
+    },
+    {
+      "slug": "us-states",
+      "file": "postal-reverse.gif",
+      "sha256": "27d6276ef37c6676e044c7c8b3c6716ed48a330d30bf3b479b1972e431305cad"
+    },
+    {
+      "slug": "us-states",
+      "file": "region.gif",
+      "sha256": "7abaf96fc8f9fba31050548cbf7fd5fc54b5a0597a0bd0504c336e86dbf09bd4"
+    },
+    {
+      "slug": "us-states",
+      "file": "division.gif",
+      "sha256": "55f5ac41396b51d9860382343e51f9c4e7b1795aaf98cdfbad5edde783ac7f01"
+    },
+    {
+      "slug": "us-states",
+      "file": "connections.gif",
+      "sha256": "76521663c6a636f7b1572b9513e3f41c1cc1dfa70a6a06c2a5bcb8cf04f47a17"
+    },
+    {
+      "slug": "brazilian-states",
+      "file": "capital.gif",
+      "sha256": "64e62e2b1307f802f78fbdff85339e394f57b9176e5b9a0645482d7432ec73d7"
+    },
+    {
+      "slug": "brazilian-states",
+      "file": "capital-reverse.gif",
+      "sha256": "c25a2ec085bb9af17b1063a10527163f675c03467f07618812489bad56bd58f9"
+    },
+    {
+      "slug": "brazilian-states",
+      "file": "map.gif",
+      "sha256": "cb16733a104518fe14a89439722479601af83e0cd709645217bcce7b3b216064"
+    },
+    {
+      "slug": "brazilian-states",
+      "file": "locate.gif",
+      "sha256": "e0afda880ca5e355dffc90cee4bcf4156b47580c7c1e231d9a2bbb0bb52a0bc3"
+    },
+    {
+      "slug": "brazilian-states",
+      "file": "connections.gif",
+      "sha256": "dde5396bb241f0d39e0d20a358adc3dc663420592d5f9eb163f07c76296dbe77"
+    },
+    {
+      "slug": "brazilian-states",
+      "file": "postal-reverse.gif",
+      "sha256": "272a6a6cbfbdde404e3039725342b78b0ab89c4ef15afb2a9b454b9654bae177"
+    },
+    {
+      "slug": "brazilian-states",
+      "file": "postal.gif",
+      "sha256": "b020039a670ecd3a302bba720c9047e2d94004f5cdc7ca5c3943269193edf84d"
+    },
+    {
+      "slug": "brazilian-states",
+      "file": "population.gif",
+      "sha256": "e10abbfd6771854e08ea32af9edf92ecfdb1f70fee402e2c9f3dd1891ab21731"
+    },
+    {
+      "slug": "brazilian-states",
+      "file": "region-context.gif",
+      "sha256": "37bffe2e578e4ce0c0980b9fe725eadd4bb2642796327f3f7493e4543f965cbe"
+    },
+    {
+      "slug": "brazilian-states",
+      "file": "border-context.gif",
+      "sha256": "4c76eb72773629f968d2ff9a48f9d512e27601a5d5f91513d07bc5ba4a4efa49"
+    },
+    {
+      "slug": "chat-with-your-cards",
+      "file": "explain-and-edit.gif",
+      "sha256": "f27ee89b8c2132bdfbef0ad1226966356783360b38a66dfc8eab67e3413f084f"
+    },
+    {
+      "slug": "chat-with-your-cards",
+      "file": "filtered-deck.gif",
+      "sha256": "62f3bddeb5db271d07b0601bde430e8e2978678b2585bb4ebb72b55e8bfe4784"
+    },
+    {
+      "slug": "web-embed-tools",
+      "file": "create.gif",
+      "sha256": "82efdd02e5f3f2e4ba158851b48d6ffc03bd71329e9b2b9e0df8148f43d64c30"
+    },
+    {
+      "slug": "web-embed-tools",
+      "file": "resize.gif",
+      "sha256": "7c12f5af125c2d4118b10c695729f900ff201dec6afaab5c1f44fb48df7883f2"
+    },
+    {
+      "slug": "fractional-scheduler",
+      "file": "schedule.gif",
+      "sha256": "8a9b26b66d8a1bb494078d45c8124180339e9cb571a14cdc17f9e36a3a5c9bdc"
+    },
+    {
+      "slug": "sight-singing",
+      "file": "sing.gif",
+      "sha256": "65a1417578dd0a48dc43ffef86736a04e2513b9b71acb441ce3781c0171ed632"
+    },
+    {
+      "slug": "sight-singing",
+      "file": "rhythm.gif",
+      "sha256": "62200eee3d2545996035246868e09ee8d7b930c96f460af69c8f84c0d9f29ca3"
+    },
+    {
+      "slug": "sight-singing",
+      "file": "error.gif",
+      "sha256": "60c52a712ad9bb61d33b52f1a70a73b2d333435fe440d85f37dcdecf64769905"
+    },
+    {
+      "slug": "dictation",
+      "file": "entry.gif",
+      "sha256": "248ab53cb7fd191ba66a0285ac26b01ca6ee33f202f0c673acf18f8a20656178"
+    },
+    {
+      "slug": "brazil-ddd-codes",
+      "file": "map.gif",
+      "sha256": "96cc63cb0c25d48b849453464d8aa8b9d838c979d4d4db4ba4fb32d584abae9d"
+    },
+    {
+      "slug": "brazil-ddd-codes",
+      "file": "reverse.gif",
+      "sha256": "8bcf3f25f8a3029e1b53a97a905b794e321c67492d8f43cd746179324b2e6460"
+    },
+    {
+      "slug": "us-regions",
+      "file": "region-neighbors.gif",
+      "sha256": "e6c9f737df4811a0eb1824c25b35614fdf978096b83baf4d725a63a64d445ed1"
+    },
+    {
+      "slug": "us-regions",
+      "file": "region-locate.gif",
+      "sha256": "188d93b08a793c0e154495ae5e474bcdebc8628e6083d35dadae77a05ac3304a"
+    },
+    {
+      "slug": "us-regions",
+      "file": "region-identify.gif",
+      "sha256": "e0cf3a2912d385a427f0285a1c0304a6b4ed2284a10719a23df90dcdd8c0283b"
+    },
+    {
+      "slug": "us-regions",
+      "file": "region-divisions.gif",
+      "sha256": "cfa66e5892faf0da510a1fe24d3380d499ce1381688a15e4a8e106529fad262d"
+    },
+    {
+      "slug": "us-regions",
+      "file": "division-region.gif",
+      "sha256": "5f7b6963394d992b521812c5ea0c18bab6d5ea29a13c2a383e42f15de0a5c942"
+    },
+    {
+      "slug": "us-regions",
+      "file": "division-neighbors.gif",
+      "sha256": "a3e2735cc9ee162d5d39483d2cd92455e071fb73ae3fe7b6ba9b76ebf33d760b"
+    },
+    {
+      "slug": "us-regions",
+      "file": "division-locate.gif",
+      "sha256": "b01df758c1a333cb20fcd5b9672f2e26a50e9d2fa44e9ce1b1864b339ec92d8c"
+    },
+    {
+      "slug": "us-regions",
+      "file": "division-identify.gif",
+      "sha256": "a7d38b7d6465d48ebc7834d11dc837116dd5335aef226c2c71c276295bf65c5a"
+    },
+    {
+      "slug": "us-regions",
+      "file": "division-states.gif",
+      "sha256": "8ea7fdfcf47c522128c735d67ea59c2029b2e6f0dae3d134e1b673e77b1237da"
+    },
+    {
+      "slug": "us-regions",
+      "file": "division-borders.gif",
+      "sha256": "9e4d14131c77786af36104b8ab3e9cfe6d82ce475aa28cd634270a6badbe9b49"
+    }
+  ]
+}
