@@ -6,28 +6,13 @@
       badge: badge,
       items: files.map(function (entry, index) {
         var file = typeof entry === 'string' ? entry : entry.file;
-        var poster = typeof entry === 'string' ? null : entry.poster;
-        var isVideo = file.endsWith('.mp4');
         return {
-          type: isVideo ? 'video' : 'image',
+          type: 'image',
           src: base + slug + '/' + file,
-          poster: isVideo ? base + slug + '/' + (poster || 'gallery-' + String(index + 1).padStart(2, '0') + '.png') : undefined,
           caption: captions[index]
         };
       })
     };
-  }
-
-  function templateGallery(title, slug, templates, release) {
-    var files = [];
-    var captions = [];
-    templates.forEach(function (template) {
-      files.push({file: template.slug + '.mp4', poster: template.slug + '-front.png'});
-      files.push(template.slug + '.png');
-      captions.push(template.video);
-      captions.push(template.still);
-    });
-    return gallery(title, slug, files, captions, release || '2026-09-23-v5', templates.length + ' templates');
   }
 
   window.ritornelloGalleries = {
@@ -147,9 +132,8 @@
     'taiwan-divisions': gallery(
       'Taiwan Divisions',
       'taiwan-divisions',
-      ['demo.mp4', 'gallery-01.png', 'gallery-02.png', 'gallery-03.png'],
+      ['gallery-01.png', 'gallery-02.png', 'gallery-03.png'],
       [
-        'See a Taiwan division reveal, loaded reference, and grade.',
         'Identify a division from its locator map.',
         'Review the answer with the live Wikipedia reference loaded.',
         'Advance to the next locator-map prompt.'
