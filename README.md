@@ -74,7 +74,8 @@ The stable contribution URL is `https://ritornello.dev/support`. Only `support/i
 
 ## Project links
 
-Every listing has a stable fragment ID and a Link action. For example,
+Every listing has a stable fragment ID. Click its project title to update the URL
+to that listing, or copy the title link directly. For example,
 [Chat With Your Cards](https://ritornello.dev/#chat-with-your-cards) links
 directly to its listing. Fragment navigation opens any containing section
 and deck programme, including when following browser history.
