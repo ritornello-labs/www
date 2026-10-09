@@ -16,6 +16,12 @@
   }
 
   window.ritornelloGalleries = {
+    "turkey-regions": gallery(
+      "Turkey Regions", "turkey",
+      ["map.gif", "locate.gif", "connections.gif"],
+      ["Identify the Aegean Region", "Locate the Black Sea Region", "Recall Southeastern Anatolia’s connections"],
+      '2026-10-08-v8', '3 GIFs'
+    ),
     "chat-with-your-cards": gallery(
       "Chat With Your Cards",
       "chat-with-your-cards",
