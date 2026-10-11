@@ -136,14 +136,10 @@
       'front · answer'
     ),
     'taiwan-divisions': gallery(
-      'Taiwan Divisions',
-      'taiwan-divisions',
-      ['gallery-01.png', 'gallery-02.png', 'gallery-03.png'],
-      [
-        'Identify a division from its locator map.',
-        'Review the answer with the live Wikipedia reference loaded.',
-        'Advance to the next locator-map prompt.'
-      ]
+      'Taiwan Divisions', 'taiwan-divisions',
+      ['map.gif', 'locate.gif', 'connections.gif'],
+      ['Identify Tainan City', 'Locate Penghu County', 'Recall Nantou County’s neighbours'],
+      '2026-10-08-v8', '3 GIFs'
     ),
     "sight-singing": gallery(
       "Sight Singing — a function-first ear & reading course",
