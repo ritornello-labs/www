@@ -16,6 +16,12 @@
   }
 
   window.ritornelloGalleries = {
+    'bible-books': gallery(
+      'Bible Books', 'bible-books',
+      ['reference.gif', 'canon.gif', 'sequence.gif', 'portuguese.gif', 'authorship.gif', 'context.gif'],
+      ['English names and abbreviations in both directions', 'Testament, Christian grouping and Tanakh division', 'Catholic and Protestant book-order alternatives', 'English and Portuguese names plus Portuguese abbreviations', 'Traditional authorship', 'Recall the individual recipients of Pauline epistles'],
+      '2026-10-11-v9', '6 GIFs'
+    ),
     "turkey-regions": gallery(
       "Turkey Regions", "turkey",
       ["map.gif", "locate.gif", "connections.gif"],
