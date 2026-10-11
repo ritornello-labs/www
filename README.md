@@ -40,26 +40,26 @@ policy.
 
 ## AnkiWeb media
 
-`media/ankiweb/<release>/` is the canonical public host for AnkiWeb listing
-images, GIF fallbacks, and MP4 demos. Release directories are immutable.
-Project listing files and READMEs link here instead of committing duplicate
-videos to every repository.
+`media/ankiweb/<release>/` hosts the approved animated GIFs used in AnkiWeb
+listings, repository READMEs and the website galleries. Release directories are
+immutable. Existing historical assets remain available, but new public copy uses
+GIFs without links to video files or video services.
 
-Motion must be recorded from an actual disposable Anki session. Run
-`scripts/finalize_ankiweb_captures.py --release <date>` after copying final
-derivatives to check each project's still set and refresh its checksummed
-manifest. `scripts/render_ankiweb_review.py` builds the ignored local review
-page from the current listing sources before an upload session. The
-`2026-09-23-v5` release adds template-by-template card clips and real
-interaction captures; public listing text links to these hosted files.
-`2026-09-23-v6` supersedes the U.S. and Brazilian States template galleries:
-the reference cards now wait for the lazy Wikipedia pane to load before their
-answer stills are taken. The previous release remains unchanged.
+Capture from actual Anki with `anki-addon-workbench`, in a disposable profile
+seeded by the current deck artifact or a read-only Publisher export. Show a
+credible study or add-on workflow. For recall drills, allow two seconds for the
+question and three seconds for the answer. Similar static templates can share a
+GIF; distinct games or workflows deserve separate examples. Every deck listing
+batch needs explicit approval before upload.
 
-Gallery buttons show a play indicator when their first item is a video, and a
-small count describing the available workflows, games, or templates. The modal
-uses the same hosted media as the listing sources, with stills alongside clips
-for visitors who cannot play video.
+`gallery-data.js` defines the gallery items. The corresponding thumbnail button
+in `index.html` must use `data-gallery` with the same key. Each listed product
+links its current AnkiWeb listing and canonical tagged GitHub release. Standalone
+collection decks without a public product repository are archived in this repo's
+releases. The archive must match the verified AnkiWeb-delivered artifact exactly.
+
+The website lists GeoTrainer once, as the full edition. Component deck listings
+are linked from AnkiWeb, rather than repeated in the website catalog.
 
 ## Cache busting
 
