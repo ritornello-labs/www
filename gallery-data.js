@@ -16,6 +16,12 @@
   }
 
   window.ritornelloGalleries = {
+    'traditional-from-simplified': gallery(
+      'Traditional Chinese from Simplified', 'traditional-from-simplified',
+      ['recall.gif'],
+      ['Recall the Simplified form of 體, then reveal 体, tǐ and its meanings'],
+      '2026-10-14-v10', '1 GIF'
+    ),
     'japan-geography': gallery(
       'Japan Geography', 'japan-geography',
       ['map.gif', 'flag.gif', 'locate.gif', 'mandarin.gif', 'connections.gif'],
