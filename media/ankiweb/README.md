@@ -1,24 +1,26 @@
 # AnkiWeb media
 
-This directory is the canonical public host for images, animated GIFs, and
-videos referenced by Ritornello AnkiWeb listings.
+This directory hosts the approved images and animated GIFs used by Ritornello
+AnkiWeb listings, repository READMEs and website galleries.
 
-- Release directories are immutable. A recapture gets a new dated directory.
-  Removing accidentally published private-project media is the sole exception.
-- Original real-Anki captures stay in their originating project repositories.
-- Public derivatives are committed once here instead of duplicating GIF/MP4
-  binaries across every project repository.
-- `manifest.json` records source and output checksums for each generated set.
-- AnkiWeb descriptions show multiple gallery images and link to short MP4s when
-  motion materially explains the feature. GIFs are used selectively for a site
-  thumbnail or an AnkiWeb-safe animated preview, never as a requirement for
-  still-only projects.
+- Release directories and existing public asset URLs are immutable. A recapture
+  gets a new dated directory.
+- New listing and README demonstrations use GIFs, without links to MP4 files or
+  video services. Historical files remain available for existing references.
+- Capture actual Anki with `anki-addon-workbench` in a disposable profile seeded
+  by the current shareable artifact. Use a credible study or add-on workflow;
+  never substitute an HTML/CSS reconstruction for a card screenshot.
+- For recall drills, hold the question for two seconds and the answer for three.
+  Similar static templates may share a GIF; distinct games or workflows benefit
+  from separate examples. Show every template when that helps explain the deck.
+- Show each complete proposed deck listing and its images to Elvis, one batch at
+  a time, and wait for explicit approval before upload.
+- Host approved derivatives once here and reuse their URLs across public copy.
+  Bind source/output hashes in the review records. Keep collection data, raw
+  responses and private verification records outside every Git checkout.
+- Update both `gallery-data.js` and the matching `data-gallery` thumbnail control
+  in `index.html`. Verify the deployed media bytes and the live gallery.
 
-Rebuild the 2026-07-30 derivatives from the repository root with:
-
-```sh
-python3 scripts/build_ankiweb_motion.py
-```
-
-The script requires Pillow and `ffmpeg`; the validated
-`anki-addon-workbench` media Docker image supplies both.
+Historical derivative rebuild helpers remain in `scripts/`; they do not override
+the current GIF and approval policy. The media tooling uses Pillow and `ffmpeg`
+from the disposable workbench media image.
