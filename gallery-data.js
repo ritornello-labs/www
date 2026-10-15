@@ -16,6 +16,12 @@
   }
 
   window.ritornelloGalleries = {
+    'japan-geography': gallery(
+      'Japan Geography', 'japan-geography',
+      ['map.gif', 'flag.gif', 'locate.gif', 'mandarin.gif', 'connections.gif'],
+      ['Identify Chūbu from its highlighted map', 'Recall Miyagi’s Japanese name from its flag', 'Locate Okinawa on a blank map', 'Recall Kyoto’s Mandarin pinyin', 'Recall Nagano’s eight neighbouring prefectures'],
+      '2026-10-14-v10', '5 GIFs'
+    ),
     'bible-books': gallery(
       'Bible Books', 'bible-books',
       ['reference.gif', 'canon.gif', 'sequence.gif', 'portuguese.gif', 'authorship.gif', 'context.gif'],
