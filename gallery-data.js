@@ -16,6 +16,12 @@
   }
 
   window.ritornelloGalleries = {
+    'iran-provinces': gallery(
+      'Iran Provinces', 'iran',
+      ['map.gif', 'locate.gif', 'capital.gif', 'capital-reverse.gif', 'connections.gif'],
+      ['Identify Alborz from its highlighted map', 'Locate Hormozgan', 'Recall Tabriz as East Azarbaijan’s capital', 'Recall Khuzestan from Ahvaz', 'Recall East Azarbaijan’s neighbouring provinces and countries'],
+      '2026-10-15-v11', '5 GIFs'
+    ),
     'traditional-from-simplified': gallery(
       'Traditional Chinese from Simplified', 'traditional-from-simplified',
       ['recall.gif'],
