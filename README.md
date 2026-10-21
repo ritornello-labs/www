@@ -58,6 +58,8 @@ links its current AnkiWeb listing and canonical tagged GitHub release. Standalon
 collection decks without a public product repository are archived in this repo's
 releases. The archive must match the verified AnkiWeb-delivered artifact exactly.
 
+Latest standalone archive: [Nigerian States — v2026.10.20](https://github.com/ritornello-labs/www/releases/tag/v2026.10.20), with its [AnkiWeb listing](https://ankiweb.net/shared/info/781697362) and [verified APKG](https://github.com/ritornello-labs/www/releases/download/v2026.10.20/nigerian-states-delivered.apkg). Current links for every product are in the [catalog](https://ritornello.dev/).
+
 The website lists GeoTrainer once, as the full edition. Component deck listings
 are linked from AnkiWeb, rather than repeated in the website catalog.
 
