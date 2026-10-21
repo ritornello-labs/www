@@ -1,0 +1,21 @@
+{
+  "slug": "nigerian-states",
+  "notes": 37,
+  "cards": 185,
+  "source_guids_model_ids_card_associations_templates_fields_css_and_media": "exact",
+  "sha256": "519916efee85b022c9dbe14ba75bdc10c75464164073a38f8f03b62f2938c44b",
+  "bytes": 11766847,
+  "ankiweb": "https://ankiweb.net/shared/info/781697362",
+  "date_local": "2026-10-20",
+  "github_release": "https://github.com/ritornello-labs/www/releases/tag/v2026.10.20",
+  "source_share_name_verified": true,
+  "approved_native_gifs": 5,
+  "media_files": 38,
+  "personal_collection_accessed": false,
+  "publisher_mutation": "none; native read-only scoped export",
+  "publisher_sync": "normal and media completion verified",
+  "schema_changed": false,
+  "github_digest_verified": true,
+  "website": "https://ritornello.dev/#nigerian-states",
+  "website_gallery_pr": 26
+}
