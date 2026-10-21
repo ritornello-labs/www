@@ -16,6 +16,12 @@
   }
 
   window.ritornelloGalleries = {
+    'mexico-federative-entities': gallery(
+      'Mexico Federative Entities', 'mexico',
+      ['map.gif', 'locate.gif', 'capital.gif', 'capital-reverse.gif', 'connections.gif'],
+      ['Identify Jalisco from its highlighted map', 'Locate Baja California Sur', 'Recall Saltillo as Coahuila’s capital', 'Recall Michoacán from Morelia', 'Recall Chihuahua’s neighbouring states and the United States'],
+      '2026-10-20-v12', '5 GIFs'
+    ),
     'iran-provinces': gallery(
       'Iran Provinces', 'iran',
       ['map.gif', 'locate.gif', 'capital.gif', 'capital-reverse.gif', 'connections.gif'],
