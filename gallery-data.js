@@ -16,6 +16,12 @@
   }
 
   window.ritornelloGalleries = {
+    'south-africa-provinces': gallery(
+      'South Africa Provinces', 'south-africa',
+      ['map.gif', 'locate.gif', 'capital.gif', 'capital-reverse.gif', 'connections.gif'],
+      ['Identify Western Cape from its highlighted map', 'Locate Gauteng', 'Recall Pietermaritzburg as KwaZulu-Natal’s capital', 'Recall Limpopo from Polokwane', 'Recall Northern Cape’s neighbouring provinces, countries and waters'],
+      '2026-10-20-v13', '5 GIFs'
+    ),
     'mexico-federative-entities': gallery(
       'Mexico Federative Entities', 'mexico',
       ['map.gif', 'locate.gif', 'capital.gif', 'capital-reverse.gif', 'connections.gif'],
