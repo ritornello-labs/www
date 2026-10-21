@@ -16,6 +16,12 @@
   }
 
   window.ritornelloGalleries = {
+    'nigerian-states': gallery(
+      'Nigerian States', 'nigerian-states',
+      ['locate.gif', 'map.gif', 'capital.gif', 'capital-reverse.gif', 'connections.gif'],
+      ['Locate Oyo on the map of Nigeria', 'Identify Rivers from its highlighted map', 'Recall Ikeja as Lagos State’s capital', 'Recall Cross River from Calabar', 'Recall Kaduna’s neighbouring states and the Federal Capital Territory'],
+      '2026-10-20-v14', '5 GIFs'
+    ),
     'south-africa-provinces': gallery(
       'South Africa Provinces', 'south-africa',
       ['map.gif', 'locate.gif', 'capital.gif', 'capital-reverse.gif', 'connections.gif'],
