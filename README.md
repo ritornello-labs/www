@@ -95,6 +95,8 @@ Direct links to individual entries open their containing section and category.
 Accordion initialization honors each toggle’s `aria-expanded` value.
 
 Use the shared catalog layout for new entries: title, full-width media preview,
-gallery control below the image, then description and links. This larger layout
-was approved for all listings on November 10, 2026. Do not put badges over the
-preview. Discuss a different layout with Elvis before implementing it.
+a small top-right gallery chip, then description and links. The chip combines
+an expand icon with an explicit action and count, such as "View 4 images". The
+entire preview opens the gallery. This layout and chip were approved for all
+listings on November 10, 2026. Avoid large descriptive badges that obscure the
+card. Discuss a different layout with Elvis before implementing it.
