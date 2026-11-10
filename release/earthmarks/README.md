@@ -47,5 +47,5 @@ Homepage follow-up: Geography opens by default, and the entry uses plain factual
 copy. Verify visibility from `/` as well as `/#earthmarks` before deployment.
 
 November 10: the owner approved larger previews for all listings. The title is
-above the image, with a plain gallery control below it. Both native Earthmarks
+above the image, with the subsequently approved small gallery chip in the top-right corner. Both native Earthmarks
 demos and both stills remain in the gallery.
