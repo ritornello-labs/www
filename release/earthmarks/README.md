@@ -35,3 +35,7 @@ and a 2 s final hold with borders visible. The hero is approved and unchanged.
 
 Final owner approval: the 5.42 s hero and 3.8 s settings demo are accepted.
 AnkiWeb listing copy is the next separate review step.
+
+Release rollout: approved entry integrated with the complete GitHub deck download
+and tagged checksum archive. AnkiWeb listing 1024786355 was submitted and awaits public review.
+The permanent media URLs serve the exact approved bytes.
