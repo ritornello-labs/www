@@ -10,7 +10,7 @@ interaction and a larger full-width presentation inside Programme I: Geography.
 - `entry.html`: insert before GeoTrainer; update the group count from 13 to 14.
 - `entry.css`: append to the site stylesheet, preserving the Score identity.
 - `gallery-entry.js`: add inside `window.ritornelloGalleries`.
-- Proposed media: Earthmarks repo `docs/images/2026-11-09-v2/{locate-short-front.gif,settings.gif,front.png,back.png,settings-borders-on.png}`.
+- Proposed media: Earthmarks repo `docs/images/2026-11-09-v2/{locate-short.gif,settings-cursor.gif,front.png,back.png,settings-borders-on.png}`.
   Copy only approved media to the named immutable website directory at rollout.
 - Preserve the reduced-motion still and meaningful alt text.
 - GitHub is the only external product link until real release/AnkiWeb links exist.
@@ -23,7 +23,8 @@ placing the guess and revealing. The second demo opens settings, enables borders
 then closes the menu and holds the visible border result for several seconds.
 The settings link opens that demo directly. Both videos remain native Anki GIFs.
 
-Hero timing revision: the visible question phase is shortened from 6.34 s to
-3.17 s; the 4.78 s answer phase is unchanged. All decoded native frames are
-pixel-identical to the original. Elvis requested clarification of the settings
-demo; keep its current GIF unchanged until the confusing part is identified.
+Hero timing revision: the question phase is 3.17 s (half of 6.34 s), and
+the answer now ends one second after the globe reaches its final settled view.
+The settings demo adds an editorial cursor and click pulses synchronized with
+the recorded native gear, border-checkbox and close actions. The native card
+content is unchanged; text is approved and final media review is pending.
