@@ -1,0 +1,20 @@
+/* Earthmarks proposal — inherits Ritornello's Score typography and true grounds. */
+.piece-earthmarks { padding-top: 1.8rem; padding-bottom: 2rem; }
+.earthmarks-kicker { margin: 0 0 .65rem; font: .65rem/1.5 var(--font-mono); text-transform: uppercase; letter-spacing: .12em; color: var(--muted); }
+.earthmarks-kicker span { padding: 0 .45rem; opacity: .45; }
+.piece-earthmarks .piece-title { margin: 0; font-size: clamp(2.1rem, 6vw, 3rem); font-weight: 500; letter-spacing: -.035em; line-height: 1.12; }
+.earthmarks-tagline { margin: .6rem 0 1.35rem; font: italic 1.25rem/1.4 var(--font-display); color: var(--muted); }
+.piece-thumb.earthmarks-stage { width:100%; max-width:none; display:block; position:relative; aspect-ratio:auto; border:1px solid var(--hairline); border-radius:12px; overflow:hidden; padding:0; background:#0a101c; text-align:left; }
+.earthmarks-stage picture, .earthmarks-stage img { display:block; width:100%; height:auto; max-height:none; object-fit:contain; }
+.earthmarks-stage-caption { display:flex; align-items:center; gap:.55rem; padding:.65rem 1rem; background:#101a29; color:#b9c9dc; font: .7rem/1.5 var(--font-mono); letter-spacing:.025em; border-top:1px solid #26344a; }
+.earthmarks-play { color:#78e4c8; font-size:1rem; }
+.earthmarks-stage:hover .earthmarks-stage-caption { color:#fff; }
+.earthmarks-summary { margin:1.25rem 0; }
+.earthmarks-summary p { margin:0 0 .75rem; font-size:.96rem; line-height:1.65; }
+.earthmarks-facts { margin:1.35rem 0; display:grid; grid-template-columns:repeat(3,1fr); padding:1rem 0; border-top:1px solid var(--hairline); border-bottom:1px solid var(--hairline); gap:1rem; }
+.earthmarks-facts dt { font: 500 .88rem/1.4 var(--font-body); color:var(--ink); }
+.earthmarks-facts dd { margin:.25rem 0 0; font: .7rem/1.5 var(--font-body); color:var(--muted); }
+.piece-links.earthmarks-links { display:flex; align-items:center; flex-wrap:wrap; gap:.5rem 1.2rem; }
+.earthmarks-links button { border:0; background:none; padding:0; color:var(--blue); cursor:pointer; font:inherit; text-decoration:underline; text-underline-offset:.18em; text-decoration-color:color-mix(in srgb,var(--blue) 45%,transparent); }
+.earthmarks-status { font-size:.7rem; color:var(--muted); }
+@media(max-width:420px) { .earthmarks-facts { gap:.55rem; } .earthmarks-facts dt { font-size:.8rem; } .earthmarks-facts dd { font-size:.64rem; } }
