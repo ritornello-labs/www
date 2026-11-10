@@ -9,7 +9,7 @@
 <meta name="theme-color" content="#FFFFFF" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#0F1113" media="(prefers-color-scheme: dark)">
 <link rel="stylesheet" href="assets/fonts.css">
-<link rel="stylesheet" href="styles.css?v=15">
+<link rel="stylesheet" href="styles.css?v=16">
 <meta property="og:title" content="Ritornello">
 <meta property="og:description" content="Spaced-repetition decks and power-user tools, built around Anki.">
 <meta property="og:url" content="https://ritornello.dev/">
@@ -171,40 +171,31 @@
     <div class="group-body">
     <div class="group-inner">
     <ul class="pieces pieces-compact">
-      <li class="piece piece-earthmarks" id="earthmarks">
-        <div class="earthmarks-heading">
-          <p class="earthmarks-kicker">Interactive geography <span aria-hidden="true">/</span> 704 cities</p>
-          <h3 class="piece-title"><a href="#earthmarks">Earthmarks</a></h3>
-          <p class="earthmarks-tagline">Know the name. Find the place.</p>
+      <li class="piece" id="earthmarks">
+        <div class="piece-grid with-shot">
+          <button class="piece-thumb piece-thumb-motion" type="button" data-gallery="earthmarks"
+                  aria-label="Open media gallery: Earthmarks">
+            <picture>
+              <source media="(prefers-reduced-motion: reduce)" srcset="media/ankiweb/2026-11-09-v2/earthmarks/back.png">
+              <img src="media/ankiweb/2026-11-09-v2/earthmarks/locate-short.gif" alt="Place a guess on the globe in Anki, then reveal the location and distance." width="960" height="563" loading="lazy">
+            </picture>
+          </button>
+          <div class="piece-text">
+            <h3 class="piece-title"><a href="#earthmarks">Earthmarks</a></h3>
+            <p>Find places on an offline satellite globe. Reveal the answer to compare
+               your guess with the correct location and see the distance.</p>
+            <p>The deck starts with an arbitrary selection of 704 cities. Add a city,
+               mountain, temple or other place with just its name and coordinates.
+               Every place uses the same globe, so no new maps or other assets are needed.</p>
+            <p class="piece-links">
+              <a href="https://ankiweb.net/shared/info/1024786355">AnkiWeb</a>
+              <a href="https://github.com/ritornello-labs/earthmarks">GitHub</a>
+              <a href="https://github.com/ritornello-labs/earthmarks/releases/tag/v2026.11.09">Release</a>
+              <a href="https://github.com/ritornello-labs/earthmarks/releases/download/v2026.11.09/Earthmarks.apkg">Download deck</a>
+              <span>AnkiWeb public review pending</span>
+            </p>
+          </div>
         </div>
-        <button class="piece-thumb earthmarks-stage" type="button" data-gallery="earthmarks" aria-label="Watch an Earthmarks guess and reveal in Anki">
-          <picture>
-            <source media="(prefers-reduced-motion: reduce)" srcset="media/ankiweb/2026-11-09-v2/earthmarks/back.png">
-            <img src="media/ankiweb/2026-11-09-v2/earthmarks/locate-short.gif" alt="Rotate and zoom the globe in real Anki, place a guess, then reveal San Francisco and the 670.4 km gap." width="960" height="563" loading="lazy">
-          </picture>
-          <span class="earthmarks-stage-caption"><span class="earthmarks-play" aria-hidden="true">↗</span> Watch a card</span>
-        </button>
-        <div class="earthmarks-summary">
-          <p>Find a place on a satellite globe. Reveal the answer to see your guess,
-             the correct location, a line between them, and the distance.</p>
-          <p>The deck starts with an arbitrary selection of 704 cities. To add a city, mountain,
-             temple or any other point on Earth, enter its name and coordinates. Every place
-             uses the same globe, so you do not need new maps or other assets.</p>
-        </div>
-        <dl class="earthmarks-facts">
-          <div><dt>22.4 MB</dt><dd>Shared offline imagery</dd></div>
-          <div><dt>Your precision</dt><dd>Choose your tolerance</dd></div>
-          <div><dt>Two fields</dt><dd>Add any point on Earth</dd></div>
-        </dl>
-        <p class="piece-links earthmarks-links">
-          <button class="piece-thumb earthmarks-text-link" type="button" data-gallery="earthmarks" aria-label="See Earthmarks in Anki">See it in Anki <span aria-hidden="true">↗</span></button>
-          <button class="piece-thumb earthmarks-text-link" type="button" data-gallery="earthmarks-settings" aria-label="View Earthmarks settings and country borders">Settings &amp; borders <span aria-hidden="true">↗</span></button>
-          <a href="https://github.com/ritornello-labs/earthmarks">GitHub &amp; instructions</a>
-          <a href="https://github.com/ritornello-labs/earthmarks/releases/download/v2026.11.09/Earthmarks.apkg">Download deck</a>
-          <a href="https://github.com/ritornello-labs/earthmarks/releases/tag/v2026.11.09">Release &amp; checksum</a>
-          <a href="https://ankiweb.net/shared/info/1024786355">AnkiWeb</a>
-          <span class="earthmarks-status">AnkiWeb public review pending</span>
-        </p>
       </li>
       <li class="piece" id="geo-trainer">
         <div class="piece-grid with-shot">

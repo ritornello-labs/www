@@ -93,3 +93,6 @@ require the established native-Anki capture and visual approval process.
 Geography opens by default so its decks are visible from the homepage without a
 fragment link. Other categories remain collapsible. Accordion initialization
 honors each toggle’s `aria-expanded` value.
+
+Use the existing compact catalog layout for new deck entries. Discuss a different
+layout with Elvis before implementing it.
