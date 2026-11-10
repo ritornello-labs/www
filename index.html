@@ -153,7 +153,7 @@
       <span class="rehearsal" aria-hidden="true">B</span>
       <div class="movement-titles">
         <h2><button class="movement-toggle" type="button" aria-expanded="true">Decks<span class="caret" aria-hidden="true"></span></button></h2>
-        <p class="movement-sub">The whole shelf, by category — click a programme to open it.</p>
+        <p class="movement-sub">Browse decks by subject.</p>
       </div>
     </header>
 
@@ -162,7 +162,7 @@
 
     <div class="group">
     <h3 class="programme-title">
-      <button class="group-toggle" type="button" aria-expanded="false">
+      <button class="group-toggle" type="button" aria-expanded="true">
         Programme I — Geography
         <span class="group-count">14 decks</span>
         <span class="caret" aria-hidden="true"></span>
@@ -182,14 +182,14 @@
             <source media="(prefers-reduced-motion: reduce)" srcset="media/ankiweb/2026-11-09-v2/earthmarks/back.png">
             <img src="media/ankiweb/2026-11-09-v2/earthmarks/locate-short.gif" alt="Rotate and zoom the globe in real Anki, place a guess, then reveal San Francisco and the 670.4 km gap." width="960" height="563" loading="lazy">
           </picture>
-          <span class="earthmarks-stage-caption"><span class="earthmarks-play" aria-hidden="true">↗</span> Explore the reveal</span>
+          <span class="earthmarks-stage-caption"><span class="earthmarks-play" aria-hidden="true">↗</span> Watch a card</span>
         </button>
         <div class="earthmarks-summary">
-          <p>Find a place on a satellite globe. Reveal the answer and watch your guess
-             meet the real location—with both pins, a connecting arc, and the distance in view.</p>
-          <p>The deck starts with an arbitrary selection of 704 cities. To add anything else—a
-             city, mountain, temple, or other point on Earth—you only need its coordinates.
-             Give it a name and reuse the same globe; no new maps or other assets are needed.</p>
+          <p>Find a place on a satellite globe. Reveal the answer to see your guess,
+             the correct location, a line between them, and the distance.</p>
+          <p>The deck starts with an arbitrary selection of 704 cities. To add a city, mountain,
+             temple or any other point on Earth, enter its name and coordinates. Every place
+             uses the same globe, so you do not need new maps or other assets.</p>
         </div>
         <dl class="earthmarks-facts">
           <div><dt>22.4 MB</dt><dd>Shared offline imagery</dd></div>
@@ -722,8 +722,7 @@
 
 <script src="gallery-data.js?v=14"></script>
 <script>
-  // Section and group accordions. Sections start open; deck groups start
-  // closed (aria-expanded in the markup is the source of truth).
+  // Use the initial expanded state declared in the markup for each accordion.
   function wireToggle(btn, target) {
     btn.addEventListener('click', function () {
       var open = btn.getAttribute('aria-expanded') !== 'true';
@@ -736,7 +735,7 @@
   });
   document.querySelectorAll('.group-toggle').forEach(function (btn) {
     var body = btn.closest('.programme-title').nextElementSibling;
-    body.classList.add('closed');
+    body.classList.toggle('closed', btn.getAttribute('aria-expanded') !== 'true');
     wireToggle(btn, body);
   });
 

@@ -89,3 +89,7 @@ Install hooks from that reviewed checkout with
 Before pushing, the hooks inspect staged objects and all outgoing commits against
 the actual destination. Existing media bytes are retained; new listing media still
 require the established native-Anki capture and visual approval process.
+
+Geography opens by default so its decks are visible from the homepage without a
+fragment link. Other categories remain collapsible. Accordion initialization
+honors each toggle’s `aria-expanded` value.

@@ -39,3 +39,6 @@ AnkiWeb listing copy was subsequently approved and submitted.
 Release rollout: approved entry integrated with the complete GitHub deck download
 and tagged checksum archive. AnkiWeb listing 1024786355 was submitted and awaits public review.
 The permanent media URLs serve the exact approved bytes.
+
+Homepage follow-up: Geography opens by default, and the entry uses plain factual
+copy. Verify visibility from `/` as well as `/#earthmarks` before deployment.
