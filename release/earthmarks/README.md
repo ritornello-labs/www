@@ -1,6 +1,6 @@
 # Earthmarks catalog entry
 
-Current layout: the standard compact deck entry, matching the rest of the catalog.
+Current layout: the shared full-width media entry, matching the rest of the catalog.
 The featured layout described in the earlier notes below has been removed.
 
 Status: listing text and both final GIFs approved by Elvis on November 9, 2026.
@@ -45,3 +45,7 @@ The permanent media URLs serve the exact approved bytes.
 
 Homepage follow-up: Geography opens by default, and the entry uses plain factual
 copy. Verify visibility from `/` as well as `/#earthmarks` before deployment.
+
+November 10: the owner approved larger previews for all listings. The title is
+above the image, with a plain gallery control below it. Both native Earthmarks
+demos and both stills remain in the gallery.
