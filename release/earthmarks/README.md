@@ -1,4 +1,7 @@
-# Earthmarks — Ritornello entry proposal
+# Earthmarks catalog entry
+
+Current layout: the standard compact deck entry, matching the rest of the catalog.
+The featured layout described in the earlier notes below has been removed.
 
 Status: listing text and both final GIFs approved by Elvis on November 9, 2026.
 The approved AnkiWeb listing has been submitted as 1024786355 and awaits public
