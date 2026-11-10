@@ -94,5 +94,7 @@ Geography opens by default so its decks are visible from the homepage without a
 fragment link. Other categories remain collapsible. Accordion initialization
 honors each toggle’s `aria-expanded` value.
 
-Use the existing compact catalog layout for new deck entries. Discuss a different
-layout with Elvis before implementing it.
+Use the shared catalog layout for new entries: title, full-width media preview,
+gallery control below the image, then description and links. This larger layout
+was approved for all listings on November 10, 2026. Do not put badges over the
+preview. Discuss a different layout with Elvis before implementing it.
