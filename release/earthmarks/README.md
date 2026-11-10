@@ -1,7 +1,8 @@
 # Earthmarks — Ritornello entry proposal
 
-Status: listing text approved by Elvis; GIF refinements remain under review. Do not deploy this proposal
-or prepare its AnkiWeb adaptation until the Ritornello version is accepted.
+Status: listing text and both final GIFs approved by Elvis on November 9, 2026.
+The AnkiWeb adaptation is now being prepared in the Earthmarks repository;
+website rollout is coordinated with the shared-deck release.
 
 The entry leads with a genuine Anki attempt and reveal, then explains the
 arbitrary 704-city starting set and coordinate-only map extension. It uses the existing gallery
@@ -27,7 +28,10 @@ Hero timing revision: the question phase is 3.17 s (half of 6.34 s), and
 the answer now ends one second after the globe reaches its final settled view.
 The settings demo adds an editorial cursor and click pulses synchronized with
 the recorded native gear, border-checkbox and close actions. The native card
-content is unchanged; text is approved and final media review is pending.
+content is unchanged; text and final media are approved.
 
 Settings timing refinement: 3.8 s total, comprising 1.8 s for cursor/menu actions
 and a 2 s final hold with borders visible. The hero is approved and unchanged.
+
+Final owner approval: the 5.42 s hero and 3.8 s settings demo are accepted.
+AnkiWeb listing copy is the next separate review step.
