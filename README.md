@@ -90,9 +90,9 @@ Before pushing, the hooks inspect staged objects and all outgoing commits agains
 the actual destination. Existing media bytes are retained; new listing media still
 require the established native-Anki capture and visual approval process.
 
-Geography opens by default so its decks are visible from the homepage without a
-fragment link. Other categories remain collapsible. Accordion initialization
-honors each toggle’s `aria-expanded` value.
+All catalog sections and deck categories start collapsed on the homepage.
+Direct links to individual entries open their containing section and category.
+Accordion initialization honors each toggle’s `aria-expanded` value.
 
 Use the shared catalog layout for new entries: title, full-width media preview,
 gallery control below the image, then description and links. This larger layout

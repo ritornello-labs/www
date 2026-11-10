@@ -54,23 +54,23 @@
     <header class="movement-head">
       <span class="rehearsal" aria-hidden="true">A</span>
       <div class="movement-titles">
-        <h2><button class="movement-toggle" type="button" aria-expanded="true">Decks<span class="caret" aria-hidden="true"></span></button></h2>
+        <h2><button class="movement-toggle" type="button" aria-expanded="false">Decks<span class="caret" aria-hidden="true"></span></button></h2>
         <p class="movement-sub">Browse decks by subject.</p>
       </div>
     </header>
 
-    <div class="movement-body">
+    <div class="movement-body closed">
     <div class="movement-inner">
 
     <div class="group">
     <h3 class="programme-title">
-      <button class="group-toggle" type="button" aria-expanded="true">
+      <button class="group-toggle" type="button" aria-expanded="false">
         Programme I — Geography
         <span class="group-count">14 decks</span>
         <span class="caret" aria-hidden="true"></span>
       </button>
     </h3>
-    <div class="group-body">
+    <div class="group-body closed">
     <div class="group-inner">
     <ul class="pieces pieces-compact">
       <li class="piece" id="earthmarks">
@@ -349,7 +349,7 @@
         <span class="caret" aria-hidden="true"></span>
       </button>
     </h3>
-    <div class="group-body">
+    <div class="group-body closed">
     <div class="group-inner">
     <ul class="pieces pieces-compact">
       <li class="piece" id="sight-singing">
@@ -404,7 +404,7 @@
         <span class="caret" aria-hidden="true"></span>
       </button>
     </h3>
-    <div class="group-body">
+    <div class="group-body closed">
     <div class="group-inner">
     <ul class="pieces pieces-compact">
       <li class="piece" id="hanzi-handwriting">
@@ -458,7 +458,7 @@
         <span class="caret" aria-hidden="true"></span>
       </button>
     </h3>
-    <div class="group-body">
+    <div class="group-body closed">
     <div class="group-inner">
     <ul class="pieces pieces-compact">
       <li class="piece" id="chinese-dynasties">
@@ -508,12 +508,12 @@
     <header class="movement-head">
       <span class="rehearsal" aria-hidden="true">B</span>
       <div class="movement-titles">
-        <h2><button class="movement-toggle" type="button" aria-expanded="true">Add-ons<span class="caret" aria-hidden="true"></span></button></h2>
+        <h2><button class="movement-toggle" type="button" aria-expanded="false">Add-ons<span class="caret" aria-hidden="true"></span></button></h2>
         <p class="movement-sub">Published on AnkiWeb, source and releases on GitHub. Media galleries open on click.</p>
       </div>
     </header>
 
-    <div class="movement-body">
+    <div class="movement-body closed">
     <div class="movement-inner">
     <ul class="pieces">
       <li class="piece" id="chat-with-your-cards">
@@ -606,12 +606,12 @@
     <header class="movement-head">
       <span class="rehearsal" aria-hidden="true">C</span>
       <div class="movement-titles">
-        <h2><button class="movement-toggle" type="button" aria-expanded="true">Tooling<span class="caret" aria-hidden="true"></span></button></h2>
+        <h2><button class="movement-toggle" type="button" aria-expanded="false">Tooling<span class="caret" aria-hidden="true"></span></button></h2>
         <p class="movement-sub">For people who build add-ons and decks themselves.</p>
       </div>
     </header>
 
-    <div class="movement-body">
+    <div class="movement-body closed">
     <div class="movement-inner">
     <ul class="pieces">
       <li class="piece" id="anki-addon-workbench">
@@ -715,6 +715,7 @@
 <script>
   // Use the initial expanded state declared in the markup for each accordion.
   function wireToggle(btn, target) {
+    target.classList.toggle('closed', btn.getAttribute('aria-expanded') !== 'true');
     btn.addEventListener('click', function () {
       var open = btn.getAttribute('aria-expanded') !== 'true';
       btn.setAttribute('aria-expanded', open ? 'true' : 'false');
@@ -726,7 +727,6 @@
   });
   document.querySelectorAll('.group-toggle').forEach(function (btn) {
     var body = btn.closest('.programme-title').nextElementSibling;
-    body.classList.toggle('closed', btn.getAttribute('aria-expanded') !== 'true');
     wireToggle(btn, body);
   });
 
