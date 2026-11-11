@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "native_renderer": "Anki desktop via anki-addon-workbench",
+  "capture_kind": "disposable APKG profile",
+  "fixture": "public geographic fields with fresh identities",
+  "card_content_reconstructed": false,
+  "postprocessing": [
+    "crop",
+    "GIF timing",
+    "illustrative cursor overlay for the recorded native language click"
+  ],
+  "approved": true,
+  "artifacts": [
+    {
+      "name": "subject.gif",
+      "sha256": "8d2d59a95cc88f14c0399c8484638fae7095ab85a7f46a8b86057ac49d22edba",
+      "bytes": 864912,
+      "width": 720,
+      "height": 790,
+      "duration_ms": 4000
+    },
+    {
+      "name": "district.gif",
+      "sha256": "046401129ec05d37c47819303be65a28de74deeb2df4aab698b0b4e5bcdc6217",
+      "bytes": 168965,
+      "width": 720,
+      "height": 682,
+      "duration_ms": 3400
+    },
+    {
+      "name": "subject-cover.png",
+      "sha256": "7c7b0b41f2f994ce3d4cb851d354fc2ecf3fecaae856d3e4d911f19172b49de9",
+      "bytes": 158450,
+      "width": 720,
+      "height": 790,
+      "duration_ms": 0
+    },
+    {
+      "name": "district-answer.png",
+      "sha256": "9c0097165c79e67e05d9b7f5874599b22426782082a34856e6557c65ef2763db",
+      "bytes": 146295,
+      "width": 720,
+      "height": 682,
+      "duration_ms": 0
+    }
+  ]
+}

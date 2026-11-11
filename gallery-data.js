@@ -16,6 +16,12 @@
   }
 
   window.ritornelloGalleries = {
+    'russian-atlas': gallery(
+      'Russia: Federal Subjects and Districts', 'russian-atlas',
+      ['subject.gif', 'district.gif'],
+      ['Identify Yakutia, reveal the answer and switch its name to Russian in Anki.', 'Identify the Far Eastern Federal District, then reveal Vladivostok as its administrative center.'],
+      '2026-11-10', '2 demonstrations'
+    ),
     'earthmarks': gallery(
       'Earthmarks', 'earthmarks',
       ['locate-short.gif', 'settings-quick.gif', 'front.png', 'back.png'],
